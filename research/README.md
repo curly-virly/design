@@ -133,6 +133,8 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 
 ## Open
 
+- Phase 2 rollout plan: design#16 (proposed palette per app, order, done criteria), one issue per app.
+
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
 - Which icon parts each app recolours: decided per app in Phase 2.
 - Which palette and flip each app gets: decided per app in Phase 2.
