@@ -118,6 +118,10 @@
     "group": "christmas",
     "replaces": [
       "🎄"
+    ],
+    "parts": [
+      "green",
+      "brown"
     ]
   },
   "santa": {
@@ -125,6 +129,13 @@
     "group": "christmas",
     "replaces": [
       "🎅"
+    ],
+    "parts": [
+      "red",
+      "snow",
+      "skin",
+      "snow",
+      "snow"
     ]
   },
   "present": {
@@ -132,6 +143,11 @@
     "group": "christmas",
     "replaces": [
       "🎁"
+    ],
+    "parts": [
+      "red",
+      "gold",
+      "gold"
     ]
   },
   "reindeer": {
@@ -139,6 +155,10 @@
     "group": "christmas",
     "replaces": [
       "🦌"
+    ],
+    "parts": [
+      "brown",
+      "tan"
     ]
   },
   "snowman": {
@@ -146,6 +166,11 @@
     "group": "christmas",
     "replaces": [
       "⛄"
+    ],
+    "parts": [
+      "snow",
+      "snow",
+      "brown"
     ]
   },
   "snowflake": {
@@ -154,6 +179,15 @@
     "replaces": [
       "❄️",
       "❄"
+    ],
+    "parts": [
+      "ice",
+      "ice",
+      "ice",
+      "ice",
+      "ice",
+      "ice",
+      "ice"
     ]
   },
   "candle": {
@@ -161,6 +195,10 @@
     "group": "christmas",
     "replaces": [
       "🕯️"
+    ],
+    "parts": [
+      "snow",
+      "flame"
     ]
   },
   "gingerbread": {
@@ -168,6 +206,9 @@
     "group": "christmas",
     "replaces": [
       "🍪"
+    ],
+    "parts": [
+      "ginger"
     ]
   },
   "star": {
@@ -176,6 +217,9 @@
     "replaces": [
       "⭐",
       "★"
+    ],
+    "parts": [
+      "gold"
     ]
   },
   "sock": {
@@ -183,6 +227,9 @@
     "group": "christmas",
     "replaces": [
       "🧦"
+    ],
+    "parts": [
+      "red"
     ]
   },
   "beer": {
@@ -270,6 +317,10 @@
     "replaces": [
       "🔔",
       "Bell"
+    ],
+    "parts": [
+      "gold",
+      "gold"
     ]
   },
   "bell-ring": {

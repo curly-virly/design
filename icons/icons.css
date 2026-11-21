@@ -20,11 +20,14 @@
 .rg-icon--solid .dot { fill: var(--rg-icon-cut, var(--rg-paper, #fff)); }
 
 /* C: line with a fill. The outline stays ink; the shapes take --rg-icon-fill (default: the palette accent). */
-.rg-icon--fill .shape { fill: var(--rg-icon-fill, var(--rg-accent, transparent)); }
+.rg-icon--fill .shape { fill: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, transparent))); }
 
 /* D: colour. The whole icon (shapes and lines) takes --rg-icon-fill; details and dots stay ink for contrast.
    Use it where the icon must carry colour at small sizes. Set --rg-icon-detail to change the contrast colour. */
-.rg-icon--color .shape { fill: var(--rg-icon-fill, var(--rg-accent, currentColor)); stroke: var(--rg-icon-fill, var(--rg-accent, currentColor)); }
-.rg-icon--color .line { stroke: var(--rg-icon-fill, var(--rg-accent, currentColor)); }
+.rg-icon--color .shape { fill: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, currentColor))); stroke: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, currentColor))); }
+.rg-icon--color .line { stroke: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, currentColor))); }
 .rg-icon--color .detail { stroke: var(--rg-icon-detail, currentColor); }
 .rg-icon--color .dot { fill: var(--rg-icon-detail, currentColor); }
+
+/* Per part: in the fill and colour looks, a part's own --rg-part (set inline by iconSvg's `natural` option,
+   or by an app) beats --rg-icon-fill. Lines only take it in the colour look; in fill they stay ink. */
