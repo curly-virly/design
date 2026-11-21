@@ -145,7 +145,7 @@ export const icons = {
   "replaces": [
    "🎅"
   ],
-  "body": "<path class=\"shape\" d=\"M5.5 10C6 5.5 9 3 13 3c3 0 5 2 6 5.5L17.5 10Z\"/><circle class=\"shape\" cx=\"20\" cy=\"9.6\" r=\"1.4\"/><path class=\"shape\" d=\"M4.5 10.5h15v2.5h-15Z\"/><path class=\"shape\" d=\"M5 14h14c0 4.5-3 7.5-7 7.5S5 18.5 5 14Z\"/><path class=\"detail\" d=\"M10 17.5h4\"/>"
+  "body": "<path class=\"shape\" d=\"M5.5 10C6 5.5 9 3 13 3c3 0 5 2 6 5.5L17.5 10Z\"/><circle class=\"shape\" cx=\"20\" cy=\"9.6\" r=\"1.4\"/><path class=\"shape\" d=\"M4.5 10h15v2.3h-15Z\"/><path class=\"shape\" d=\"M5.5 13.3h13c0 4.6-2.9 8.2-6.5 8.2s-6.5-3.6-6.5-8.2Z\"/><path class=\"detail\" d=\"M9.3 18.6c1.1-.9 2-.9 2.7 0 .7-.9 1.6-.9 2.7 0\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"9.9\" cy=\"15.3\" r=\"1.1\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"14.1\" cy=\"15.3\" r=\"1.1\"/>"
  },
  "present": {
   "label": "Present",
