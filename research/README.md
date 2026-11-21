@@ -93,6 +93,7 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - Round 2 uses many silhouette layers that darken toward the front, a dry-brush sky with grain, a moonbeam, and
   black foreground pines and boughs cropping the edges, with the title and buttons inside the scene. It combines
   three background techniques, while §3 says one, so that rule may need changing (`decision`).
+- Jens prefers `night` (blue) over `aku` for this, with the tree kept its natural green instead of the palette accent.
 
 ## Open
 
