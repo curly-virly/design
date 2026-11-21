@@ -94,6 +94,7 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   black foreground pines and boughs cropping the edges, with the title and buttons inside the scene. It combines
   three background techniques, while §3 says one, so that rule may need changing (`decision`).
 - Jens prefers `night` (blue) over `aku` for this, with the tree kept its natural green instead of the palette accent.
+- Tested green and snowy trees; Jens kept the black (ink) tree silhouettes. The starry sky from the old landing came back (flat dots and a few four-point sparkles).
 
 ## Open
 
