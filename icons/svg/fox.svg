@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="rg-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Fox">
+<path class="shape" d="M3 3l6 5h6l6-5-1 8c-1 4-5 8-8 10-3-2-7-6-8-10Z"/>
+<path class="detail" d="M8.2 14.6c1.6.9 2.8 2.2 3.8 3.6 1-1.4 2.2-2.7 3.8-3.6"/>
+<circle class="dot" fill="currentColor" stroke="none" cx="9.3" cy="12.2" r="0.85"/>
+<circle class="dot" fill="currentColor" stroke="none" cx="14.7" cy="12.2" r="0.85"/>
+</svg>

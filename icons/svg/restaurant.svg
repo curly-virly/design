@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="rg-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Restaurant">
+<circle class="shape" cx="12" cy="12" r="5"/>
+<path class="shape" d="M19.5 3c-1.5 1-2.5 3.5-2.5 7.5h2.5Z"/>
+<path class="line" d="M19.5 10.5V21M3.5 3v5.5c0 1 .7 1.7 1.5 1.7s1.5-.7 1.5-1.7V3M5 10.2V21"/>
+<circle class="detail" cx="12" cy="12" r="2.8"/>
+</svg>

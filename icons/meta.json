@@ -1,0 +1,726 @@
+{
+  "sheriff": {
+    "label": "Sheriff",
+    "group": "teams",
+    "replaces": [
+      "🤠"
+    ]
+  },
+  "chicken": {
+    "label": "Chicken",
+    "group": "teams",
+    "replaces": [
+      "🐔"
+    ]
+  },
+  "diver": {
+    "label": "Diver",
+    "group": "teams",
+    "replaces": [
+      "🤿"
+    ]
+  },
+  "bunny": {
+    "label": "Bunny",
+    "group": "teams",
+    "replaces": [
+      "🐰"
+    ]
+  },
+  "robot": {
+    "label": "Robot",
+    "group": "teams",
+    "replaces": [
+      "🤖"
+    ]
+  },
+  "alien": {
+    "label": "Alien",
+    "group": "teams",
+    "replaces": [
+      "👽"
+    ]
+  },
+  "shark": {
+    "label": "Shark",
+    "group": "teams",
+    "replaces": [
+      "🦈"
+    ]
+  },
+  "angel": {
+    "label": "Angel",
+    "group": "teams",
+    "replaces": [
+      "😇"
+    ]
+  },
+  "devil": {
+    "label": "Devil",
+    "group": "teams",
+    "replaces": [
+      "😈"
+    ]
+  },
+  "crown": {
+    "label": "Crown",
+    "group": "teams",
+    "replaces": [
+      "👑",
+      "Crown"
+    ]
+  },
+  "pirate-flag": {
+    "label": "Pirate flag",
+    "group": "teams",
+    "replaces": [
+      "🏴‍☠️",
+      "☠"
+    ]
+  },
+  "dragon": {
+    "label": "Dragon",
+    "group": "teams",
+    "replaces": [
+      "🐉"
+    ]
+  },
+  "fox": {
+    "label": "Fox",
+    "group": "teams",
+    "replaces": [
+      "🦊"
+    ]
+  },
+  "axe": {
+    "label": "Axe",
+    "group": "teams",
+    "replaces": [
+      "🪓"
+    ]
+  },
+  "detective": {
+    "label": "Detective",
+    "group": "teams",
+    "replaces": [
+      "🕵️"
+    ]
+  },
+  "mystery": {
+    "label": "Mystery",
+    "group": "teams",
+    "replaces": [
+      "❔"
+    ]
+  },
+  "xmas-tree": {
+    "label": "Christmas tree",
+    "group": "christmas",
+    "replaces": [
+      "🎄"
+    ]
+  },
+  "santa": {
+    "label": "Santa",
+    "group": "christmas",
+    "replaces": [
+      "🎅"
+    ]
+  },
+  "present": {
+    "label": "Present",
+    "group": "christmas",
+    "replaces": [
+      "🎁"
+    ]
+  },
+  "reindeer": {
+    "label": "Reindeer",
+    "group": "christmas",
+    "replaces": [
+      "🦌"
+    ]
+  },
+  "snowman": {
+    "label": "Snowman",
+    "group": "christmas",
+    "replaces": [
+      "⛄"
+    ]
+  },
+  "snowflake": {
+    "label": "Snowflake",
+    "group": "christmas",
+    "replaces": [
+      "❄️",
+      "❄"
+    ]
+  },
+  "candle": {
+    "label": "Candle",
+    "group": "christmas",
+    "replaces": [
+      "🕯️"
+    ]
+  },
+  "gingerbread": {
+    "label": "Gingerbread",
+    "group": "christmas",
+    "replaces": [
+      "🍪"
+    ]
+  },
+  "star": {
+    "label": "Star",
+    "group": "christmas",
+    "replaces": [
+      "⭐",
+      "★"
+    ]
+  },
+  "sock": {
+    "label": "Stocking",
+    "group": "christmas",
+    "replaces": [
+      "🧦"
+    ]
+  },
+  "beer": {
+    "label": "Bar",
+    "group": "places",
+    "replaces": [
+      "🍺"
+    ]
+  },
+  "coffee": {
+    "label": "Café",
+    "group": "places",
+    "replaces": [
+      "☕"
+    ]
+  },
+  "museum": {
+    "label": "Museum",
+    "group": "places",
+    "replaces": [
+      "🏛️"
+    ]
+  },
+  "station": {
+    "label": "Station",
+    "group": "places",
+    "replaces": [
+      "🚉"
+    ]
+  },
+  "tree": {
+    "label": "Park",
+    "group": "places",
+    "replaces": [
+      "🌳"
+    ]
+  },
+  "restaurant": {
+    "label": "Restaurant",
+    "group": "places",
+    "replaces": [
+      "🍽️"
+    ]
+  },
+  "books": {
+    "label": "Library",
+    "group": "places",
+    "replaces": [
+      "📚"
+    ]
+  },
+  "pin": {
+    "label": "Map pin",
+    "group": "places",
+    "replaces": [
+      "📍",
+      "MapPin"
+    ]
+  },
+  "statue": {
+    "label": "Statue",
+    "group": "places",
+    "replaces": [
+      "🗿"
+    ]
+  },
+  "trophy": {
+    "label": "Trophy",
+    "group": "game",
+    "replaces": [
+      "🏆"
+    ]
+  },
+  "camera": {
+    "label": "Camera",
+    "group": "game",
+    "replaces": [
+      "📷",
+      "📸"
+    ]
+  },
+  "bell": {
+    "label": "Bell",
+    "group": "game",
+    "replaces": [
+      "🔔",
+      "Bell"
+    ]
+  },
+  "bell-ring": {
+    "label": "Bell ringing",
+    "group": "game",
+    "replaces": [
+      "BellRing"
+    ]
+  },
+  "bell-off": {
+    "label": "Bell off",
+    "group": "game",
+    "replaces": [
+      "BellOff"
+    ]
+  },
+  "hourglass": {
+    "label": "Hourglass",
+    "group": "game",
+    "replaces": [
+      "⏳"
+    ]
+  },
+  "stopwatch": {
+    "label": "Stopwatch",
+    "group": "game",
+    "replaces": [
+      "⏱"
+    ]
+  },
+  "handshake": {
+    "label": "Handshake",
+    "group": "game",
+    "replaces": [
+      "🤝"
+    ]
+  },
+  "finish-flag": {
+    "label": "Finish flag",
+    "group": "game",
+    "replaces": [
+      "🏁"
+    ]
+  },
+  "flag": {
+    "label": "Flag",
+    "group": "game",
+    "replaces": [
+      "🚩"
+    ]
+  },
+  "rope": {
+    "label": "Rope",
+    "group": "game",
+    "replaces": [
+      "🪢"
+    ]
+  },
+  "search": {
+    "label": "Search",
+    "group": "game",
+    "replaces": [
+      "🔎",
+      "Search"
+    ]
+  },
+  "shuffle": {
+    "label": "Shuffle",
+    "group": "game",
+    "replaces": [
+      "🔀",
+      "Shuffle"
+    ]
+  },
+  "repeat": {
+    "label": "Repeat",
+    "group": "game",
+    "replaces": [
+      "🔁"
+    ]
+  },
+  "play": {
+    "label": "Play",
+    "group": "game",
+    "replaces": [
+      "Play"
+    ]
+  },
+  "pause": {
+    "label": "Pause",
+    "group": "game",
+    "replaces": [
+      "⏸",
+      "Pause"
+    ]
+  },
+  "warning": {
+    "label": "Warning",
+    "group": "game",
+    "replaces": [
+      "⚠️",
+      "⚠"
+    ]
+  },
+  "sparkle": {
+    "label": "Sparkle",
+    "group": "game",
+    "replaces": [
+      "✦"
+    ]
+  },
+  "sparkles": {
+    "label": "Sparkles",
+    "group": "game",
+    "replaces": [
+      "Sparkles",
+      "✨"
+    ]
+  },
+  "crosshair": {
+    "label": "Crosshair",
+    "group": "game",
+    "replaces": [
+      "Crosshair"
+    ]
+  },
+  "locate": {
+    "label": "Locate me",
+    "group": "game",
+    "replaces": [
+      "LocateFixed"
+    ]
+  },
+  "dice": {
+    "label": "Dice",
+    "group": "game",
+    "replaces": [
+      "Dices",
+      "🎲"
+    ]
+  },
+  "swords": {
+    "label": "Swords",
+    "group": "game",
+    "replaces": [
+      "Swords",
+      "⚔️"
+    ]
+  },
+  "shield-check": {
+    "label": "Shield",
+    "group": "game",
+    "replaces": [
+      "ShieldCheck"
+    ]
+  },
+  "heart": {
+    "label": "Heart",
+    "group": "game",
+    "replaces": [
+      "Heart",
+      "❤️"
+    ]
+  },
+  "hexagon": {
+    "label": "Hexagon",
+    "group": "game",
+    "replaces": [
+      "Hexagon"
+    ]
+  },
+  "circle": {
+    "label": "Circle",
+    "group": "game",
+    "replaces": [
+      "Circle"
+    ]
+  },
+  "kettlebell": {
+    "label": "Strength",
+    "group": "gym",
+    "replaces": [
+      "💪"
+    ]
+  },
+  "shoe": {
+    "label": "Cardio",
+    "group": "gym",
+    "replaces": [
+      "🏃"
+    ]
+  },
+  "yoga": {
+    "label": "Mobility",
+    "group": "gym",
+    "replaces": [
+      "🧘"
+    ]
+  },
+  "flame": {
+    "label": "Warm-up",
+    "group": "gym",
+    "replaces": [
+      "🔥"
+    ]
+  },
+  "phone": {
+    "label": "Phone",
+    "group": "gym",
+    "replaces": [
+      "📱"
+    ]
+  },
+  "calendar": {
+    "label": "Calendar",
+    "group": "gym",
+    "replaces": [
+      "📅"
+    ]
+  },
+  "pencil": {
+    "label": "Write",
+    "group": "gym",
+    "replaces": [
+      "✍️"
+    ]
+  },
+  "settings": {
+    "label": "Settings",
+    "group": "ui",
+    "replaces": [
+      "⚙️",
+      "Settings"
+    ]
+  },
+  "check": {
+    "label": "Check",
+    "group": "ui",
+    "replaces": [
+      "✓",
+      "Check"
+    ]
+  },
+  "close": {
+    "label": "Close",
+    "group": "ui",
+    "replaces": [
+      "✕",
+      "✗",
+      "X"
+    ]
+  },
+  "plus": {
+    "label": "Add",
+    "group": "ui",
+    "replaces": [
+      "Plus"
+    ]
+  },
+  "minus": {
+    "label": "Remove",
+    "group": "ui",
+    "replaces": [
+      "Minus"
+    ]
+  },
+  "arrow-left": {
+    "label": "Back",
+    "group": "ui",
+    "replaces": [
+      "ArrowLeft"
+    ]
+  },
+  "arrow-right": {
+    "label": "Forward",
+    "group": "ui",
+    "replaces": [
+      "ArrowRight"
+    ]
+  },
+  "chevron-up": {
+    "label": "Chevron up",
+    "group": "ui",
+    "replaces": [
+      "ChevronUp"
+    ]
+  },
+  "chevron-down": {
+    "label": "Chevron down",
+    "group": "ui",
+    "replaces": [
+      "ChevronDown",
+      "ChevronDownIcon"
+    ]
+  },
+  "chevron-left": {
+    "label": "Chevron left",
+    "group": "ui",
+    "replaces": [
+      "ChevronLeft",
+      "ChevronLeftIcon"
+    ]
+  },
+  "chevron-right": {
+    "label": "Chevron right",
+    "group": "ui",
+    "replaces": [
+      "ChevronRight",
+      "ChevronRightIcon"
+    ]
+  },
+  "more": {
+    "label": "More",
+    "group": "ui",
+    "replaces": [
+      "MoreHorizontal"
+    ]
+  },
+  "grip": {
+    "label": "Drag handle",
+    "group": "ui",
+    "replaces": [
+      "GripVertical"
+    ]
+  },
+  "panel": {
+    "label": "Side panel",
+    "group": "ui",
+    "replaces": [
+      "PanelLeft"
+    ]
+  },
+  "expand": {
+    "label": "Full screen",
+    "group": "ui",
+    "replaces": [
+      "⛶",
+      "Maximize2"
+    ]
+  },
+  "lock": {
+    "label": "Locked",
+    "group": "ui",
+    "replaces": [
+      "🔒",
+      "Lock"
+    ]
+  },
+  "unlock": {
+    "label": "Unlocked",
+    "group": "ui",
+    "replaces": [
+      "🔓",
+      "LockOpen"
+    ]
+  },
+  "download": {
+    "label": "Download",
+    "group": "ui",
+    "replaces": [
+      "Download"
+    ]
+  },
+  "printer": {
+    "label": "Print",
+    "group": "ui",
+    "replaces": [
+      "Printer",
+      "🖨️"
+    ]
+  },
+  "undo": {
+    "label": "Undo",
+    "group": "ui",
+    "replaces": [
+      "Undo2"
+    ]
+  },
+  "redo": {
+    "label": "Redo",
+    "group": "ui",
+    "replaces": [
+      "Redo2"
+    ]
+  },
+  "reset": {
+    "label": "Start over",
+    "group": "ui",
+    "replaces": [
+      "RotateCcw"
+    ]
+  },
+  "user-plus": {
+    "label": "Add player",
+    "group": "ui",
+    "replaces": [
+      "UserPlus"
+    ]
+  },
+  "copy": {
+    "label": "Copy",
+    "group": "ui",
+    "replaces": [
+      "Copy"
+    ]
+  },
+  "external": {
+    "label": "Open elsewhere",
+    "group": "ui",
+    "replaces": [
+      "ExternalLink"
+    ]
+  },
+  "link": {
+    "label": "Link",
+    "group": "ui",
+    "replaces": [
+      "Link2",
+      "🔗"
+    ]
+  },
+  "globe": {
+    "label": "Globe",
+    "group": "ui",
+    "replaces": [
+      "Globe",
+      "🌐"
+    ]
+  },
+  "image": {
+    "label": "Picture",
+    "group": "ui",
+    "replaces": [
+      "Image",
+      "🖼️"
+    ]
+  },
+  "info": {
+    "label": "Info",
+    "group": "ui",
+    "replaces": [
+      "Info",
+      "ℹ️"
+    ]
+  },
+  "trash": {
+    "label": "Delete",
+    "group": "ui",
+    "replaces": [
+      "Trash2",
+      "🗑️"
+    ]
+  }
+}

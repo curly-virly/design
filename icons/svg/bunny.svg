@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="rg-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Bunny">
+<path class="shape" d="M12 21c-3.9 0-6.5-2.6-6.5-5.8 0-2.6 1.5-4.4 3.3-5.2C8 7 7.5 3.5 9 2.5c1.6-.9 2.6 3 2.8 6.6h.4c.2-3.6 1.2-7.5 2.8-6.6 1.5 1-1 4.5-1.8 7.5 1.8.8 3.3 2.6 3.3 5.2 0 3.2-2.6 5.8-6.5 5.8Z"/>
+<path class="detail" d="M11 17.3l1 .8 1-.8"/>
+<circle class="dot" fill="currentColor" stroke="none" cx="9.8" cy="14.5" r="0.85"/>
+<circle class="dot" fill="currentColor" stroke="none" cx="14.2" cy="14.5" r="0.85"/>
+</svg>

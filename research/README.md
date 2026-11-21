@@ -39,7 +39,19 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   rejected. **Rejected outright: lines of different thickness.** Decision: keep the original mark and
   hide it in odd places as an Easter egg instead of a header logo.
 
+## Phase 1, step 4: icons (2026-11-21)
+
+- Inventory: Sheriffs vs Chickens 56 emoji plus about 50 Lucide icons, Igel Gym 13 emoji, Fjällripa and
+  Verflick Lucide only. Push texts keep emoji.
+- Jens wanted icons in black and white or as line drawings, so an agent can add its own colours or leave
+  them. The rule said solid only, no outline sets.
+- Round 1 (20 samples, design issue #1) showed one drawing three ways: solid, line, line plus fill. Jens:
+  "we're getting there"; only the fox's mouth was too wide. He then asked for the full set in the design
+  system. **Decision:** the rule became "one drawing, three looks", with role classes so the look is pure CSS.
+  Solid stays the default because silhouettes read best at small sizes.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
+- Icon look per app (solid, line or fill for each kind of thing): decided per app in Phase 2.
 - Which palette and flip each app gets: decided per app in Phase 2.

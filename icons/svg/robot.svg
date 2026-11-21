@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="rg-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Robot">
+<path class="shape" d="M6 7h12a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/>
+<circle class="shape" cx="12" cy="3.2" r="1.2"/>
+<path class="line" d="M12 7V4.4M3 11v4M21 11v4"/>
+<path class="detail" d="M9 16h6"/>
+<circle class="dot" fill="currentColor" stroke="none" cx="9" cy="11.8" r="1.2"/>
+<circle class="dot" fill="currentColor" stroke="none" cx="15" cy="11.8" r="1.2"/>
+</svg>
