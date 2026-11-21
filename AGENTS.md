@@ -8,8 +8,8 @@ it as a pinned Git dependency.
 - The legi mark (`assets/legi-mark.svg`) is final: don't redraw it. One stroke weight, one colour.
 - Never mix line weights within one element, and never use tapered strokes.
 - `tokens.css` sets no colours; colours come only from `palettes/`.
-- After a change apps should adopt, bump `version` in `package.json`, tag it `vX.Y.Z`, and note it in the
-  README. Apps update by bumping their pinned tag.
+- No tags or releases: apps follow `main` and take changes with `bun update legi-design`. Keep `main` usable;
+  a change that breaks how apps use the package needs a note in the PR saying what apps must change.
 - Keep `specimen/index.html` in step with the tokens: it's how Jens reviews changes. Check it renders after
   each change.
 - Icons: edit `icons/svg/` and `icons/meta.json`, then run `node scripts/build-icons.mjs`; never edit `icons/index.js`

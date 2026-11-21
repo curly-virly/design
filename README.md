@@ -17,7 +17,7 @@ legi mark hidden as an Easter egg.
 ## Use in an app
 
 ```sh
-bun add github:curly-virly/design#v0.2.0
+bun add github:curly-virly/design
 ```
 
 ```css
@@ -32,9 +32,4 @@ import { iconSvg } from "legi-design/icons/index.js";
 
 Set `data-palette="<palette>"` on the root (or on a single screen for a big moment's flip).
 
-Changes reach an app only when it bumps the tag. Planning and open work: vps-app-hosting issue #60.
-
-## Versions
-
-- **v0.2.0**: the icon set (99 icons replacing emoji and Lucide), `icons/icons.css` (solid, line, fill, colour), `specimen/icons.html`.
-- **v0.1.0**: rules, tokens, palettes, mark, specimen.
+Apps follow `main`. The app's lockfile records the commit it uses, and `bun update legi-design` moves it to the latest. No tags or releases. Planning and open work: vps-app-hosting issue #60.
