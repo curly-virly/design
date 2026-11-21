@@ -1012,20 +1012,23 @@ export const byReplaces = {
 };
 
 /**
- * SVG markup for one icon. variant: "line" (default), "solid", "fill" or "color"; needs icons/icons.css.
+ * SVG markup for one icon. variant: "solid" (default: one silhouette, details cut out) or "color" (shapes in
+ * colour, details in ink); needs icons/icons.css. There is no outline look (DESIGN.md, Icons).
  * label: accessible name; pass "" for a decorative icon next to text.
- * natural: colour each part in its natural colour (icons/natural.css), for icons that list parts; use with "fill" or "color".
+ * natural: colour each part in its natural colour (icons/natural.css), for icons that list parts; implies "color".
  */
-export function iconSvg(name, { variant = "line", label, className = "", natural = false } = {}) {
+export function iconSvg(name, { variant = "solid", label, className = "", natural = false } = {}) {
   const icon = icons[name];
   if (!icon) throw new Error(`Unknown icon: ${name}`);
+  if (natural) variant = "color";
+  if (variant !== "solid" && variant !== "color") throw new Error(`Unknown icon variant: ${variant} (solid or color; the line and fill looks were retired)`);
   let body = icon.body;
   if (natural && icon.parts) {
     let i = 0;
     body = body.replace(/class="(shape|line)"/g, (m) => `${m} style="--rg-part:var(--rg-natural-${icon.parts[i++]})"`);
   }
   const text = label ?? icon.label;
-  const cls = ["rg-icon", variant === "line" ? "" : `rg-icon--${variant}`, className].filter(Boolean).join(" ");
+  const cls = ["rg-icon", variant === "color" ? "rg-icon--color" : "", className].filter(Boolean).join(" ");
   const a11y = text ? `role="img" aria-label="${text.replace(/"/g, "&quot;")}"` : 'aria-hidden="true"';
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="${cls}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ${a11y}>${body}</svg>`;
 }

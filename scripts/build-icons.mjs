@@ -63,34 +63,37 @@ export const icons = ${JSON.stringify(icons, null, 1)};
 export const byReplaces = ${JSON.stringify(Object.fromEntries(seen), null, 1)};
 
 /**
- * SVG markup for one icon. variant: "line" (default), "solid", "fill" or "color"; needs icons/icons.css.
+ * SVG markup for one icon. variant: "solid" (default: one silhouette, details cut out) or "color" (shapes in
+ * colour, details in ink); needs icons/icons.css. There is no outline look (DESIGN.md, Icons).
  * label: accessible name; pass "" for a decorative icon next to text.
- * natural: colour each part in its natural colour (icons/natural.css), for icons that list parts; use with "fill" or "color".
+ * natural: colour each part in its natural colour (icons/natural.css), for icons that list parts; implies "color".
  */
-export function iconSvg(name, { variant = "line", label, className = "", natural = false } = {}) {
+export function iconSvg(name, { variant = "solid", label, className = "", natural = false } = {}) {
   const icon = icons[name];
   if (!icon) throw new Error(\`Unknown icon: \${name}\`);
+  if (natural) variant = "color";
+  if (variant !== "solid" && variant !== "color") throw new Error(\`Unknown icon variant: \${variant} (solid or color; the line and fill looks were retired)\`);
   let body = icon.body;
   if (natural && icon.parts) {
     let i = 0;
     body = body.replace(/class="(shape|line)"/g, (m) => \`\${m} style="--rg-part:var(--rg-natural-\${icon.parts[i++]})"\`);
   }
   const text = label ?? icon.label;
-  const cls = ["rg-icon", variant === "line" ? "" : \`rg-icon--\${variant}\`, className].filter(Boolean).join(" ");
+  const cls = ["rg-icon", variant === "color" ? "rg-icon--color" : "", className].filter(Boolean).join(" ");
   const a11y = text ? \`role="img" aria-label="\${text.replace(/"/g, "&quot;")}"\` : 'aria-hidden="true"';
   return \`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="\${cls}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" \${a11y}>\${body}</svg>\`;
 }
 `;
 writeFileSync(join(root, "icons/index.js"), js);
 
-// specimen page: every icon, three looks, palette switch
+// specimen page: every icon, both looks on paper and on the field, palette switch
 const paint = (n) => { let i = 0; return icons[n].body.replace(/class="(shape|line)"/g, (m) => `${m} style="--rg-part:var(--rg-natural-${icons[n].parts[i++]})"`); };
 const svg = (n, v, nat) => `<svg viewBox="0 0 24 24" class="rg-icon${v ? " rg-icon--" + v : ""}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${nat ? paint(n) : icons[n].body}</svg>`;
 const GROUP_NAMES = { teams: "Teams and characters", christmas: "Christmas", places: "Places", game: "Game", gym: "Gym", ui: "Interface" };
 const sections = GROUPS.map((g) => {
   const names = Object.keys(icons).filter((n) => icons[n].group === g);
   return `<section><h2>${GROUP_NAMES[g]} <span>${names.length}</span></h2><div class="grid">${names
-    .map((n) => `<article><div class="trio">${svg(n, "solid")}${svg(n, "")}${svg(n, "fill")}${svg(n, "color")}</div>${icons[n].parts ? `<div class="trio nat">${svg(n, "fill", true)}${svg(n, "color", true)}<small>natural</small></div>` : ""}<b>${n}</b><small>${icons[n].replaces.map((r) => r.replace(/&/g, "&amp;")).join(" ")}</small></article>`)
+    .map((n) => `<article><div class="trio">${svg(n, "")}${svg(n, "color")}${icons[n].parts ? svg(n, "color", true) : ""}<span class="field">${svg(n, "")}${svg(n, "color", !!icons[n].parts)}</span></div><b>${n}</b><small>${icons[n].replaces.map((r) => r.replace(/&/g, "&amp;")).join(" ")}</small></article>`)
     .join("")}</div></section>`;
 }).join("\n");
 const palettes = readdirSync(join(root, "palettes")).filter((f) => f.endsWith(".css")).map((f) => f.slice(0, -4)).sort();
@@ -119,7 +122,7 @@ ${palettes.map((p) => `<link rel="stylesheet" href="../palettes/${p}.css">`).joi
   article{display:grid;gap:4px}
   .trio{display:flex;gap:12px;padding:8px 0}
   .trio .rg-icon{width:32px;height:32px}
-  .nat{align-items:center;padding-top:0}
+  .field{display:flex;gap:12px;padding:6px 8px;margin:-6px 0;background:var(--rg-field);color:var(--rg-ink);--rg-icon-cut:var(--rg-field)}
   b{font-weight:600;font-size:var(--rg-text-sm)}
 </style>
 </head>
@@ -127,7 +130,7 @@ ${palettes.map((p) => `<link rel="stylesheet" href="../palettes/${p}.css">`).joi
 <header>
   <div class="legend">LEGI DESIGN · ICONS · ${Object.keys(icons).length}</div>
   <h1>Icons</h1>
-  <p>Each icon is drawn once and shown four ways: solid (<code>rg-icon--solid</code>), line (no class, the default), line with a fill (<code>rg-icon--fill</code>) and colour (<code>rg-icon--color</code>: the whole icon in colour, details in ink). Colour comes from <code>--rg-icon-fill</code>, default the palette accent. Icons of real things also come in natural colours, a colour per part (<code>iconSvg(name, { natural: true })</code>, colours in <code>icons/natural.css</code>). Under each name: the emoji or Lucide icon it replaces.</p>
+  <p>Samurai Jack style: flat shapes with no outline; ink lines only for detail inside a shape. Each icon is drawn once and shown as solid (no class, the default: one silhouette, details cut out) and colour (<code>rg-icon--color</code>: shapes in colour, details in ink). Colour comes from <code>--rg-icon-fill</code>, default the palette accent. Icons of real things also come in natural colours, a colour per part (<code>iconSvg(name, { natural: true })</code>, colours in <code>icons/natural.css</code>). The last pair sits on the palette field. Under each name: the emoji or Lucide icon it replaces.</p>
   <div class="controls" id="pal">${palettes.map((p) => `<button data-p="${p}" aria-pressed="${p === "stardust"}">${p}</button>`).join("")}</div>
 </header>
 ${sections}

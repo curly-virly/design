@@ -57,8 +57,22 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   a colour per part (natural colours), and Santa's face became its own shape so it can be skin-coloured
   instead of white like the beard.
 
+## Phase 1, step 5: no outlines (2026-11-21)
+
+- Jens: rework the icons to follow Samurai Jack more closely, "no black boundaries, only for detailing".
+  Samurai Jack draws flat colour shapes with no outline; dark lines appear only inside a shape (a fold, a
+  face), and shapes are separated by colour.
+- **Decision:** no ink outlines on drawings (icons, illustrations, scenes); interface lines such as list rules and the ghost button stay. Section 3 now says shapes end where their colour
+  ends and ink lines are for detail only. The icons' line look (ink outline, empty) and fill look (ink
+  outline, coloured) are retired; two looks remain, solid (default) and colour, plus natural colours per part
+  in the colour look. `iconSvg` defaults to solid and refuses `line` and `fill`. No app used the package yet,
+  so nothing breaks.
+- The drawings already read without outlines (the solid look was the default and every icon had to read as a
+  silhouette), so no icon needed redrawing. White natural parts (snowman, candle, beard) lose their edge on
+  `paper`; they belong on a coloured field.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
-- Icon look per app (solid, line or fill for each kind of thing): decided per app in Phase 2.
+- Icon look per app (solid or colour for each kind of thing): decided per app in Phase 2.
 - Which palette and flip each app gets: decided per app in Phase 2.
