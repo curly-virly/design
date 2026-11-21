@@ -98,10 +98,16 @@ each one.
 `icons/svg/` holds one drawing per icon (24 grid, one line weight, round caps). They replace emoji and Lucide
 in the apps; `icons/meta.json` says which. Live reference: `specimen/icons.html`.
 
-- **Drawn once, four looks** (`icons/icons.css`): **solid** (`rg-icon--solid`: shapes filled with ink,
-  details cut out), **line** (no class: black and white outlines, also how the bare `.svg` looks), **fill**
-  (`rg-icon--fill`: ink outline, shapes filled from `--rg-icon-fill`, default the accent) and **colour**
-  (`rg-icon--color`: the whole icon in `--rg-icon-fill`, details and dots in ink for contrast).
+- **Drawn once, four looks** (`icons/icons.css`). Two choices: keep the ink outline or not, and what fills
+  the inside. Colour comes from `--rg-icon-fill` (default: the palette accent).
+
+  | Look | Class | Outline | Inside | Details |
+  |---|---|---|---|---|
+  | Solid | `rg-icon--solid` | none | ink | cut out (background colour) |
+  | Line | none (also the bare `.svg`) | ink | empty | ink |
+  | Fill | `rg-icon--fill` | ink | colour | ink |
+  | Colour | `rg-icon--color` | none | colour | ink |
+
 - Every icon outside the interface glyphs has at least one shape, so it carries colour even when small.
 - Each part has a role: `shape` (closed, fillable), `line`, `detail` (sits inside a shape, at most one kind
   per icon) and `dot`. Colour comes only from CSS, never from the file.
