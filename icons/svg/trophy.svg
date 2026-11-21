@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="rg-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Trophy">
+<path class="shape" d="M7 3h10v6c0 2.8-1.8 4.6-4 5v4h3v3H8v-3h3v-4c-2.2-.4-4-2.2-4-5Z"/>
+<path class="line" d="M7 5H4.5c0 3 1 4.5 2.7 5M17 5h2.5c0 3-1 4.5-2.7 5"/>
+<path class="detail" d="M9.6 5.8c0 2.6.6 4.2 1.8 5.2"/>
+</svg>

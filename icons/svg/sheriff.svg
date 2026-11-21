@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="rg-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Sheriff">
+<path class="shape" d="M7.2 12.6C7.2 8.2 8.2 5 10 5c1 0 1.4 1 2 1s1-1 2-1c1.8 0 2.8 3.2 2.8 7.6Z"/>
+<path class="shape" d="M2 12c2.5 2 6 3 10 3s7.5-1 10-3c0 3-4 6-10 6S2 15 2 12Z"/>
+<path class="detail" d="M7.4 10.6c3 .8 6.2.8 9.2 0"/>
+</svg>

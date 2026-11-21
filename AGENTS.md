@@ -12,3 +12,5 @@ it as a pinned Git dependency.
   README. Apps update by bumping their pinned tag.
 - Keep `specimen/index.html` in step with the tokens: it's how Jens reviews changes. Check it renders after
   each change.
+- Icons: edit `icons/svg/` and `icons/meta.json`, then run `node scripts/build-icons.mjs`; never edit `icons/index.js`
+  or `specimen/icons.html` by hand. Check `specimen/icons.html` renders after each change.

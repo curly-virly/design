@@ -49,7 +49,7 @@ never the detail.
 | Primary button | Solid `ink` on `paper` (or the reverse), square with the cut bottom-right corner (`.rg-btn`). Uppercase display type. At the bottom of the screen. |
 | Secondary button | Outline at `--rg-line`, no cut corner (`.rg-btn--ghost`). |
 | Lists | Rows divided by lines at `--rg-line`; the first rule full `ink`, the rest softened. No card boxes around rows. |
-| Icons | Solid silhouette, optionally one detail at the same line weight. No outline-only icon sets. |
+| Icons | From `icons/` only (section 7). Solid silhouette by default; line or line-plus-fill where the app chooses. |
 | Scenes and headers | Flat silhouettes on a colour field, plus one background technique (below). |
 | Big moments | The palette **flips** to the app's sibling palette for that screen (`data-palette` of the flip). |
 
@@ -93,15 +93,37 @@ each one.
   on a loading screen or a 404 page.
 - legi.nu is the exception: the mark is its hero and favicon.
 
-## 7. Using this in an app
+## 7. Icons
+
+`icons/svg/` holds one drawing per icon (24 grid, one line weight, round caps). They replace emoji and Lucide
+in the apps; `icons/meta.json` says which. Live reference: `specimen/icons.html`.
+
+- **Drawn once, three looks** (`icons/icons.css`): **solid** (`rg-icon--solid`: shapes filled with ink,
+  details cut out), **line** (no class: black and white outlines, also how the bare `.svg` looks) and **fill**
+  (`rg-icon--fill`: line plus a fill from `--rg-icon-fill`, default the accent).
+- Each part has a role: `shape` (closed, fillable), `line`, `detail` (sits inside a shape, at most one kind
+  per icon) and `dot`. Colour comes only from CSS, never from the file.
+- One look per kind of thing in an app: e.g. solid for teams and moments, line for interface controls.
+- Silhouettes read alone: every icon must still be recognisable in solid.
+- Push notifications and other plain text keep emoji; icons are for the UI.
+- Adding one: draw `icons/svg/<name>.svg` with the role classes, add it to `icons/meta.json`, run
+  `node scripts/build-icons.mjs` (checks the rules, writes `icons/index.js` and the specimen).
+
+## 8. Using this in an app
 
 ```sh
-bun add github:curly-virly/design#v0.1.0
+bun add github:curly-virly/design#v0.2.0
 ```
 
 ```css
 @import "legi-design/tokens.css";
 @import "legi-design/palettes/stardust.css";
+@import "legi-design/icons/icons.css";
+```
+
+```js
+import { iconSvg, byReplaces } from "legi-design/icons/index.js";
+iconSvg("sheriff", { variant: "solid" }); // SVG markup string
 ```
 
 Pin a tag; an app gets changes only when it bumps the version. Each app's `AGENTS.md` points here with one
