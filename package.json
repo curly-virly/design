@@ -2,6 +2,7 @@
   "name": "legi-design",
   "version": "0.2.0",
   "private": true,
+  "type": "module",
   "description": "Shared design tokens, palettes, icons and the legi mark for the legi apps.",
   "files": [
     "DESIGN.md",
