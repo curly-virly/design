@@ -85,6 +85,15 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   line that stands for a coloured thing (ribbon, hat band, cuff, window, header, ferrule, flame core) becomes
   its own coloured part. Touching parts get a small gap so the one-colour silhouette still separates them.
 
+## Phase 1, step 7: Christmas landing test (2026-11-21)
+
+- Test of the system on the Sheriffs vs Chickens Christmas landing (a mockup only, not issue work).
+- Round 1 (a flat `aku` field with stipple and a small scene at the bottom): Jens felt it wasn't working. Too much
+  empty space, and it lost the charm of the old landing. Samurai Jack "plays more with layers".
+- Round 2 uses many silhouette layers that darken toward the front, a dry-brush sky with grain, a moonbeam, and
+  black foreground pines and boughs cropping the edges, with the title and buttons inside the scene. It combines
+  three background techniques, while §3 says one, so that rule may need changing (`decision`).
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
