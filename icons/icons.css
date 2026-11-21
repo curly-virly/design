@@ -1,6 +1,11 @@
-/* legi icons: one drawing, four looks (see DESIGN.md, Icons).
-   Every part of an icon has a role: .shape (closed, can be filled), .line, .detail (sits inside a shape), .dot.
-   No class: line look (B), the same as opening the .svg file on its own. */
+/* legi icons (see DESIGN.md, Icons): flat filled shapes with no outline, Samurai Jack style; ink lines only for
+   detail inside a shape. Every part has a role: .shape (closed, filled), .line (a part drawn as a line, e.g. legs),
+   .detail (a line inside a shape) and .dot (e.g. an eye).
+
+   Each part's colour is --rg-c, written on the part by iconSvg: its realistic default from icons/meta.json and
+   icons/natural.css, or what the app passed. Without it (interface glyphs, or a one-colour icon) shapes and lines
+   take currentColor and details are cut out in --rg-icon-cut (default: paper).
+   A shape's stroke is its own fill colour, only so every part keeps its drawn size; it is never a boundary. */
 
 .rg-icon {
   width: 1.5em;
@@ -8,26 +13,7 @@
   flex: none;
   overflow: visible;
 }
-.rg-icon .shape,
-.rg-icon .line,
-.rg-icon .detail { fill: none; stroke: currentColor; }
-.rg-icon .dot { fill: currentColor; stroke: none; }
-
-/* A: solid. Shapes fill with ink; details and dots are cut out in the colour behind the icon.
-   Set --rg-icon-cut on the surface when it isn't paper (e.g. on a field-coloured header). */
-.rg-icon--solid .shape { fill: currentColor; }
-.rg-icon--solid .detail { stroke: var(--rg-icon-cut, var(--rg-paper, #fff)); }
-.rg-icon--solid .dot { fill: var(--rg-icon-cut, var(--rg-paper, #fff)); }
-
-/* C: line with a fill. The outline stays ink; the shapes take --rg-icon-fill (default: the palette accent). */
-.rg-icon--fill .shape { fill: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, transparent))); }
-
-/* D: colour. The whole icon (shapes and lines) takes --rg-icon-fill; details and dots stay ink for contrast.
-   Use it where the icon must carry colour at small sizes. Set --rg-icon-detail to change the contrast colour. */
-.rg-icon--color .shape { fill: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, currentColor))); stroke: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, currentColor))); }
-.rg-icon--color .line { stroke: var(--rg-part, var(--rg-icon-fill, var(--rg-accent, currentColor))); }
-.rg-icon--color .detail { stroke: var(--rg-icon-detail, currentColor); }
-.rg-icon--color .dot { fill: var(--rg-icon-detail, currentColor); }
-
-/* Per part: in the fill and colour looks, a part's own --rg-part (set inline by iconSvg's `natural` option,
-   or by an app) beats --rg-icon-fill. Lines only take it in the colour look; in fill they stay ink. */
+.rg-icon .shape { fill: var(--rg-c, currentColor); stroke: var(--rg-c, currentColor); }
+.rg-icon .line { fill: none; stroke: var(--rg-c, currentColor); }
+.rg-icon .detail { fill: none; stroke: var(--rg-c, var(--rg-icon-cut, var(--rg-paper, #fff))); }
+.rg-icon .dot { fill: var(--rg-c, var(--rg-icon-cut, var(--rg-paper, #fff))); stroke: none; }
