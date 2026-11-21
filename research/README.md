@@ -97,6 +97,7 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - Tested green and snowy trees; Jens kept the black (ink) tree silhouettes. The starry sky from the old landing came back (flat dots and a few four-point sparkles).
 - The detailed layered snowfall from the old landing came back (specks and crystals behind, big tumbling crystals in front).
 - Jens: no lines on buttons, only solids. The secondary button became a solid field tone. That clashes with §3, which says the secondary button is an outline (`decision`).
+- Tightened the colours: the tree was removed, and the secondary buttons and the "vs" tag reuse a sky shade (`field` mixed with 20% `paper`) instead of the bright cyan `accent` or a lighter blue of its own. The page now uses only `field`, `ink` and `paper` plus their mixes.
 
 ## Open
 
