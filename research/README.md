@@ -53,6 +53,9 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   (snowflake, swords, rope, bell off) took almost no colour, so they were redrawn with shapes, and a fourth
   look, **colour**, fills the whole icon and keeps details in ink. The build now refuses a non-interface icon
   without a shape.
+- Christmas colour test: one colour per icon made Santa all red and the reindeer's antlers brown. Jens chose
+  a colour per part (natural colours), and Santa's face became its own shape so it can be skin-coloured
+  instead of white like the beard.
 
 ## Open
 

@@ -108,6 +108,10 @@ in the apps; `icons/meta.json` says which. Live reference: `specimen/icons.html`
   | Fill | `rg-icon--fill` | ink | colour | ink |
   | Colour | `rg-icon--color` | none | colour | ink |
 
+- **Natural colours, per part:** icons of real things (Christmas set first) can list `parts` in
+  `icons/meta.json`, one natural colour per shape or line, e.g. Santa: red hat, white trim and beard, skin face.
+  `iconSvg(name, { variant: "fill" | "color", natural: true })` applies them from `icons/natural.css`; an app
+  can override any `--rg-natural-*`. White parts need the fill look or a dark field to stay visible.
 - Every icon outside the interface glyphs has at least one shape, so it carries colour even when small.
 - Each part has a role: `shape` (closed, fillable), `line`, `detail` (sits inside a shape, at most one kind
   per icon) and `dot`. Colour comes only from CSS, never from the file.
@@ -127,6 +131,7 @@ bun add github:curly-virly/design
 @import "legi-design/tokens.css";
 @import "legi-design/palettes/stardust.css";
 @import "legi-design/icons/icons.css";
+@import "legi-design/icons/natural.css"; /* only if you use natural colours */
 ```
 
 ```js
