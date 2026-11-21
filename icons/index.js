@@ -145,7 +145,7 @@ export const icons = {
   "replaces": [
    "🎅"
   ],
-  "body": "<path class=\"shape\" d=\"M5.5 10C6 5.5 9 3 13 3c3 0 5 2 6 5.5L17.5 10Z\"/><circle class=\"shape\" cx=\"20\" cy=\"9.6\" r=\"1.4\"/><path class=\"shape\" d=\"M4.5 10h15v2.3h-15Z\"/><path class=\"shape\" d=\"M5.5 13.3h13c0 4.6-2.9 8.2-6.5 8.2s-6.5-3.6-6.5-8.2Z\"/><path class=\"detail\" d=\"M9.3 18.6c1.1-.9 2-.9 2.7 0 .7-.9 1.6-.9 2.7 0\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"9.9\" cy=\"15.3\" r=\"1.1\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"14.1\" cy=\"15.3\" r=\"1.1\"/>"
+  "body": "<path class=\"shape\" d=\"M5.5 10C6 5.5 9 3 13 3c3 0 5 2 6 5.5L17.5 10Z\"/><circle class=\"shape\" cx=\"20\" cy=\"9.6\" r=\"1.4\"/><path class=\"shape\" d=\"M4.5 10h15v2.3h-15Z\"/><path class=\"shape\" d=\"M5.3 13.2c0 2.2.8 3.7 2 4.5-.1 1.6.7 2.8 1.8 3.2.6 1.1 1.7 1.7 2.9 1.7s2.3-.6 2.9-1.7c1.1-.4 1.9-1.6 1.8-3.2 1.2-.8 2-2.3 2-4.5Z\"/><path class=\"detail\" d=\"M8 16.2c.8 1 2.4 1.3 4 .3 1.6 1 3.2.7 4-.3M10.6 19c.9.5 1.9.5 2.8 0\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"9.7\" cy=\"14.6\" r=\"1\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"14.3\" cy=\"14.6\" r=\"1\"/>"
  },
  "present": {
   "label": "Present",
