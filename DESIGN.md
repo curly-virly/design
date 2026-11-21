@@ -120,7 +120,7 @@ in the apps; `icons/meta.json` says which. Live reference: `specimen/icons.html`
 ## 8. Using this in an app
 
 ```sh
-bun add github:curly-virly/design#v0.2.0
+bun add github:curly-virly/design
 ```
 
 ```css
@@ -134,5 +134,5 @@ import { iconSvg, byReplaces } from "legi-design/icons/index.js";
 iconSvg("sheriff", { variant: "solid" }); // SVG markup string
 ```
 
-Pin a tag; an app gets changes only when it bumps the version. Each app's `AGENTS.md` points here with one
+Apps follow `main`; the lockfile holds the commit in use, and `bun update legi-design` takes the latest. Each app's `AGENTS.md` points here with one
 line.
