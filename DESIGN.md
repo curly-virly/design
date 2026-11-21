@@ -52,7 +52,7 @@ never the detail.
 | Primary button | Solid `ink` on `paper` (or the reverse), square with the cut bottom-right corner (`.rg-btn`). Uppercase display type. At the bottom of the screen. |
 | Secondary button | Outline at `--rg-line`, no cut corner (`.rg-btn--ghost`). |
 | Lists | Rows divided by lines at `--rg-line`; the first rule full `ink`, the rest softened. No card boxes around rows. |
-| Icons | From `icons/` only (section 7). Solid silhouette by default; colour where the app chooses. Never outlined. |
+| Icons | From `icons/` only (section 7). Realistic colours by default; recolour per part where the app chooses. Never outlined. |
 | Scenes and headers | Flat silhouettes on a colour field, plus one background technique (below). |
 | Big moments | The palette **flips** to the app's sibling palette for that screen (`data-palette` of the flip). |
 
@@ -101,30 +101,31 @@ each one.
 `icons/svg/` holds one drawing per icon (24 grid, one line weight, round caps). They replace emoji and Lucide
 in the apps; `icons/meta.json` says which. Drawn after Samurai Jack: flat shapes, no outline. Live reference: `specimen/icons.html`.
 
-- **No outlines.** Icons are flat shapes in one colour; ink lines appear only as detail inside a shape. Interface
-  glyphs (arrows, check, close) are lines by nature; that line is the glyph, not an edge.
-- **Drawn once, two looks** (`icons/icons.css`):
-
-  | Look | Class | Shapes and lines | Details and dots |
-  |---|---|---|---|
-  | Solid (default) | none, or `rg-icon--solid` | `currentColor` | cut out (`--rg-icon-cut`, default `paper`) |
-  | Colour | `rg-icon--color` | `--rg-icon-fill` (default: the palette accent) | ink (`--rg-icon-detail`) |
-
-  The `.svg` files are source drawings; render them through `iconSvg` or `icons.css`.
-- **Natural colours, per part:** icons of real things (Christmas set first) can list `parts` in
-  `icons/meta.json`, one natural colour per shape or line, e.g. Santa: red hat, white trim and beard, skin face.
-  `iconSvg(name, { natural: true })` applies them (colour look) from `icons/natural.css`; an app can override any
-  `--rg-natural-*`. Parts are told apart by colour, never by outline, so white parts sit on a coloured field,
-  not on `paper`.
+- **No outlines.** Icons are flat shapes; ink lines appear only as detail inside a shape. Interface glyphs
+  (arrows, check, close) are lines by nature; that line is the glyph, not an edge.
+- **One drawing, every part its own colour.** There are no looks to choose from. Each shape and line of an icon
+  is a named part (`parts` in `icons/meta.json`, e.g. reindeer: `head`, `antlers`) with a realistic default
+  colour: reindeer brown, Santa's hat red, a heart red. Details and dots share one part, `detail` (default
+  ink). Things with no real colour (circle, play, mystery) default to the palette `accent`.
+- **Recolour freely, per part:** `iconSvg(name, { colors: { antlers: "#fff" } })`, or in CSS with
+  `--rg-icon-<icon>-<part>` (e.g. `--rg-icon-reindeer-antlers`). Tune the whole set at once by overriding the
+  default colours, `--rg-natural-*` in `icons/natural.css`.
+- **One colour:** `iconSvg(name, { colors: "currentColor" })` (or any colour) draws the silhouette with details
+  cut out (`--rg-icon-cut`, default `paper`). Interface glyphs have no named parts and always draw this way.
+- Parts are told apart by colour, never by outline. White parts (snow, Santa's beard) need a coloured field or
+  a recolour to show on `paper`.
+- The `.svg` files are source drawings; render them through `iconSvg` with `icons/icons.css` and
+  `icons/natural.css`.
 - Every icon outside the interface glyphs has at least one shape, so it carries colour even when small.
-- Each part has a role: `shape` (closed, filled), `line` (a part drawn as a line, e.g. legs, in the body colour),
-  `detail` (an ink line inside a shape, at most one kind per icon) and `dot`. Colour comes only from CSS, never
-  from the file.
+- Each part has a role: `shape` (closed, filled), `line` (a part drawn as a line, e.g. legs), `detail` (a line
+  inside a shape) and `dot`. Every shape and line outside the interface glyphs is named in `parts`. Colour
+  comes only from `meta.json` and CSS, never from the file.
 - A detail stays inside its shape and never follows its edge; if a drawing needs an edge to read, redraw it.
-- One look per kind of thing in an app: e.g. colour for teams and moments, solid for interface controls.
-- Silhouettes read alone: every icon must still be recognisable in solid.
+- Interface controls usually stay one colour (`currentColor`), like text.
+- Silhouettes read alone: every icon must still be recognisable in one colour.
 - Push notifications and other plain text keep emoji; icons are for the UI.
-- Adding one: draw `icons/svg/<name>.svg` with the role classes, add it to `icons/meta.json`, run
+- Adding one: draw `icons/svg/<name>.svg` with the role classes, add it to `icons/meta.json` with its parts and
+  their realistic colours (a new colour goes in `icons/natural.css`), run
   `node scripts/build-icons.mjs` (checks the rules, writes `icons/index.js` and the specimen).
 
 ## 8. Using this in an app
@@ -137,14 +138,14 @@ bun add github:curly-virly/design
 @import "legi-design/tokens.css";
 @import "legi-design/palettes/stardust.css";
 @import "legi-design/icons/icons.css";
-@import "legi-design/icons/natural.css"; /* only if you use natural colours */
+@import "legi-design/icons/natural.css"; /* the icons' default colours */
 ```
 
 ```js
 import { iconSvg, byReplaces } from "legi-design/icons/index.js";
-iconSvg("sheriff"); // SVG markup string, solid
-iconSvg("sheriff", { variant: "color" });
-iconSvg("santa", { natural: true });
+iconSvg("reindeer"); // SVG markup string, realistic colours
+iconSvg("reindeer", { colors: { antlers: "var(--rg-accent)" } }); // one part recoloured
+iconSvg("check", { colors: "currentColor" }); // one colour
 ```
 
 Apps follow `main`; the lockfile holds the commit in use, and `bun update legi-design` takes the latest. Each app's `AGENTS.md` points here with one

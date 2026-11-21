@@ -64,15 +64,25 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   face), and shapes are separated by colour.
 - **Decision:** no ink outlines on drawings (icons, illustrations, scenes); interface lines such as list rules and the ghost button stay. Section 3 now says shapes end where their colour
   ends and ink lines are for detail only. The icons' line look (ink outline, empty) and fill look (ink
-  outline, coloured) are retired; two looks remain, solid (default) and colour, plus natural colours per part
-  in the colour look. `iconSvg` defaults to solid and refuses `line` and `fill`. No app used the package yet,
+  outline, coloured) are retired (step 6 then replaced the remaining looks with per-part colours). No app used the package yet,
   so nothing breaks.
 - The drawings already read without outlines (the solid look was the default and every icon had to read as a
   silhouette), so no icon needed redrawing. White natural parts (snowman, candle, beard) lose their edge on
   `paper`; they belong on a coloured field.
 
+## Phase 1, step 6: every part its own colour (design #11, 2026-11-21)
+
+- Jens: the icons had too many versions; give the designer full control instead. Every line and area can be
+  coloured separately, with a default colour, and the default is the realistic one (reindeer are brown).
+- **Decision:** no looks. Each shape and line is a named part in `meta.json` with a realistic default colour
+  (`natural.css`, now 19 colours including `ink` and `accent`); details and dots are one more part, `detail`.
+  `iconSvg(name, { colors })` takes per-part overrides, or one colour for a silhouette; CSS can recolour with
+  `--rg-icon-<icon>-<part>`. The solid, colour and natural options and the `rg-icon--*` classes are gone. The
+  build refuses a non-interface icon without parts. Abstract shapes (circle, play, mystery) default to the
+  palette accent, since they have no real colour.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
-- Icon look per app (solid or colour for each kind of thing): decided per app in Phase 2.
+- Which icon parts each app recolours: decided per app in Phase 2.
 - Which palette and flip each app gets: decided per app in Phase 2.

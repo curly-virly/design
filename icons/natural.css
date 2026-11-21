@@ -1,6 +1,6 @@
-/* Natural colours for icons that show a real thing (a red Santa hat, a brown reindeer).
-   Used only with the per-part colouring in icons/index.js (`iconSvg(name, { natural: true })`) and only for
-   icons that list `parts` in meta.json. Override any of these in an app to match its palette. */
+/* Default icon colours: the realistic colour of each part (a red Santa hat, a brown reindeer). icons/meta.json
+   names one of these per part; iconSvg writes it as the part's default. Override any of them in an app to tune
+   the whole set, or recolour single parts (DESIGN.md, Icons). `ink` and `accent` follow the palette. */
 :root {
   --rg-natural-red: #c8312b;
   --rg-natural-green: #2f7d3a;
@@ -12,4 +12,13 @@
   --rg-natural-ice: #8fc8e8;
   --rg-natural-ginger: #b5713a;
   --rg-natural-flame: #f2a531;
+  --rg-natural-orange: #e07a2f;
+  --rg-natural-blue: #3f78c4;
+  --rg-natural-steel: #8b96a3;
+  --rg-natural-grey: #b9b4ab;
+  --rg-natural-stone: #c9bfae;
+  --rg-natural-patina: #5d9c8b;
+  --rg-natural-charcoal: #2e2b2f;
+  --rg-natural-ink: var(--rg-ink, #1d1b19);
+  --rg-natural-accent: var(--rg-accent, #c8312b);
 }

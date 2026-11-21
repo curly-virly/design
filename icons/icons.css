@@ -1,32 +1,19 @@
-/* legi icons, Samurai Jack style (see DESIGN.md, Icons): flat filled shapes with no outline; ink lines only for
+/* legi icons (see DESIGN.md, Icons): flat filled shapes with no outline, Samurai Jack style; ink lines only for
    detail inside a shape. Every part has a role: .shape (closed, filled), .line (a part drawn as a line, e.g. legs),
-   .detail (ink line inside a shape), .dot (ink dot, e.g. an eye).
+   .detail (a line inside a shape) and .dot (e.g. an eye).
 
-   Two looks:
-   - solid (no class, or rg-icon--solid): one silhouette in currentColor; details and dots cut out.
-   - colour (rg-icon--color): shapes and lines in --rg-icon-fill (default: the palette accent), or per part
-     (--rg-part, set by iconSvg's `natural` option); details and dots in ink.
-   Shapes carry a stroke in their own fill colour only so every part keeps the drawn size; it is never a boundary. */
+   Each part's colour is --rg-c, written on the part by iconSvg: its realistic default from icons/meta.json and
+   icons/natural.css, or what the app passed. Without it (interface glyphs, or a one-colour icon) shapes and lines
+   take currentColor and details are cut out in --rg-icon-cut (default: paper).
+   A shape's stroke is its own fill colour, only so every part keeps its drawn size; it is never a boundary. */
 
 .rg-icon {
   width: 1.5em;
   height: 1.5em;
   flex: none;
   overflow: visible;
-  --rg-icon-body: currentColor;
-  --rg-icon-ink: var(--rg-icon-cut, var(--rg-paper, #fff));
 }
-.rg-icon .shape { fill: var(--rg-part-body, var(--rg-icon-body)); stroke: var(--rg-part-body, var(--rg-icon-body)); }
-.rg-icon .line { fill: none; stroke: var(--rg-part-body, var(--rg-icon-body)); }
-.rg-icon .detail { fill: none; stroke: var(--rg-icon-ink); }
-.rg-icon .dot { fill: var(--rg-icon-ink); stroke: none; }
-
-/* Solid: set --rg-icon-cut on the surface when it isn't paper (e.g. on a field-coloured header). */
-
-/* Colour: the body takes the colour, details stay ink. Set --rg-icon-detail to change the detail colour. */
-.rg-icon--color {
-  --rg-icon-body: var(--rg-icon-fill, var(--rg-accent, currentColor));
-  --rg-icon-ink: var(--rg-icon-detail, var(--rg-ink, currentColor));
-}
-.rg-icon--color .shape,
-.rg-icon--color .line { --rg-part-body: var(--rg-part); }
+.rg-icon .shape { fill: var(--rg-c, currentColor); stroke: var(--rg-c, currentColor); }
+.rg-icon .line { fill: none; stroke: var(--rg-c, currentColor); }
+.rg-icon .detail { fill: none; stroke: var(--rg-c, var(--rg-icon-cut, var(--rg-paper, #fff))); }
+.rg-icon .dot { fill: var(--rg-c, var(--rg-icon-cut, var(--rg-paper, #fff))); stroke: none; }

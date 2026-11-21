@@ -9,8 +9,8 @@ legi mark hidden as an Easter egg.
 | `tokens.css` | Shared tokens and classes: line weights, cut-corner button, type, spacing, background techniques. |
 | `palettes/` | One file per palette (`--rg-field`, `--rg-ink`, `--rg-paper`, `--rg-accent`) with its flip palette noted. |
 | `assets/legi-mark.svg` | The mark, in `currentColor`. |
-| `icons/` | The icon set: `svg/` (one file per icon), `icons.css` (solid and colour looks), `natural.css` (natural colours per part), `index.js` (`iconSvg`, `byReplaces`), `meta.json`. Rebuild with `node scripts/build-icons.mjs`. |
-| `specimen/icons.html` | Every icon in both looks, on paper and on the field. |
+| `icons/` | The icon set: `svg/` (one file per icon), `icons.css` (how parts take colour), `natural.css` (the default colours), `index.js` (`iconSvg`, `iconParts`, `byReplaces`), `meta.json`. Rebuild with `node scripts/build-icons.mjs`. |
+| `specimen/icons.html` | Every icon in its default colours, on paper and on the field, in one colour, with its part names. |
 | `specimen/index.html` | Live reference: switch palettes, backgrounds and line weights on a sample screen. Open it in a browser. |
 | `research/` | How and why the rules were chosen. |
 
@@ -24,6 +24,7 @@ bun add github:curly-virly/design
 @import "legi-design/tokens.css";
 @import "legi-design/palettes/<palette>.css";
 @import "legi-design/icons/icons.css";
+@import "legi-design/icons/natural.css";
 ```
 
 ```js

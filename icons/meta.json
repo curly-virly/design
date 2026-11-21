@@ -4,63 +4,101 @@
     "group": "teams",
     "replaces": [
       "🤠"
-    ]
+    ],
+    "parts": {
+      "crown": "brown",
+      "brim": "brown"
+    },
+    "detail": "charcoal"
   },
   "chicken": {
     "label": "Chicken",
     "group": "teams",
     "replaces": [
       "🐔"
-    ]
+    ],
+    "parts": {
+      "comb": "red",
+      "body": "tan",
+      "legs": "gold"
+    }
   },
   "snorkel": {
     "label": "Snorkel",
     "group": "teams",
     "replaces": [
       "🤿"
-    ]
+    ],
+    "parts": {
+      "mask": "blue",
+      "tube": "gold",
+      "mouthpiece": "charcoal"
+    }
   },
   "bunny": {
     "label": "Bunny",
     "group": "teams",
     "replaces": [
       "🐰"
-    ]
+    ],
+    "parts": {
+      "body": "grey"
+    }
   },
   "robot": {
     "label": "Robot",
     "group": "teams",
     "replaces": [
       "🤖"
-    ]
+    ],
+    "parts": {
+      "head": "steel",
+      "bulb": "red",
+      "wires": "charcoal"
+    }
   },
   "alien": {
     "label": "Alien",
     "group": "teams",
     "replaces": [
       "👽"
-    ]
+    ],
+    "parts": {
+      "head": "green"
+    }
   },
   "shark": {
     "label": "Shark",
     "group": "teams",
     "replaces": [
       "🦈"
-    ]
+    ],
+    "parts": {
+      "body": "steel"
+    }
   },
   "angel": {
     "label": "Angel",
     "group": "teams",
     "replaces": [
       "😇"
-    ]
+    ],
+    "parts": {
+      "face": "skin",
+      "halo": "gold"
+    }
   },
   "devil": {
     "label": "Devil",
     "group": "teams",
     "replaces": [
       "😈"
-    ]
+    ],
+    "parts": {
+      "face": "red",
+      "left-horn": "charcoal",
+      "right-horn": "charcoal"
+    }
   },
   "crown": {
     "label": "Crown",
@@ -68,7 +106,10 @@
     "replaces": [
       "👑",
       "Crown"
-    ]
+    ],
+    "parts": {
+      "crown": "gold"
+    }
   },
   "pirate-flag": {
     "label": "Pirate flag",
@@ -76,42 +117,65 @@
     "replaces": [
       "🏴‍☠️",
       "☠"
-    ]
+    ],
+    "parts": {
+      "pole": "brown",
+      "flag": "charcoal"
+    },
+    "detail": "snow"
   },
   "dragon": {
     "label": "Dragon",
     "group": "teams",
     "replaces": [
       "🐉"
-    ]
+    ],
+    "parts": {
+      "body": "green"
+    }
   },
   "fox": {
     "label": "Fox",
     "group": "teams",
     "replaces": [
       "🦊"
-    ]
+    ],
+    "parts": {
+      "head": "orange"
+    }
   },
   "axe": {
     "label": "Axe",
     "group": "teams",
     "replaces": [
       "🪓"
-    ]
+    ],
+    "parts": {
+      "head": "steel",
+      "handle": "brown"
+    }
   },
   "detective": {
     "label": "Detective",
     "group": "teams",
     "replaces": [
       "🕵️"
-    ]
+    ],
+    "parts": {
+      "hat": "brown",
+      "brim": "brown",
+      "face": "skin"
+    }
   },
   "mystery": {
     "label": "Mystery",
     "group": "teams",
     "replaces": [
       "❔"
-    ]
+    ],
+    "parts": {
+      "disc": "accent"
+    }
   },
   "xmas-tree": {
     "label": "Christmas tree",
@@ -119,10 +183,11 @@
     "replaces": [
       "🎄"
     ],
-    "parts": [
-      "green",
-      "brown"
-    ]
+    "parts": {
+      "tree": "green",
+      "trunk": "brown"
+    },
+    "detail": "gold"
   },
   "santa": {
     "label": "Santa",
@@ -130,13 +195,13 @@
     "replaces": [
       "🎅"
     ],
-    "parts": [
-      "red",
-      "snow",
-      "skin",
-      "snow",
-      "snow"
-    ]
+    "parts": {
+      "hat": "red",
+      "pompom": "snow",
+      "face": "skin",
+      "beard": "snow",
+      "trim": "snow"
+    }
   },
   "present": {
     "label": "Present",
@@ -144,11 +209,11 @@
     "replaces": [
       "🎁"
     ],
-    "parts": [
-      "red",
-      "gold",
-      "gold"
-    ]
+    "parts": {
+      "box": "red",
+      "lid": "gold",
+      "bow": "gold"
+    }
   },
   "reindeer": {
     "label": "Reindeer",
@@ -156,10 +221,10 @@
     "replaces": [
       "🦌"
     ],
-    "parts": [
-      "brown",
-      "tan"
-    ]
+    "parts": {
+      "head": "brown",
+      "antlers": "tan"
+    }
   },
   "snowman": {
     "label": "Snowman",
@@ -167,11 +232,11 @@
     "replaces": [
       "⛄"
     ],
-    "parts": [
-      "snow",
-      "snow",
-      "brown"
-    ]
+    "parts": {
+      "head": "snow",
+      "body": "snow",
+      "arms": "brown"
+    }
   },
   "snowflake": {
     "label": "Snowflake",
@@ -180,15 +245,15 @@
       "❄️",
       "❄"
     ],
-    "parts": [
-      "ice",
-      "ice",
-      "ice",
-      "ice",
-      "ice",
-      "ice",
-      "ice"
-    ]
+    "parts": {
+      "arm1": "ice",
+      "arm2": "ice",
+      "arm3": "ice",
+      "arm4": "ice",
+      "arm5": "ice",
+      "arm6": "ice",
+      "centre": "ice"
+    }
   },
   "candle": {
     "label": "Candle",
@@ -196,10 +261,10 @@
     "replaces": [
       "🕯️"
     ],
-    "parts": [
-      "snow",
-      "flame"
-    ]
+    "parts": {
+      "candle": "snow",
+      "flame": "flame"
+    }
   },
   "gingerbread": {
     "label": "Gingerbread",
@@ -207,9 +272,10 @@
     "replaces": [
       "🍪"
     ],
-    "parts": [
-      "ginger"
-    ]
+    "parts": {
+      "body": "ginger"
+    },
+    "detail": "snow"
   },
   "star": {
     "label": "Star",
@@ -218,9 +284,9 @@
       "⭐",
       "★"
     ],
-    "parts": [
-      "gold"
-    ]
+    "parts": {
+      "star": "gold"
+    }
   },
   "sock": {
     "label": "Stocking",
@@ -228,58 +294,90 @@
     "replaces": [
       "🧦"
     ],
-    "parts": [
-      "red"
-    ]
+    "parts": {
+      "sock": "red"
+    },
+    "detail": "snow"
   },
   "beer": {
     "label": "Bar",
     "group": "places",
     "replaces": [
       "🍺"
-    ]
+    ],
+    "parts": {
+      "beer": "gold",
+      "handle": "gold"
+    }
   },
   "coffee": {
     "label": "Café",
     "group": "places",
     "replaces": [
       "☕"
-    ]
+    ],
+    "parts": {
+      "cup": "brown",
+      "handle-and-steam": "grey"
+    }
   },
   "museum": {
     "label": "Museum",
     "group": "places",
     "replaces": [
       "🏛️"
-    ]
+    ],
+    "parts": {
+      "roof": "stone",
+      "columns": "stone",
+      "base": "stone"
+    }
   },
   "station": {
     "label": "Station",
     "group": "places",
     "replaces": [
       "🚉"
-    ]
+    ],
+    "parts": {
+      "train": "blue",
+      "legs": "charcoal"
+    }
   },
   "tree": {
     "label": "Park",
     "group": "places",
     "replaces": [
       "🌳"
-    ]
+    ],
+    "parts": {
+      "crown": "green",
+      "trunk": "brown",
+      "ground": "green"
+    }
   },
   "restaurant": {
     "label": "Restaurant",
     "group": "places",
     "replaces": [
       "🍽️"
-    ]
+    ],
+    "parts": {
+      "plate": "snow",
+      "knife": "steel",
+      "cutlery": "steel"
+    }
   },
   "books": {
     "label": "Library",
     "group": "places",
     "replaces": [
       "📚"
-    ]
+    ],
+    "parts": {
+      "books": "red",
+      "leaning": "blue"
+    }
   },
   "pin": {
     "label": "Map pin",
@@ -287,21 +385,31 @@
     "replaces": [
       "📍",
       "MapPin"
-    ]
+    ],
+    "parts": {
+      "pin": "red"
+    }
   },
   "statue": {
     "label": "Statue",
     "group": "places",
     "replaces": [
       "🗿"
-    ]
+    ],
+    "parts": {
+      "statue": "patina"
+    }
   },
   "trophy": {
     "label": "Trophy",
     "group": "game",
     "replaces": [
       "🏆"
-    ]
+    ],
+    "parts": {
+      "cup": "gold",
+      "handles": "gold"
+    }
   },
   "camera": {
     "label": "Camera",
@@ -309,7 +417,11 @@
     "replaces": [
       "📷",
       "📸"
-    ]
+    ],
+    "parts": {
+      "body": "charcoal"
+    },
+    "detail": "grey"
   },
   "bell": {
     "label": "Bell",
@@ -318,66 +430,100 @@
       "🔔",
       "Bell"
     ],
-    "parts": [
-      "gold",
-      "gold"
-    ]
+    "parts": {
+      "bell": "gold",
+      "clapper": "gold"
+    }
   },
   "bell-ring": {
     "label": "Bell ringing",
     "group": "game",
     "replaces": [
       "BellRing"
-    ]
+    ],
+    "parts": {
+      "bell": "gold",
+      "clapper": "gold",
+      "rings": "gold"
+    }
   },
   "bell-off": {
     "label": "Bell off",
     "group": "game",
     "replaces": [
       "BellOff"
-    ]
+    ],
+    "parts": {
+      "bell": "gold",
+      "clapper": "gold",
+      "slash": "ink"
+    }
   },
   "hourglass": {
     "label": "Hourglass",
     "group": "game",
     "replaces": [
       "⏳"
-    ]
+    ],
+    "parts": {
+      "caps": "brown",
+      "glass": "tan"
+    }
   },
   "stopwatch": {
     "label": "Stopwatch",
     "group": "game",
     "replaces": [
       "⏱"
-    ]
+    ],
+    "parts": {
+      "body": "steel",
+      "buttons": "steel"
+    }
   },
   "handshake": {
     "label": "Handshake",
     "group": "game",
     "replaces": [
       "🤝"
-    ]
+    ],
+    "parts": {
+      "cuffs": "blue",
+      "hands": "skin"
+    }
   },
   "finish-flag": {
     "label": "Finish flag",
     "group": "game",
     "replaces": [
       "🏁"
-    ]
+    ],
+    "parts": {
+      "pole": "steel",
+      "flag": "snow"
+    }
   },
   "flag": {
     "label": "Flag",
     "group": "game",
     "replaces": [
       "🚩"
-    ]
+    ],
+    "parts": {
+      "pole": "steel",
+      "flag": "red"
+    }
   },
   "lasso": {
     "label": "Lasso",
     "group": "game",
     "replaces": [
       "🪢"
-    ]
+    ],
+    "parts": {
+      "loop": "tan",
+      "tail": "tan"
+    }
   },
   "search": {
     "label": "Search",
@@ -407,7 +553,10 @@
     "group": "game",
     "replaces": [
       "Play"
-    ]
+    ],
+    "parts": {
+      "play": "accent"
+    }
   },
   "pause": {
     "label": "Pause",
@@ -415,7 +564,10 @@
     "replaces": [
       "⏸",
       "Pause"
-    ]
+    ],
+    "parts": {
+      "pause": "accent"
+    }
   },
   "warning": {
     "label": "Warning",
@@ -423,14 +575,20 @@
     "replaces": [
       "⚠️",
       "⚠"
-    ]
+    ],
+    "parts": {
+      "sign": "gold"
+    }
   },
   "sparkle": {
     "label": "Sparkle",
     "group": "game",
     "replaces": [
       "✦"
-    ]
+    ],
+    "parts": {
+      "sparkle": "gold"
+    }
   },
   "sparkles": {
     "label": "Sparkles",
@@ -438,7 +596,11 @@
     "replaces": [
       "Sparkles",
       "✨"
-    ]
+    ],
+    "parts": {
+      "big": "gold",
+      "small": "gold"
+    }
   },
   "crosshair": {
     "label": "Crosshair",
@@ -460,7 +622,10 @@
     "replaces": [
       "Dices",
       "🎲"
-    ]
+    ],
+    "parts": {
+      "die": "snow"
+    }
   },
   "swords": {
     "label": "Swords",
@@ -468,14 +633,25 @@
     "replaces": [
       "Swords",
       "⚔️"
-    ]
+    ],
+    "parts": {
+      "right-blade": "steel",
+      "left-blade": "steel",
+      "hilts": "brown",
+      "left-pommel": "brown",
+      "right-pommel": "brown"
+    }
   },
   "shield-check": {
     "label": "Shield",
     "group": "game",
     "replaces": [
       "ShieldCheck"
-    ]
+    ],
+    "parts": {
+      "shield": "green"
+    },
+    "detail": "snow"
   },
   "heart": {
     "label": "Heart",
@@ -483,70 +659,109 @@
     "replaces": [
       "Heart",
       "❤️"
-    ]
+    ],
+    "parts": {
+      "heart": "red"
+    }
   },
   "hexagon": {
     "label": "Hexagon",
     "group": "game",
     "replaces": [
       "Hexagon"
-    ]
+    ],
+    "parts": {
+      "hexagon": "accent"
+    }
   },
   "circle": {
     "label": "Circle",
     "group": "game",
     "replaces": [
       "Circle"
-    ]
+    ],
+    "parts": {
+      "circle": "accent"
+    }
   },
   "kettlebell": {
     "label": "Strength",
     "group": "gym",
     "replaces": [
       "💪"
-    ]
+    ],
+    "parts": {
+      "handle": "charcoal",
+      "bell": "charcoal"
+    },
+    "detail": "grey"
   },
   "shoe": {
     "label": "Cardio",
     "group": "gym",
     "replaces": [
       "🏃"
-    ]
+    ],
+    "parts": {
+      "shoe": "blue",
+      "ground": "grey"
+    },
+    "detail": "snow"
   },
   "yoga": {
     "label": "Mobility",
     "group": "gym",
     "replaces": [
       "🧘"
-    ]
+    ],
+    "parts": {
+      "head": "skin",
+      "body": "accent"
+    }
   },
   "flame": {
     "label": "Warm-up",
     "group": "gym",
     "replaces": [
       "🔥"
-    ]
+    ],
+    "parts": {
+      "flame": "flame"
+    },
+    "detail": "gold"
   },
   "phone": {
     "label": "Phone",
     "group": "gym",
     "replaces": [
       "📱"
-    ]
+    ],
+    "parts": {
+      "phone": "charcoal"
+    },
+    "detail": "grey"
   },
   "calendar": {
     "label": "Calendar",
     "group": "gym",
     "replaces": [
       "📅"
-    ]
+    ],
+    "parts": {
+      "page": "snow",
+      "rings": "steel"
+    },
+    "detail": "red"
   },
   "pencil": {
     "label": "Write",
     "group": "gym",
     "replaces": [
       "✍️"
-    ]
+    ],
+    "parts": {
+      "pencil": "gold"
+    }
   },
   "settings": {
     "label": "Settings",
