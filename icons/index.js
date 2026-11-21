@@ -97,7 +97,7 @@ export const icons = {
   "replaces": [
    "🐉"
   ],
-  "body": "<path class=\"shape\" d=\"M4 21C4 16 4.5 12.5 6 9.5L4 3l5.5 3.5C11 6 13.5 6.5 16 7.5l3.5 1.3c1.3.5 2.2 1.4 2 2.7l-.3 1H14c-1 .7-2 1.8-2.3 3.5L11 21Z\"/><path class=\"detail\" d=\"M6.6 13.5c1.5.3 2.8 1.3 3.3 2.8\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"14.5\" cy=\"9.6\" r=\"0.85\"/>"
+  "body": "<path class=\"shape\" d=\"M5.5 21 3.4 19l2-.6-1.5-2.5 2.1-.4-1.1-2.6 2.2.1C7.4 11.5 7.6 10.6 8 9.8L2.8 4.2l6.4 3L9 2.2l3.5 5.3L21 8.5c.6.1 1 .6.8 1.2L21 11l-5.5.6 4.3 1.5c.5.2.5.9 0 1.1L14 15.5c-.8 1.5-1.2 3.5-1.2 5.5Z\"/><path class=\"detail\" d=\"M8.4 14.6c1.4.4 2.5 1.4 3.1 2.8\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"14.3\" cy=\"9.5\" r=\"0.85\"/>"
  },
  "fox": {
   "label": "Fox",
