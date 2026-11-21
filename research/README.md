@@ -128,6 +128,7 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   as a star.
 - Review 1: the floating buttons (re-center and Wanted) were different sizes; both are now 64 px squares. Navigate's text was
   tight in a three-button row, so Navigate and Address share a row and the main action (Arrived, Leave) runs full width below.
+- The caught team's button is a statement in the players' voice: "Santas caught us", not "Santas caught you?".
 - Open for Jens: everything else is a proposal until he reviews it.
 
 ## Open
