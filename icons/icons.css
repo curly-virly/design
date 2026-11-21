@@ -1,4 +1,4 @@
-/* legi icons: one drawing, three looks (see DESIGN.md, Icons).
+/* legi icons: one drawing, four looks (see DESIGN.md, Icons).
    Every part of an icon has a role: .shape (closed, can be filled), .line, .detail (sits inside a shape), .dot.
    No class: line look (B), the same as opening the .svg file on its own. */
 
@@ -21,3 +21,10 @@
 
 /* C: line with a fill. The outline stays ink; the shapes take --rg-icon-fill (default: the palette accent). */
 .rg-icon--fill .shape { fill: var(--rg-icon-fill, var(--rg-accent, transparent)); }
+
+/* D: colour. The whole icon (shapes and lines) takes --rg-icon-fill; details and dots stay ink for contrast.
+   Use it where the icon must carry colour at small sizes. Set --rg-icon-detail to change the contrast colour. */
+.rg-icon--color .shape { fill: var(--rg-icon-fill, var(--rg-accent, currentColor)); stroke: var(--rg-icon-fill, var(--rg-accent, currentColor)); }
+.rg-icon--color .line { stroke: var(--rg-icon-fill, var(--rg-accent, currentColor)); }
+.rg-icon--color .detail { stroke: var(--rg-icon-detail, currentColor); }
+.rg-icon--color .dot { fill: var(--rg-icon-detail, currentColor); }

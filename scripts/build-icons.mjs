@@ -39,6 +39,7 @@ for (const name of Object.keys(meta)) {
     if (role === "dot" && !/fill="currentColor"/.test(p)) errors.push(`${name}: dot needs fill="currentColor"`);
   }
   if (role(parts, "detail") && !role(parts, "shape")) errors.push(`${name}: a detail needs a shape to sit in`);
+  if (m.group !== "ui" && !role(parts, "shape")) errors.push(`${name}: needs at least one shape so it can carry colour (only interface glyphs may be lines alone)`);
   icons[name] = { label: m.label, group: m.group, replaces: m.replaces ?? [], body: inner.replace(/\n/g, "") };
 }
 function role(parts, r) { return parts.some((p) => p.includes(`class="${r}"`)); }
@@ -56,7 +57,7 @@ export const icons = ${JSON.stringify(icons, null, 1)};
 export const byReplaces = ${JSON.stringify(Object.fromEntries(seen), null, 1)};
 
 /**
- * SVG markup for one icon. variant: "line" (default), "solid" or "fill"; needs icons/icons.css.
+ * SVG markup for one icon. variant: "line" (default), "solid", "fill" or "color"; needs icons/icons.css.
  * label: accessible name; pass "" for a decorative icon next to text.
  */
 export function iconSvg(name, { variant = "line", label, className = "" } = {}) {
@@ -76,7 +77,7 @@ const GROUP_NAMES = { teams: "Teams and characters", christmas: "Christmas", pla
 const sections = GROUPS.map((g) => {
   const names = Object.keys(icons).filter((n) => icons[n].group === g);
   return `<section><h2>${GROUP_NAMES[g]} <span>${names.length}</span></h2><div class="grid">${names
-    .map((n) => `<article><div class="trio">${svg(n, "solid")}${svg(n, "")}${svg(n, "fill")}</div><b>${n}</b><small>${icons[n].replaces.map((r) => r.replace(/&/g, "&amp;")).join(" ")}</small></article>`)
+    .map((n) => `<article><div class="trio">${svg(n, "solid")}${svg(n, "")}${svg(n, "fill")}${svg(n, "color")}</div><b>${n}</b><small>${icons[n].replaces.map((r) => r.replace(/&/g, "&amp;")).join(" ")}</small></article>`)
     .join("")}</div></section>`;
 }).join("\n");
 const palettes = readdirSync(join(root, "palettes")).filter((f) => f.endsWith(".css")).map((f) => f.slice(0, -4)).sort();
@@ -100,10 +101,10 @@ ${palettes.map((p) => `<link rel="stylesheet" href="../palettes/${p}.css">`).joi
   .controls{display:flex;flex-wrap:wrap;gap:8px}
   .controls button{font:500 11px var(--rg-font-mono);letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border:var(--rg-line) solid var(--rg-ink);background:none;color:inherit;cursor:pointer}
   .controls button[aria-pressed=true]{background:var(--rg-ink);color:var(--rg-paper)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:20px 16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:20px 16px}
   article{display:grid;gap:4px}
-  .trio{display:flex;gap:14px;padding:8px 0}
-  .trio .rg-icon{width:36px;height:36px}
+  .trio{display:flex;gap:12px;padding:8px 0}
+  .trio .rg-icon{width:32px;height:32px}
   b{font-weight:600;font-size:var(--rg-text-sm)}
 </style>
 </head>
@@ -111,7 +112,7 @@ ${palettes.map((p) => `<link rel="stylesheet" href="../palettes/${p}.css">`).joi
 <header>
   <div class="legend">LEGI DESIGN · ICONS · ${Object.keys(icons).length}</div>
   <h1>Icons</h1>
-  <p>Each icon is drawn once and shown three ways: solid (<code>rg-icon--solid</code>), line (no class, the default) and line with a fill (<code>rg-icon--fill</code>, colour from <code>--rg-icon-fill</code>). Under each name: the emoji or Lucide icon it replaces.</p>
+  <p>Each icon is drawn once and shown four ways: solid (<code>rg-icon--solid</code>), line (no class, the default), line with a fill (<code>rg-icon--fill</code>) and colour (<code>rg-icon--color</code>: the whole icon in colour, details in ink). Colour comes from <code>--rg-icon-fill</code>, default the palette accent. Under each name: the emoji or Lucide icon it replaces.</p>
   <div class="controls" id="pal">${palettes.map((p) => `<button data-p="${p}" aria-pressed="${p === "stardust"}">${p}</button>`).join("")}</div>
 </header>
 ${sections}

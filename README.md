@@ -9,8 +9,8 @@ legi mark hidden as an Easter egg.
 | `tokens.css` | Shared tokens and classes: line weights, cut-corner button, type, spacing, background techniques. |
 | `palettes/` | One file per palette (`--rg-field`, `--rg-ink`, `--rg-paper`, `--rg-accent`) with its flip palette noted. |
 | `assets/legi-mark.svg` | The mark, in `currentColor`. |
-| `icons/` | The icon set: `svg/` (one file per icon), `icons.css` (the three looks), `index.js` (`iconSvg`, `byReplaces`), `meta.json`. Rebuild with `node scripts/build-icons.mjs`. |
-| `specimen/icons.html` | Every icon in all three looks. |
+| `icons/` | The icon set: `svg/` (one file per icon), `icons.css` (the four looks), `index.js` (`iconSvg`, `byReplaces`), `meta.json`. Rebuild with `node scripts/build-icons.mjs`. |
+| `specimen/icons.html` | Every icon in all four looks. |
 | `specimen/index.html` | Live reference: switch palettes, backgrounds and line weights on a sample screen. Open it in a browser. |
 | `research/` | How and why the rules were chosen. |
 
@@ -36,5 +36,5 @@ Changes reach an app only when it bumps the tag. Planning and open work: vps-app
 
 ## Versions
 
-- **v0.2.0**: the icon set (99 icons replacing emoji and Lucide), `icons/icons.css`, `specimen/icons.html`.
+- **v0.2.0**: the icon set (99 icons replacing emoji and Lucide), `icons/icons.css` (solid, line, fill, colour), `specimen/icons.html`.
 - **v0.1.0**: rules, tokens, palettes, mark, specimen.

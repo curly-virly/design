@@ -49,6 +49,10 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   "we're getting there"; only the fox's mouth was too wide. He then asked for the full set in the design
   system. **Decision:** the rule became "one drawing, three looks", with role classes so the look is pure CSS.
   Solid stays the default because silhouettes read best at small sizes.
+- Full set review: the dragon read as a horse and the diver as a webcam (now a snorkel). Line-only icons
+  (snowflake, swords, rope, bell off) took almost no colour, so they were redrawn with shapes, and a fourth
+  look, **colour**, fills the whole icon and keeps details in ink. The build now refuses a non-interface icon
+  without a shape.
 
 ## Open
 

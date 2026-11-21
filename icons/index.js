@@ -17,13 +17,13 @@ export const icons = {
   ],
   "body": "<path class=\"shape\" d=\"M16.5 4.5c-.2-2 1.6-2.7 2.3-1.2.7-.8 2-.3 1.6 1.2\"/><path class=\"shape\" d=\"M17 4.5c1.8 0 3 1.4 3 3l2 1-2 .8c0 1.6-.8 2.8-1.8 3.7C18 17 15 20 11 20c-5 0-8-3-8-8 0-2 1-4 2-5 1 2 3 3 5 3s3-1 4-3c.2-1.6 1.3-2.5 3-2.5Z\"/><path class=\"line\" d=\"M10 20v2.5M13 20v2.5\"/><path class=\"detail\" d=\"M7.5 13c1 3 4.5 3.4 6.8 1.2\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"17.6\" cy=\"7.2\" r=\"0.9\"/>"
  },
- "diver": {
-  "label": "Diver",
+ "snorkel": {
+  "label": "Snorkel",
   "group": "teams",
   "replaces": [
    "🤿"
   ],
-  "body": "<circle class=\"shape\" cx=\"12\" cy=\"10.5\" r=\"8\"/><path class=\"shape\" d=\"M6 18.5h12v3H6Z\"/><circle class=\"detail\" cx=\"12\" cy=\"10.5\" r=\"3.6\"/>"
+  "body": "<path class=\"shape\" d=\"M5 9h10a2 2 0 0 1 2 2v3a3 3 0 0 1-3 3h-2.2L10 15.3 8.2 17H6a3 3 0 0 1-3-3v-3a2 2 0 0 1 2-2Z\"/><path class=\"shape\" d=\"M18.5 3h2v12a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2Z\"/><path class=\"shape\" d=\"M12 17.5h2.5v3.5H12Z\"/><path class=\"detail\" d=\"M5.5 11.5h9\"/>"
  },
  "bunny": {
   "label": "Bunny",
@@ -178,7 +178,7 @@ export const icons = {
    "❄️",
    "❄"
   ],
-  "body": "<path class=\"line\" d=\"M12 12V2.5M9.8 4.3 12 6.5l2.2-2.2\" transform=\"rotate(0 12 12)\"/><path class=\"line\" d=\"M12 12V2.5M9.8 4.3 12 6.5l2.2-2.2\" transform=\"rotate(60 12 12)\"/><path class=\"line\" d=\"M12 12V2.5M9.8 4.3 12 6.5l2.2-2.2\" transform=\"rotate(120 12 12)\"/><path class=\"line\" d=\"M12 12V2.5M9.8 4.3 12 6.5l2.2-2.2\" transform=\"rotate(180 12 12)\"/><path class=\"line\" d=\"M12 12V2.5M9.8 4.3 12 6.5l2.2-2.2\" transform=\"rotate(240 12 12)\"/><path class=\"line\" d=\"M12 12V2.5M9.8 4.3 12 6.5l2.2-2.2\" transform=\"rotate(300 12 12)\"/><circle class=\"shape\" cx=\"12\" cy=\"12\" r=\"1.8\"/>"
+  "body": "<path class=\"shape\" transform=\"rotate(0 12 12)\" d=\"M10.8 9.92V6L8.9 4.3l1-1.1L12 5l2.1-1.8 1 1.1L13.2 6v3.92Z\"/><path class=\"shape\" transform=\"rotate(60 12 12)\" d=\"M10.8 9.92V6L8.9 4.3l1-1.1L12 5l2.1-1.8 1 1.1L13.2 6v3.92Z\"/><path class=\"shape\" transform=\"rotate(120 12 12)\" d=\"M10.8 9.92V6L8.9 4.3l1-1.1L12 5l2.1-1.8 1 1.1L13.2 6v3.92Z\"/><path class=\"shape\" transform=\"rotate(180 12 12)\" d=\"M10.8 9.92V6L8.9 4.3l1-1.1L12 5l2.1-1.8 1 1.1L13.2 6v3.92Z\"/><path class=\"shape\" transform=\"rotate(240 12 12)\" d=\"M10.8 9.92V6L8.9 4.3l1-1.1L12 5l2.1-1.8 1 1.1L13.2 6v3.92Z\"/><path class=\"shape\" transform=\"rotate(300 12 12)\" d=\"M10.8 9.92V6L8.9 4.3l1-1.1L12 5l2.1-1.8 1 1.1L13.2 6v3.92Z\"/><path class=\"shape\" d=\"M14.4 12l-1.2 2.08h-2.4L9.6 12l1.2-2.08h2.4Z\"/>"
  },
  "candle": {
   "label": "Candle",
@@ -326,7 +326,7 @@ export const icons = {
   "replaces": [
    "BellOff"
   ],
-  "body": "<path class=\"line\" d=\"M12 3c-3.5 0-5.5 3-5.5 6.5V14l-2 3.5h15l-2-3.5V9.5C17.5 6 15.5 3 12 3Z\"/><circle class=\"line\" cx=\"12\" cy=\"20.2\" r=\"1.4\"/><path class=\"line\" d=\"M3 3l18 18\"/>"
+  "body": "<path class=\"shape\" d=\"M12 3c-3.5 0-5.5 3-5.5 6.5V14l-2 3.5h15l-2-3.5V9.5C17.5 6 15.5 3 12 3Z\"/><circle class=\"shape\" cx=\"12\" cy=\"20.2\" r=\"1.4\"/><path class=\"line\" d=\"M3 3l4.1 4.1M18 18l3 3\"/><path class=\"detail\" d=\"M7.3 7.3l10.2 10.2\"/>"
  },
  "hourglass": {
   "label": "Hourglass",
@@ -368,17 +368,17 @@ export const icons = {
   ],
   "body": "<path class=\"line\" d=\"M5 21.5V3\"/><path class=\"shape\" d=\"M5 3.5h13l-3 4.5 3 4.5H5Z\"/>"
  },
- "rope": {
-  "label": "Rope",
+ "lasso": {
+  "label": "Lasso",
   "group": "game",
   "replaces": [
    "🪢"
   ],
-  "body": "<path class=\"line\" d=\"M2.5 15C6 15 8 6 12 6c2.2 0 3.8 1.6 3.8 3.6 0 2.2-1.8 3.9-3.8 3.9S8.2 11.8 8.2 9.6C8.2 7.6 9.8 6 12 6M12 13.5c2.5 0 3.5 4 9.5 4\"/>"
+  "body": "<path class=\"shape\" fill-rule=\"evenodd\" d=\"M12 2.5c4.4 0 8 2 8 4.5s-3.6 4.5-8 4.5S4 9.5 4 7s3.6-4.5 8-4.5Zm0 2c-3 0-5.5 1.1-5.5 2.5S9 9.5 12 9.5s5.5-1.1 5.5-2.5S15 4.5 12 4.5Z\"/><path class=\"shape\" d=\"M15.6 10.9c.9 2.3-.4 3.8-1.9 5.3-1.4 1.4-2.1 3-1 5.1l-1.6.8c-1.5-2.8-.6-5 1.2-6.8 1.3-1.3 2.2-2.3 1.6-4Z\"/><path class=\"detail\" d=\"M8 3.6v1.1M12 2.9v1.2M16 3.6v1.1\"/>"
  },
  "search": {
   "label": "Search",
-  "group": "game",
+  "group": "ui",
   "replaces": [
    "🔎",
    "Search"
@@ -387,7 +387,7 @@ export const icons = {
  },
  "shuffle": {
   "label": "Shuffle",
-  "group": "game",
+  "group": "ui",
   "replaces": [
    "🔀",
    "Shuffle"
@@ -396,7 +396,7 @@ export const icons = {
  },
  "repeat": {
   "label": "Repeat",
-  "group": "game",
+  "group": "ui",
   "replaces": [
    "🔁"
   ],
@@ -447,7 +447,7 @@ export const icons = {
  },
  "crosshair": {
   "label": "Crosshair",
-  "group": "game",
+  "group": "ui",
   "replaces": [
    "Crosshair"
   ],
@@ -455,7 +455,7 @@ export const icons = {
  },
  "locate": {
   "label": "Locate me",
-  "group": "game",
+  "group": "ui",
   "replaces": [
    "LocateFixed"
   ],
@@ -477,7 +477,7 @@ export const icons = {
    "Swords",
    "⚔️"
   ],
-  "body": "<path class=\"line\" d=\"M4 4l11 11M20 4 9 15M13 17l4-4M7 13l4 4M16 16l4 4M8 16l-4 4\"/>"
+  "body": "<path class=\"shape\" d=\"M20.5 3.5l-.9 2.6L8.5 17.1l-1.6-1.6L17.9 4.4Z\"/><path class=\"shape\" d=\"M3.5 3.5l.9 2.6 11.1 11 1.6-1.6L6.1 4.4Z\"/><path class=\"line\" d=\"M5 13.5l5.5 5.5M7.7 16.3 4.5 19.5M19 13.5l-5.5 5.5M16.3 16.3l3.2 3.2\"/><circle class=\"shape\" cx=\"3.8\" cy=\"20.2\" r=\"1\"/><circle class=\"shape\" cx=\"20.2\" cy=\"20.2\" r=\"1\"/>"
  },
  "shield-check": {
   "label": "Shield",
@@ -830,7 +830,7 @@ export const icons = {
 export const byReplaces = {
  "🤠": "sheriff",
  "🐔": "chicken",
- "🤿": "diver",
+ "🤿": "snorkel",
  "🐰": "bunny",
  "🤖": "robot",
  "👽": "alien",
@@ -880,7 +880,7 @@ export const byReplaces = {
  "🤝": "handshake",
  "🏁": "finish-flag",
  "🚩": "flag",
- "🪢": "rope",
+ "🪢": "lasso",
  "🔎": "search",
  "Search": "search",
  "🔀": "shuffle",
@@ -961,7 +961,7 @@ export const byReplaces = {
 };
 
 /**
- * SVG markup for one icon. variant: "line" (default), "solid" or "fill"; needs icons/icons.css.
+ * SVG markup for one icon. variant: "line" (default), "solid", "fill" or "color"; needs icons/icons.css.
  * label: accessible name; pass "" for a decorative icon next to text.
  */
 export function iconSvg(name, { variant = "line", label, className = "" } = {}) {

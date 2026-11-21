@@ -98,9 +98,11 @@ each one.
 `icons/svg/` holds one drawing per icon (24 grid, one line weight, round caps). They replace emoji and Lucide
 in the apps; `icons/meta.json` says which. Live reference: `specimen/icons.html`.
 
-- **Drawn once, three looks** (`icons/icons.css`): **solid** (`rg-icon--solid`: shapes filled with ink,
-  details cut out), **line** (no class: black and white outlines, also how the bare `.svg` looks) and **fill**
-  (`rg-icon--fill`: line plus a fill from `--rg-icon-fill`, default the accent).
+- **Drawn once, four looks** (`icons/icons.css`): **solid** (`rg-icon--solid`: shapes filled with ink,
+  details cut out), **line** (no class: black and white outlines, also how the bare `.svg` looks), **fill**
+  (`rg-icon--fill`: ink outline, shapes filled from `--rg-icon-fill`, default the accent) and **colour**
+  (`rg-icon--color`: the whole icon in `--rg-icon-fill`, details and dots in ink for contrast).
+- Every icon outside the interface glyphs has at least one shape, so it carries colour even when small.
 - Each part has a role: `shape` (closed, fillable), `line`, `detail` (sits inside a shape, at most one kind
   per icon) and `dot`. Colour comes only from CSS, never from the file.
 - One look per kind of thing in an app: e.g. solid for teams and moments, line for interface controls.
