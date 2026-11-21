@@ -101,6 +101,7 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - The reindeer and snowman moved into the title, icon-sized, each beside its own word. To fill the clearing, the tree from the app's Christmas logo came back as a large flat drawing: green tiers with a band of snow on each, a gold star and coloured lights.
 - Jens wanted the old page's light effect back: a soft glow on the lights, star and windows, and a warm pool on the snow. A blur like this is against "hard cuts, never painterly" (`decision`).
 - Jens's reference (a flat Samurai Jack-style tree under a moon) shaped a more detailed hero tree: a dark spruce of jagged drooping tiers, lighter facets on the moonlit side, a red ribbon spiral, red baubles on hairline strings, warm lights and a tall two-tone star. The rule it suggests: **the main subject carries the detail; the rest of the scene stays plain silhouettes.**
+- The warm pool of light under the tree went ("looks like the tree peed itself"). The lights moved off the ribbon to the branch tips, because lights next to a ribbon band read as doubled. The legi mark at 10 px in the snow was too small; it now hides in the sky as one of the stars, at about 16 px in `paper`, twinkling with the rest.
 
 ## Open
 
