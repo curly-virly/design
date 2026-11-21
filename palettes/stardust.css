@@ -1,0 +1,8 @@
+/* Violet and acid: after JoJo, Stardust Crusaders. Deep violet against acid green.
+   Flip palette for big moments: wind */
+[data-palette="stardust"], .palette-stardust {
+  --rg-field: #5a2a88;
+  --rg-ink: #160d22;
+  --rg-paper: #efe8f5;
+  --rg-accent: #a6e85b;
+}

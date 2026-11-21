@@ -1,0 +1,216 @@
+<title>Reduced Graphic Specimen</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Familjen+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a control rail and two phone specimens side by side; stacks on phones. Chrome is quiet so the specimens carry the colour. */
+:root{
+  --chrome-bg:#eeedf0; --chrome-fg:#17161b; --chrome-mute:#6b6873; --chrome-line:#d5d3da; --chrome-chip:#ffffff;
+  --display:"Archivo",system-ui,sans-serif; --body:"Familjen Grotesk",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  /* specimen palette (set by script) */
+  --field:#e5191c; --ink:#0b0b0b; --paper:#ffffff; --accent:#ffffff;
+  --line-w:1.25px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--chrome-bg:#141318;--chrome-fg:#ecebf0;--chrome-mute:#9b98a4;--chrome-line:#2c2a33;--chrome-chip:#1f1d25;color-scheme:dark}}
+:root[data-theme="dark"]{--chrome-bg:#141318;--chrome-fg:#ecebf0;--chrome-mute:#9b98a4;--chrome-line:#2c2a33;--chrome-chip:#1f1d25;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--chrome-bg);color:var(--chrome-fg);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:grid;gap:28px}
+header h1{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:850;font-size:clamp(34px,6vw,56px);line-height:.95;letter-spacing:-.01em;margin:0;text-transform:uppercase;text-wrap:balance}
+header p{margin:10px 0 0;max-width:62ch;color:var(--chrome-mute)}
+.grid{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+.rail{display:grid;gap:22px;min-width:0}
+.group h2{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--chrome-mute);margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{appearance:none;border:1px solid var(--chrome-line);background:var(--chrome-chip);color:var(--chrome-fg);font:500 13px/1 var(--body);padding:8px 10px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.chip[aria-pressed="true"]{border-color:var(--chrome-fg);box-shadow:inset 0 0 0 1px var(--chrome-fg)}
+.chip:focus-visible{outline:2px solid var(--chrome-fg);outline-offset:2px}
+.sw{display:inline-flex;border-radius:999px;overflow:hidden;width:34px;height:14px;border:1px solid var(--chrome-line)}
+.sw i{flex:1}
+.note{font-size:13px;color:var(--chrome-mute);margin:8px 0 0;min-height:2.6em}
+.stage{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;min-width:0}
+.stage>div{width:min(330px,100%)}
+.phone{width:100%;aspect-ratio:9/19;border-radius:38px;padding:10px;background:#0a0a0c;box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 20px 40px -20px rgba(0,0,0,.45);max-width:100%}
+.screen{position:relative;width:100%;height:100%;border-radius:29px;overflow:hidden;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;transition:background .35s,color .35s}
+.cap{font-family:var(--mono);font-size:11px;color:var(--chrome-mute);text-align:center;margin-top:8px;letter-spacing:.06em}
+
+/* ---- specimen screen ---- */
+.scene{position:relative;height:40%;flex:none;background:var(--field);overflow:hidden;transition:background .35s}
+.scene svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.bg{opacity:0;transition:opacity .25s}
+.screen[data-bg="layers"] .bg-layers,.screen[data-bg="haze"] .bg-haze,.screen[data-bg="stipple"] .bg-stipple,
+.screen[data-bg="motif"] .bg-motif,.screen[data-bg="grain"] .bg-grain,.screen[data-bg="shards"] .bg-shards{opacity:1}
+.topbar{position:absolute;top:14px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center;z-index:2;color:var(--paper);font:600 12px/1 var(--mono);letter-spacing:.08em}
+.body{flex:1;display:flex;flex-direction:column;gap:14px;padding:18px 18px 16px;min-height:0}
+.eyebrow{font:500 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:.65}
+.title{font-family:var(--display);font-variation-settings:"wdth" 68;font-weight:850;font-size:34px;line-height:.92;text-transform:uppercase;margin:4px 0 0}
+.rows{display:grid;gap:0;border-top:var(--line-w) solid var(--ink)}
+.row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:var(--line-w) solid color-mix(in oklab,var(--ink) 35%,transparent);font-size:14px}
+.row .ic{width:26px;height:26px;flex:none}
+.row b{font-weight:600}
+.row span{margin-left:auto;font:500 12px var(--mono);opacity:.7}
+.cta{margin-top:auto;display:flex;gap:10px}
+.btn{flex:1;height:48px;border:0;border-radius:0;font:800 14px/1 var(--display);font-variation-settings:"wdth" 90;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background:var(--ink);color:var(--paper);clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)}
+.btn.ghost{flex:none;width:48px;background:transparent;color:var(--ink);box-shadow:inset 0 0 0 var(--line-w) var(--ink);clip-path:none}
+.btn:focus-visible{outline:2px solid var(--field);outline-offset:3px}
+
+/* moment screen */
+.moment{justify-content:center;align-items:stretch;background:var(--field)}
+.moment .big{position:absolute;inset:0}
+.moment .msg{position:relative;z-index:2;margin-top:auto;padding:22px;color:var(--paper)}
+.moment .msg .title{font-size:46px;color:var(--paper)}
+.moment .msg p{margin:8px 0 18px;font-size:14px;max-width:26ch;opacity:.9}
+.moment .btn{background:var(--paper);color:var(--ink);width:100%}
+@media (prefers-reduced-motion:reduce){.screen,.scene,.bg{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Reduced graphic</h1>
+    <p>One sample screen built on the working description: flat shapes with a thin line only where it counts, silhouettes, empty space and one sharp accent. Swap the palette and the background technique to see which ones carry the look. The legi mark hides somewhere on each screen.</p>
+  </header>
+
+  <div class="grid">
+    <aside class="rail">
+      <section class="group">
+        <h2>Palette</h2>
+        <div class="chips" id="palettes"></div>
+        <p class="note" id="palNote"></p>
+      </section>
+      <section class="group">
+        <h2>Background</h2>
+        <div class="chips" id="bgs"></div>
+        <p class="note" id="bgNote"></p>
+      </section>
+      <section class="group">
+        <h2>Line weight</h2>
+        <div class="chips" id="lines"></div>
+      </section>
+    </aside>
+
+    <main class="stage">
+      <div>
+        <div class="phone"><div class="screen" id="s1" data-bg="layers">
+          <div class="scene">
+            <div class="topbar"><span>SAT 21 NOV</span><span>≡</span></div>
+            <svg viewBox="0 0 320 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+              <defs>
+                <radialGradient id="glow" cx="70%" cy="35%" r="65%"><stop offset="0" stop-color="var(--accent)" stop-opacity=".75"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient>
+                <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.3" fill="var(--paper)"/></pattern>
+                <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset=".8" stop-color="#fff" stop-opacity="0"/></linearGradient>
+                <mask id="fadeMask"><rect width="320" height="300" fill="url(#fade)"/></mask>
+                <pattern id="leaf" width="34" height="30" patternUnits="userSpaceOnUse"><path d="M17 4 L20 13 L29 15 L20 17 L17 26 L14 17 L5 15 L14 13 Z" fill="var(--paper)" opacity=".28"/></pattern>
+                <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter>
+              </defs>
+              <g class="bg bg-haze"><rect width="320" height="300" fill="url(#glow)"/></g>
+              <g class="bg bg-stipple"><rect width="320" height="300" fill="url(#dots)" mask="url(#fadeMask)" opacity=".5"/></g>
+              <g class="bg bg-motif"><rect width="320" height="300" fill="url(#leaf)"/></g>
+              <g class="bg bg-grain"><rect width="320" height="300" filter="url(#noise)" opacity=".22"/></g>
+              <g class="bg bg-shards">
+                <polygon points="0,120 120,60 90,190 0,210" fill="var(--ink)" opacity=".14"/>
+                <polygon points="200,40 320,0 320,150 250,170" fill="var(--paper)" opacity=".14"/>
+                <polygon points="150,150 230,120 260,230 140,240" fill="var(--ink)" opacity=".1"/>
+              </g>
+              <g class="bg bg-layers">
+                <path d="M0 170 C60 140 110 150 160 125 S260 120 320 100 V300 H0Z" fill="var(--paper)" opacity=".18"/>
+                <path d="M0 205 C70 185 120 200 190 175 S280 175 320 160 V300 H0Z" fill="var(--paper)" opacity=".26"/>
+              </g>
+              <!-- sun: a flat disc with one hairline orbit -->
+              <circle cx="228" cy="96" r="30" fill="var(--accent)"/>
+              <circle cx="228" cy="96" r="44" fill="none" stroke="var(--paper)" stroke-width="var(--line-w)"/>
+              <!-- foreground silhouette: ridge + lone figure -->
+              <path d="M0 250 L70 214 L104 226 L150 196 L196 230 L244 212 L320 240 V300 H0Z" fill="var(--ink)"/>
+              <path d="M150 196 L156 186 L160 196" fill="var(--ink)"/>
+              <rect x="150" y="181" width="3" height="16" fill="var(--ink)"/>
+              <circle cx="151.5" cy="178" r="3.2" fill="var(--ink)"/>
+              <line x1="104" y1="226" x2="196" y2="230" stroke="var(--paper)" stroke-width="var(--line-w)" opacity=".6"/>
+              <!-- easter egg: the legi mark hiding among the rocks -->
+              <g transform="translate(268 250) scale(9)" fill="none" stroke="var(--field)" stroke-width=".14" stroke-linecap="round" opacity=".9"><path d="M0.75 1.5 C2 1.5 2 1.5 1.1 0.6"/><ellipse cx="1" cy="1" rx="0.1" ry="0.05"/><path d="M1.003 0.503 L0.6495 0.1494"/><path d="M0.7789 0.795 L0.3459 0.545"/><path d="M0.6381 1.1351 L0.1551 1.0057"/></g>
+            </svg>
+          </div>
+          <div class="body">
+            <div>
+              <div class="eyebrow">Day 12 · 3 of 5 done</div>
+              <h3 class="title">The long<br>ridge</h3>
+            </div>
+            <div class="rows">
+              <div class="row"><svg class="ic" viewBox="0 0 26 26"><path d="M3 21 L10 9 L14 15 L17 11 L23 21Z" fill="var(--ink)"/><circle cx="19" cy="6" r="2.5" fill="none" stroke="var(--ink)" stroke-width="var(--line-w)"/></svg><b>Climb</b><span>4.2 km</span></div>
+              <div class="row"><svg class="ic" viewBox="0 0 26 26"><rect x="5" y="5" width="16" height="16" fill="var(--ink)" transform="rotate(45 13 13)"/><line x1="2" y1="13" x2="24" y2="13" stroke="var(--paper)" stroke-width="var(--line-w)"/></svg><b>Camp</b><span>18:40</span></div>
+              <div class="row"><svg class="ic" viewBox="0 0 26 26"><circle cx="13" cy="13" r="9" fill="none" stroke="var(--ink)" stroke-width="var(--line-w)"/><path d="M13 4 A9 9 0 0 1 13 22Z" fill="var(--ink)"/></svg><b>Rest</b><span>—</span></div>
+            </div>
+            <div class="cta"><button class="btn" id="startBtn" type="button">Start leg 4</button><button class="btn ghost" type="button" aria-label="More">⋯</button></div>
+          </div>
+        </div></div>
+        <div class="cap">Everyday screen</div>
+      </div>
+
+      <div>
+        <div class="phone"><div class="screen moment" id="s2">
+          <svg class="big" viewBox="0 0 320 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <polygon points="0,0 320,0 320,250 0,380" fill="var(--ink)" opacity=".9"/>
+            <circle cx="160" cy="250" r="112" fill="var(--accent)"/>
+            <circle cx="160" cy="250" r="138" fill="none" stroke="var(--paper)" stroke-width="var(--line-w)"/>
+            <path d="M118 300 L160 170 L202 300Z" fill="var(--ink)"/>
+            <rect x="0" y="0" width="320" height="640" fill="url(#dots)" opacity=".18"/>
+            <!-- easter egg: the legi mark peeking over the summit -->
+            <g transform="translate(170 152) scale(11)" fill="none" stroke="var(--ink)" stroke-width=".12" stroke-linecap="round"><path d="M0.75 1.5 C2 1.5 2 1.5 1.1 0.6"/><ellipse cx="1" cy="1" rx="0.1" ry="0.05"/><path d="M1.003 0.503 L0.6495 0.1494"/><path d="M0.7789 0.795 L0.3459 0.545"/><path d="M0.6381 1.1351 L0.1551 1.0057"/></g>
+          </svg>
+          <div class="msg">
+            <div class="eyebrow" style="color:var(--paper)">Summit</div>
+            <h3 class="title">Ridge<br>taken</h3>
+            <p>All five legs done. The palette flips for big moments like this one.</p>
+            <button class="btn" type="button">Carry on</button>
+          </div>
+        </div></div>
+        <div class="cap">Moment screen · palette flipped</div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+const PALETTES=[
+  {id:"phantom",name:"Red heist",from:"Persona 5",field:"#e3191b",ink:"#0c0b0b",paper:"#ffffff",accent:"#ffffff",note:"Red, black, white. Nothing else."},
+  {id:"checker",name:"TV orange",from:"Persona 4",field:"#f39412",ink:"#15120f",paper:"#f6eee0",accent:"#ffd23a",note:"Warm orange field, near-black ink, yellow pop."},
+  {id:"stardust",name:"Violet & acid",from:"JoJo · Stardust Crusaders",field:"#5a2a88",ink:"#160d22",paper:"#efe8f5",accent:"#a6e85b",note:"Deep violet against acid green."},
+  {id:"wind",name:"Magenta & teal",from:"JoJo · Golden Wind",field:"#df2f78",ink:"#24101b",paper:"#fdf1e8",accent:"#18b6a6",note:"Hot pink field, teal accent, gold-cream paper."},
+  {id:"morioh",name:"Lilac & mint",from:"JoJo · Diamond is Unbreakable",field:"#9d7fd0",ink:"#1d1430",paper:"#faf6ee",accent:"#78e2c1",note:"Soft lilac with mint; the gentlest of the loud ones."},
+  {id:"aku",name:"Flame",from:"Samurai Jack",field:"#d13a1e",ink:"#0d0a08",paper:"#f4ead6",accent:"#43a84f",note:"Red field, black shape, one green."},
+  {id:"desert",name:"Desert haze",from:"Samurai Jack",field:"#e6ad62",ink:"#2a1912",paper:"#f7ead0",accent:"#a3412a",note:"Sand and rust; calm with a hot accent."},
+  {id:"night",name:"Night forest",from:"Samurai Jack",field:"#14284d",ink:"#060b17",paper:"#dcebf2",accent:"#46c4e0",note:"Deep blue with a cold cyan light."}
+];
+const FLIP={phantom:"checker",checker:"phantom",stardust:"wind",wind:"stardust",morioh:"stardust",aku:"night",desert:"aku",night:"desert"};
+const BGS=[
+  {id:"flat",name:"Flat field",note:"Just the colour field. The silhouette does all the work."},
+  {id:"layers",name:"Silhouette layers",note:"Flat hills stacked front to back, paler with distance."},
+  {id:"haze",name:"Haze",note:"A soft glow behind sharp flat shapes."},
+  {id:"stipple",name:"Stipple",note:"A dot pattern fading out down the field."},
+  {id:"motif",name:"Motif",note:"One small shape repeated across the field."},
+  {id:"grain",name:"Grain",note:"A faint dry-brush noise over the flat colour."},
+  {id:"shards",name:"Shards",note:"Angular blocks behind the subject."}
+];
+const LINES=[{id:"0.75",name:"Hairline"},{id:"1.25",name:"Fine"},{id:"2.5",name:"Bold"}];
+const root=document.documentElement, s1=document.getElementById("s1"), s2=document.getElementById("s2");
+let state={pal:"phantom",bg:"layers",line:"1.25"};
+try{const saved=JSON.parse(localStorage.getItem("rg-state")||"null"); if(saved) state={...state,...saved};}catch(e){}
+function setVars(el,p){for(const k of ["field","ink","paper","accent"]) el.style.setProperty("--"+k,p[k]);}
+function chip(list,host,key,render){
+  host.innerHTML="";
+  for(const it of list){const b=document.createElement("button");b.type="button";b.className="chip";b.id=key+"-"+it.id;b.setAttribute("aria-pressed",String(state[key]===it.id));b.innerHTML=render(it);b.onclick=()=>{state[key]=it.id;apply();};host.appendChild(b);}
+}
+function apply(){
+  const p=PALETTES.find(x=>x.id===state.pal), f=PALETTES.find(x=>x.id===FLIP[state.pal]);
+  setVars(s1,p); setVars(s2,f);
+  s1.dataset.bg=state.bg;
+  root.style.setProperty("--line-w",state.line+"px");
+  chip(PALETTES,document.getElementById("palettes"),"pal",it=>`<span class="sw"><i style="background:${it.field}"></i><i style="background:${it.ink}"></i><i style="background:${it.accent}"></i></span>${it.name}`);
+  chip(BGS,document.getElementById("bgs"),"bg",it=>it.name);
+  chip(LINES,document.getElementById("lines"),"line",it=>it.name);
+  document.getElementById("palNote").textContent=`After ${p.from}. ${p.note} Moment screen flips to ${f.name}.`;
+  document.getElementById("bgNote").textContent=BGS.find(b=>b.id===state.bg).note;
+  try{localStorage.setItem("rg-state",JSON.stringify(state));}catch(e){}
+}
+apply();
+</script>

@@ -1,0 +1,12 @@
+{
+  "name": "legi-design",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared design tokens, palettes and the legi mark for the legi apps.",
+  "files": ["DESIGN.md", "tokens.css", "palettes", "assets"],
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./palettes/*": "./palettes/*",
+    "./assets/*": "./assets/*"
+  }
+}

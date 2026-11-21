@@ -1,0 +1,8 @@
+/* Red heist: after Persona 5. Red, black, white. Nothing else.
+   Flip palette for big moments: checker */
+[data-palette="phantom"], .palette-phantom {
+  --rg-field: #e3191b;
+  --rg-ink: #0c0b0b;
+  --rg-paper: #ffffff;
+  --rg-accent: #ffffff;
+}

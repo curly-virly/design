@@ -1,0 +1,8 @@
+/* Desert haze: after Samurai Jack. Sand and rust; calm with a hot accent.
+   Flip palette for big moments: aku */
+[data-palette="desert"], .palette-desert {
+  --rg-field: #e6ad62;
+  --rg-ink: #2a1912;
+  --rg-paper: #f7ead0;
+  --rg-accent: #a3412a;
+}

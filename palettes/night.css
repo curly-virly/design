@@ -1,0 +1,8 @@
+/* Night forest: after Samurai Jack. Deep blue with a cold cyan light.
+   Flip palette for big moments: desert */
+[data-palette="night"], .palette-night {
+  --rg-field: #14284d;
+  --rg-ink: #060b17;
+  --rg-paper: #dcebf2;
+  --rg-accent: #46c4e0;
+}

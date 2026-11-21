@@ -1,0 +1,8 @@
+/* Flame: after Samurai Jack. Red field, black shape, one green.
+   Flip palette for big moments: night */
+[data-palette="aku"], .palette-aku {
+  --rg-field: #d13a1e;
+  --rg-ink: #0d0a08;
+  --rg-paper: #f4ead6;
+  --rg-accent: #43a84f;
+}

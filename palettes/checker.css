@@ -1,0 +1,8 @@
+/* TV orange: after Persona 4. Warm orange field, near-black ink, yellow pop.
+   Flip palette for big moments: phantom */
+[data-palette="checker"], .palette-checker {
+  --rg-field: #f39412;
+  --rg-ink: #15120f;
+  --rg-paper: #f6eee0;
+  --rg-accent: #ffd23a;
+}

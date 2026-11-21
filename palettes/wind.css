@@ -1,0 +1,8 @@
+/* Magenta and teal: after JoJo, Golden Wind. Hot pink field, teal accent, cream paper.
+   Flip palette for big moments: stardust */
+[data-palette="wind"], .palette-wind {
+  --rg-field: #df2f78;
+  --rg-ink: #24101b;
+  --rg-paper: #fdf1e8;
+  --rg-accent: #18b6a6;
+}
