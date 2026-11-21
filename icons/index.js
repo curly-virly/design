@@ -245,11 +245,11 @@ export const icons = {
   ],
   "parts": {
    "box": "red",
+   "ribbon": "gold",
    "lid": "gold",
    "bow": "gold"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M4 10.5h16V21H4Z\"/><path class=\"shape\" d=\"M3 6.5h18v3H3Z\"/><path class=\"line\" d=\"M12 6.5C10.3 3.6 7.2 3.4 7.6 5.2 7.9 6.4 10 6.5 12 6.5c2 0 4.1-.1 4.4-1.3C16.8 3.4 13.7 3.6 12 6.5Z\"/><path class=\"detail\" d=\"M12 10.5V21\"/>"
+  "body": "<path class=\"shape\" d=\"M4 11h16V21H4Z\"/><path class=\"shape\" d=\"M11.25 11h1.5V21h-1.5Z\"/><path class=\"shape\" d=\"M3 6.5h18v2.8H3Z\"/><path class=\"line\" d=\"M12 6.5C10.3 3.6 7.2 3.4 7.6 5.2 7.9 6.4 10 6.5 12 6.5c2 0 4.1-.1 4.4-1.3C16.8 3.4 13.7 3.6 12 6.5Z\"/>"
  },
  "reindeer": {
   "label": "Reindeer",

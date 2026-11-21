@@ -211,6 +211,7 @@
     ],
     "parts": {
       "box": "red",
+      "ribbon": "gold",
       "lid": "gold",
       "bow": "gold"
     }
