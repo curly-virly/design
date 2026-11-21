@@ -7,9 +7,9 @@
     ],
     "parts": {
       "crown": "brown",
+      "band": "charcoal",
       "brim": "brown"
-    },
-    "detail": "charcoal"
+    }
   },
   "chicken": {
     "label": "Chicken",
@@ -31,6 +31,7 @@
     ],
     "parts": {
       "mask": "blue",
+      "glass": "ice",
       "tube": "gold",
       "mouthpiece": "charcoal"
     }
@@ -108,7 +109,8 @@
       "Crown"
     ],
     "parts": {
-      "crown": "gold"
+      "crown": "gold",
+      "band": "red"
     }
   },
   "pirate-flag": {
@@ -163,6 +165,7 @@
     ],
     "parts": {
       "hat": "brown",
+      "band": "charcoal",
       "brim": "brown",
       "face": "skin"
     }
@@ -296,9 +299,9 @@
       "🧦"
     ],
     "parts": {
-      "sock": "red"
-    },
-    "detail": "snow"
+      "sock": "red",
+      "cuff": "snow"
+    }
   },
   "beer": {
     "label": "Bar",
@@ -342,8 +345,10 @@
     ],
     "parts": {
       "train": "blue",
+      "window": "ice",
       "legs": "charcoal"
-    }
+    },
+    "detail": "gold"
   },
   "tree": {
     "label": "Park",
@@ -377,6 +382,7 @@
     ],
     "parts": {
       "books": "red",
+      "bands": "gold",
       "leaning": "blue"
     }
   },
@@ -727,9 +733,9 @@
       "🔥"
     ],
     "parts": {
-      "flame": "flame"
-    },
-    "detail": "gold"
+      "flame": "flame",
+      "core": "gold"
+    }
   },
   "phone": {
     "label": "Phone",
@@ -750,9 +756,9 @@
     ],
     "parts": {
       "page": "snow",
+      "header": "red",
       "rings": "steel"
-    },
-    "detail": "red"
+    }
   },
   "pencil": {
     "label": "Write",
@@ -761,7 +767,8 @@
       "✍️"
     ],
     "parts": {
-      "pencil": "gold"
+      "pencil": "gold",
+      "ferrule": "steel"
     }
   },
   "settings": {

@@ -80,6 +80,10 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   `--rg-icon-<icon>-<part>`. The solid, colour and natural options and the `rg-icon--*` classes are gone. The
   build refuses a non-interface icon without parts. Abstract shapes (circle, play, mystery) default to the
   palette accent, since they have no real colour.
+- Edge-line sweep: Jens flagged Santa's line along the face and beard edge, the candle's line on its top edge
+  and the present's ribbon. **Decision**, applied to every icon: an ink line that traces an edge goes, and a
+  line that stands for a coloured thing (ribbon, hat band, cuff, window, header, ferrule, flame core) becomes
+  its own coloured part. Touching parts get a small gap so the one-colour silhouette still separates them.
 
 ## Open
 

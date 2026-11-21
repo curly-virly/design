@@ -9,10 +9,10 @@ export const icons = {
   ],
   "parts": {
    "crown": "brown",
+   "band": "charcoal",
    "brim": "brown"
   },
-  "detail": "charcoal",
-  "body": "<path class=\"shape\" d=\"M7.2 12.6C7.2 8.2 8.2 5 10 5c1 0 1.4 1 2 1s1-1 2-1c1.8 0 2.8 3.2 2.8 7.6Z\"/><path class=\"shape\" d=\"M2 12c2.5 2 6 3 10 3s7.5-1 10-3c0 3-4 6-10 6S2 15 2 12Z\"/><path class=\"detail\" d=\"M7.4 10.6c3 .8 6.2.8 9.2 0\"/>"
+  "body": "<path class=\"shape\" d=\"M7.2 12.6C7.2 8.2 8.2 5 10 5c1 0 1.4 1 2 1s1-1 2-1c1.8 0 2.8 3.2 2.8 7.6Z\"/><path class=\"shape\" d=\"M7.35 9.7c3.1.8 6.2.8 9.3 0l.1 1.5c-3.2.85-6.3.85-9.5 0Z\"/><path class=\"shape\" d=\"M2 12c2.5 2 6 3 10 3s7.5-1 10-3c0 3-4 6-10 6S2 15 2 12Z\"/>"
  },
  "chicken": {
   "label": "Chicken",
@@ -36,11 +36,11 @@ export const icons = {
   ],
   "parts": {
    "mask": "blue",
+   "glass": "ice",
    "tube": "gold",
    "mouthpiece": "charcoal"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M5 9h10a2 2 0 0 1 2 2v3a3 3 0 0 1-3 3h-2.2L10 15.3 8.2 17H6a3 3 0 0 1-3-3v-3a2 2 0 0 1 2-2Z\"/><path class=\"shape\" d=\"M18.5 3h2v12a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2Z\"/><path class=\"shape\" d=\"M12 17.5h2.5v3.5H12Z\"/><path class=\"detail\" d=\"M5.5 11.5h9\"/>"
+  "body": "<path class=\"shape\" d=\"M5 9h10a2 2 0 0 1 2 2v3a3 3 0 0 1-3 3h-2.2L10 15.3 8.2 17H6a3 3 0 0 1-3-3v-3a2 2 0 0 1 2-2Z\"/><path class=\"shape\" d=\"M5.5 11h9v2.3c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1Z\"/><path class=\"shape\" d=\"M18.5 3h2v12a4 4 0 0 1-4 4h-2v-2h2a2 2 0 0 0 2-2Z\"/><path class=\"shape\" d=\"M12 17.5h2.5v3.5H12Z\"/>"
  },
  "bunny": {
   "label": "Bunny",
@@ -127,10 +127,10 @@ export const icons = {
    "Crown"
   ],
   "parts": {
-   "crown": "gold"
+   "crown": "gold",
+   "band": "red"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M3 8l4.5 4L12 5l4.5 7L21 8l-2 10H5Z\"/><path class=\"detail\" d=\"M5.7 15h12.6\"/>"
+  "body": "<path class=\"shape\" d=\"M3 8l4.5 4L12 5l4.5 7L21 8l-2 10H5Z\"/><path class=\"shape\" d=\"M5.45 14.3h13.1l-.3 1.5H5.75Z\"/>"
  },
  "pirate-flag": {
   "label": "Pirate flag",
@@ -190,11 +190,11 @@ export const icons = {
   ],
   "parts": {
    "hat": "brown",
+   "band": "charcoal",
    "brim": "brown",
    "face": "skin"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M6 9.5c0-3 1.5-6 6-6s6 3 6 6Z\"/><path class=\"shape\" d=\"M3 10.5h18c0 1-1 1.5-2 1.5H5c-1 0-2-.5-2-1.5Z\"/><path class=\"shape\" d=\"M7.5 13.5h9c0 4-2 7-4.5 7s-4.5-3-4.5-7Z\"/><path class=\"detail\" d=\"M6.3 7.8h11.4\"/>"
+  "body": "<path class=\"shape\" d=\"M6 9.5c0-3 1.5-6 6-6s6 3 6 6Z\"/><path class=\"shape\" d=\"M6.3 7.2h11.4c.15.5.25 1 .28 1.5H6.02c.03-.5.13-1 .28-1.5Z\"/><path class=\"shape\" d=\"M3 10.5h18c0 1-1 1.5-2 1.5H5c-1 0-2-.5-2-1.5Z\"/><path class=\"shape\" d=\"M7.5 13.5h9c0 4-2 7-4.5 7s-4.5-3-4.5-7Z\"/>"
  },
  "mystery": {
   "label": "Mystery",
@@ -339,10 +339,10 @@ export const icons = {
    "🧦"
   ],
   "parts": {
-   "sock": "red"
+   "sock": "red",
+   "cuff": "snow"
   },
-  "detail": "snow",
-  "body": "<path class=\"shape\" d=\"M8 2.5h7V12c0 1-.3 1.8-.8 2.6l-3 4.6a3.3 3.3 0 0 1-5.6-3.6L8 12Z\"/><path class=\"detail\" d=\"M8 6h7\"/>"
+  "body": "<path class=\"shape\" d=\"M8 2.5h7V12c0 1-.3 1.8-.8 2.6l-3 4.6a3.3 3.3 0 0 1-5.6-3.6L8 12Z\"/><path class=\"shape\" d=\"M8 2.5h7v3.5H8Z\"/>"
  },
  "beer": {
   "label": "Bar",
@@ -390,10 +390,11 @@ export const icons = {
   ],
   "parts": {
    "train": "blue",
+   "window": "ice",
    "legs": "charcoal"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M6 3.5h12A1.5 1.5 0 0 1 19.5 5v11a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2V5A1.5 1.5 0 0 1 6 3.5Z\"/><path class=\"line\" d=\"M8 18l-2.5 3.5M16 18l2.5 3.5\"/><path class=\"detail\" d=\"M7.5 6.5h9V11h-9Z\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"8.5\" cy=\"14.5\" r=\"1\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"15.5\" cy=\"14.5\" r=\"1\"/>"
+  "detail": "gold",
+  "body": "<path class=\"shape\" d=\"M6 3.5h12A1.5 1.5 0 0 1 19.5 5v11a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2V5A1.5 1.5 0 0 1 6 3.5Z\"/><path class=\"shape\" d=\"M7.5 6.5h9V11h-9Z\"/><path class=\"line\" d=\"M8 18l-2.5 3.5M16 18l2.5 3.5\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"8.5\" cy=\"14.5\" r=\"1\"/><circle class=\"dot\" fill=\"currentColor\" stroke=\"none\" cx=\"15.5\" cy=\"14.5\" r=\"1\"/>"
  },
  "tree": {
   "label": "Park",
@@ -431,10 +432,10 @@ export const icons = {
   ],
   "parts": {
    "books": "red",
+   "bands": "gold",
    "leaning": "blue"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M4 4h3.5v17H4ZM8.5 4H12v17H8.5Z\"/><path class=\"shape\" d=\"M13.3 5.2l3.4-.9 4.4 16.4-3.4.9Z\"/><path class=\"detail\" d=\"M4 7.5h3.5M8.5 7.5H12\"/>"
+  "body": "<path class=\"shape\" d=\"M4 4h3.5v17H4ZM8.5 4H12v17H8.5Z\"/><path class=\"shape\" d=\"M4 6.9h3.5v1.2H4ZM8.5 6.9H12v1.2H8.5Z\"/><path class=\"shape\" d=\"M13.3 5.2l3.4-.9 4.4 16.4-3.4.9Z\"/>"
  },
  "pin": {
   "label": "Map pin",
@@ -459,7 +460,7 @@ export const icons = {
    "statue": "patina"
   },
   "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M8 21V9c0-4 1.5-6.5 5-6.5h2c.5 1.5.5 3.5 1.5 5.5l1 3-1.5.5c.5 1.5.5 3-.2 4l.2 2.5h-2v3Z\"/><path class=\"detail\" d=\"M11 8.5h4.6\"/>"
+  "body": "<path class=\"shape\" d=\"M8 21V9c0-4 1.5-6.5 5-6.5h2c.5 1.5.5 3.5 1.5 5.5l1 3-1.5.5c.5 1.5.5 3-.2 4l.2 2.5h-2v3Z\"/><path class=\"detail\" d=\"M11 8.5h3.6\"/>"
  },
  "trophy": {
   "label": "Trophy",
@@ -828,10 +829,10 @@ export const icons = {
    "🔥"
   ],
   "parts": {
-   "flame": "flame"
+   "flame": "flame",
+   "core": "gold"
   },
-  "detail": "gold",
-  "body": "<path class=\"shape\" d=\"M12 2.5c1 3.5 5.5 5.5 5.5 11.5 0 4-2.5 7.5-5.5 7.5s-5.5-3-5.5-6.5c0-3 1.5-4.5 2.5-6 .3 2 1 3 2 3.5-.5-3.5 0-7 1-10Z\"/><path class=\"detail\" d=\"M12 20.6c-1.4-.4-2.1-1.8-1.9-3.2.3-1.5 1.4-2.4 1.9-3.9 1 2 2.1 3 1.9 5-.2 1.4-.9 2-1.9 2.1Z\"/>"
+  "body": "<path class=\"shape\" d=\"M12 2.5c1 3.5 5.5 5.5 5.5 11.5 0 4-2.5 7.5-5.5 7.5s-5.5-3-5.5-6.5c0-3 1.5-4.5 2.5-6 .3 2 1 3 2 3.5-.5-3.5 0-7 1-10Z\"/><path class=\"shape\" d=\"M12 20.6c-1.4-.4-2.1-1.8-1.9-3.2.3-1.5 1.4-2.4 1.9-3.9 1 2 2.1 3 1.9 5-.2 1.4-.9 2-1.9 2.1Z\"/>"
  },
  "phone": {
   "label": "Phone",
@@ -853,10 +854,10 @@ export const icons = {
   ],
   "parts": {
    "page": "snow",
+   "header": "red",
    "rings": "steel"
   },
-  "detail": "red",
-  "body": "<path class=\"shape\" d=\"M4 5.5h16a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1Z\"/><path class=\"line\" d=\"M8 3v4M16 3v4\"/><path class=\"detail\" d=\"M3 10h18\"/>"
+  "body": "<path class=\"shape\" d=\"M4 5.5h16a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1Z\"/><path class=\"shape\" d=\"M4 5.5h16a1 1 0 0 1 1 1V10H3V6.5a1 1 0 0 1 1-1Z\"/><path class=\"line\" d=\"M8 3v4M16 3v4\"/>"
  },
  "pencil": {
   "label": "Write",
@@ -865,10 +866,10 @@ export const icons = {
    "✍️"
   ],
   "parts": {
-   "pencil": "gold"
+   "pencil": "gold",
+   "ferrule": "steel"
   },
-  "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M15.5 3.5l5 5L9 20l-5.5 1 1-5.5Z\"/><path class=\"detail\" d=\"M13.5 5.5l5 5\"/>"
+  "body": "<path class=\"shape\" d=\"M15.5 3.5l5 5L9 20l-5.5 1 1-5.5Z\"/><path class=\"shape\" d=\"M14.3 4.7l5 5-1.1 1.1-5-5Z\"/>"
  },
  "settings": {
   "label": "Settings",
