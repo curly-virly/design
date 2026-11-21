@@ -126,7 +126,9 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   foreground with a `paper` snowbank along its top. Hideouts are `ink` tiles with the cut corner; the picked one gets
   one bold orbit, which closes as the visit counts. The hunting circle is a small night-sky scene with the legi mark
   as a star.
-- Open for Jens: everything above is a proposal until he reviews it.
+- Review 1: the floating buttons (re-center and Wanted) were different sizes; both are now 64 px squares. Navigate's text was
+  tight in a three-button row, so Navigate and Address share a row and the main action (Arrived, Leave) runs full width below.
+- Open for Jens: everything else is a proposal until he reviews it.
 
 ## Open
 
