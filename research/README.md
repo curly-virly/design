@@ -99,6 +99,8 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - Jens: no lines on buttons, only solids. The secondary button became a solid field tone. That clashes with §3, which says the secondary button is an outline (`decision`).
 - Tightened the colours: the tree was removed, and the secondary buttons and the "vs" tag reuse a sky shade (`field` mixed with 20% `paper`) instead of the bright cyan `accent` or a lighter blue of its own. The page now uses only `field`, `ink` and `paper` plus their mixes.
 - The reindeer and snowman moved into the title, icon-sized, each beside its own word. To fill the clearing, the tree from the app's Christmas logo came back as a large flat drawing: green tiers with a band of snow on each, a gold star and coloured lights.
+- Jens wanted the old page's light effect back: a soft glow on the lights, star and windows, and a warm pool on the snow. A blur like this is against "hard cuts, never painterly" (`decision`).
+- Jens's reference (a flat Samurai Jack-style tree under a moon) shaped a more detailed hero tree: a dark spruce of jagged drooping tiers, lighter facets on the moonlit side, a red ribbon spiral, red baubles on hairline strings, warm lights and a tall two-tone star. The rule it suggests: **the main subject carries the detail; the rest of the scene stays plain silhouettes.**
 
 ## Open
 
