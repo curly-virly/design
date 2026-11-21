@@ -36,6 +36,9 @@
   --rg-fast: 150ms;
   --rg-base: 250ms;
   --rg-ease: cubic-bezier(0.2, 0, 0, 1);
+
+  /* derived shades (mixes of palette colours only) */
+  --rg-second: color-mix(in oklab, var(--rg-field) 80%, var(--rg-paper)); /* secondary button */
 }
 
 /* ---------- type ---------- */
@@ -73,10 +76,9 @@
 }
 .rg-btn:active { transform: translateY(1px); }
 .rg-btn:focus-visible { outline: 2px solid var(--rg-field); outline-offset: 3px; }
-.rg-btn--ghost {
-  background: transparent;
-  color: var(--rg-ink);
-  box-shadow: inset 0 0 0 var(--rg-line) var(--rg-ink);
+.rg-btn--second {
+  background: var(--rg-second);
+  color: var(--rg-paper);
   clip-path: none;
 }
 
@@ -135,6 +137,11 @@
     linear-gradient(115deg, transparent 38%, color-mix(in oklab, var(--rg-ink) 14%, transparent) 38% 55%, transparent 55%),
     linear-gradient(200deg, transparent 60%, color-mix(in oklab, var(--rg-paper) 14%, transparent) 60% 78%, transparent 78%),
     var(--rg-field);
+}
+
+/* glow: light sources only (lamps, tree lights, stars, lit windows), never the ground */
+.rg-glow {
+  filter: drop-shadow(0 0 2px var(--rg-glow, currentColor)) drop-shadow(0 0 6px var(--rg-glow, currentColor));
 }
 
 /* silhouette layers need real shapes: use the SVG hills from specimen/index.html */

@@ -20,9 +20,16 @@ Why each rule exists: `research/README.md`. Live reference: `specimen/index.html
 2. **Warm, never corporate.** Made by someone, not a template. No stock dashboard look.
 3. **Craft through detail.** Care shows in every state: empty, loading, error, focus.
 4. **Play in the moments and the words.** Fun appears when something happens (a win, an empty state, a
-   game event) and in what the app says. Motion stays quick and functional.
+   game event) and in what the app says. Interface motion stays quick and functional; scenes may move
+   gently (section 3, Scenes).
 5. **Siblings, not twins.** Every app shares the form language below; each has its own palette and
    character.
+6. **The main subject carries the detail.** One hero per view gets the facets, ornaments and light;
+   everything else stays a plain silhouette.
+7. **Everything makes physical sense.** Decorations sit where they would in life (lights on branch tips, not
+   beside a ribbon); nothing peeks out from behind a subject as a stray shape. Check overlaps at every size.
+8. **Phone first.** Compose the phone view on its own and check 375×667, 390×844 and 430×932. Text and the
+   subject never touch; on short screens shrink the subject from its base and tighten the title.
 
 A TV dashboard is a mode: large type, readable from across a room. Not a principle of its own.
 
@@ -35,14 +42,18 @@ never the detail.
   outline: a shape ends where its colour ends, never at an ink edge. Shapes that touch are told apart by colour or a gap, not by a border.
 - **Ink lines only for detail.** A line sits inside a shape to describe it (a hat band, an eye, a fold), or
   stands alone as emphasis (an orbit round a disc, a horizon). It never traces a shape's edge. Interface
-  lines (list rules, the secondary button) are controls, not drawings, and keep their line.
+  lines (list rules) are controls, not drawings, and keep their line.
 - **One line weight per element.** Never tapered or mixed-thickness strokes. Weights: `--rg-line`
   (default 1.25px), `--rg-line-hair` (0.75px), `--rg-line-bold` (2.5px).
 - **Silhouettes read alone.** Every icon and illustration is recognisable as one solid shape.
-- **Strong colour, few of them.** Each view uses two or three colours from its palette: `field`, `ink`,
-  `paper` and one `accent`. Bold combinations are welcome; busy detail is not.
-- **Big empty space.** A small subject in a large calm field.
-- **Geometric with a hand.** Hard cuts and simple curves. Never photographic or painterly.
+- **Strong colour, few of them.** Each view uses `field`, `ink`, `paper` and their mixes, plus at most one
+  `accent` (optional: drop it if it shouts). The hero subject may use the icons' natural colours (section 7).
+  Bold combinations are welcome; busy detail is not.
+- **Calm around the subject, never an empty screen.** Space sits around the hero inside a full scene; a
+  flat field with a small picture at the edge reads as unfinished.
+- **Geometric with a hand.** Hard cuts and simple curves. Never photographic or painterly. One exception:
+  light sources (lamps, tree lights, stars, lit windows) may have a small soft glow (`.rg-glow`). Never a
+  glow pool on the ground.
 - **Calm, then one sharp accent.** One dramatic element per view.
 
 ### Elements
@@ -50,15 +61,30 @@ never the detail.
 | Element | Rule |
 |---|---|
 | Primary button | Solid `ink` on `paper` (or the reverse), square with the cut bottom-right corner (`.rg-btn`). Uppercase display type. At the bottom of the screen. |
-| Secondary button | Outline at `--rg-line`, no cut corner (`.rg-btn--ghost`). |
+| Secondary button | Solid, never outlined: a `field` shade (`--rg-second`, `field` with 20% `paper`) with `paper` text, no cut corner (`.rg-btn--second`). |
+| Titles | Plain display type. Small words inside a title ("vs") stay plain `paper` type: no box, tag or colour of their own. Characters appear as icons at text size beside their word. |
 | Lists | Rows divided by lines at `--rg-line`; the first rule full `ink`, the rest softened. No card boxes around rows. |
 | Icons | From `icons/` only (section 7). Realistic colours by default; recolour per part where the app chooses. Never outlined. |
-| Scenes and headers | Flat silhouettes on a colour field, plus one background technique (below). |
+| Scenes and headers | Built in layers (below). |
 | Big moments | The palette **flips** to the app's sibling palette for that screen (`data-palette` of the flip). |
+
+### Scenes
+
+After Samurai Jack, a scene is built in depth, back to front:
+
+1. **Sky:** `field` with a dry-brush wash and grain, plus one light (a moon and its beam, or haze).
+2. **Three to five silhouette layers**, darker toward the front (`field` mixed with more `ink` each step).
+3. **The clearing:** the hero subject in the middle, the only detailed drawing.
+4. **Foreground:** `ink` shapes (pines, boughs, a bank) cropping the edges and framing the view.
+
+The title sits on the sky and the actions on the foreground, inside the scene: no separate bands of page.
+Icons stay icon-sized; never scale one up into a scene prop. Ambient motion (snowfall in depth, twinkling,
+smoke) is allowed in scenes and stops under `prefers-reduced-motion`. Reference: `specimen/scene.html`.
 
 ### Background techniques
 
-All are allowed; each app narrows them down while designing. Classes in `tokens.css`; the specimen shows
+All are allowed, and a scene combines them: silhouette layers as the base, one texture (grain, wash) and
+one light (haze). Each app narrows them down while designing. Classes in `tokens.css`; the specimen shows
 each one.
 
 | Technique | What it is |
@@ -76,6 +102,8 @@ each one.
 - Palettes live in `palettes/`, one file each, with four tokens: `--rg-field`, `--rg-ink`, `--rg-paper`,
   `--rg-accent`, plus `flip` (the sibling palette for big moments).
 - Each app picks one palette as its own and one flip. Two apps shouldn't share a main palette.
+- No colours outside the palette: extra shades are mixes of `field`, `ink` and `paper` only, never a new tint.
+  The icons' natural colours (`icons/natural.css`) are the one addition, for icons and the hero subject.
 - Semantic colours (success, warning, error) are separate and stay legible on `paper` in both themes.
 
 ## 5. Type (draft)
@@ -93,7 +121,8 @@ each one.
 - **One colour,** `currentColor` (ink, paper or field). Never filled, never multicoloured.
 - **An Easter egg, not a header logo.** It doesn't belong in a top corner. Hide it in odd little places,
   small and quiet: among rocks in a scene, peeking over a summit, at the end of a list, in an empty state,
-  on a loading screen or a 404 page.
+  on a loading screen or a 404 page. Best as an object in the world, e.g. one of the stars in a night sky.
+- **At least 16 px.** Smaller, it can't be found.
 - legi.nu is the exception: the mark is its hero and favicon.
 
 ## 7. Icons

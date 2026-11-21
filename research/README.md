@@ -103,6 +103,20 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - Jens's reference (a flat Samurai Jack-style tree under a moon) shaped a more detailed hero tree: a dark spruce of jagged drooping tiers, lighter facets on the moonlit side, a red ribbon spiral, red baubles on hairline strings, warm lights and a tall two-tone star. The rule it suggests: **the main subject carries the detail; the rest of the scene stays plain silhouettes.**
 - The warm pool of light under the tree went ("looks like the tree peed itself"). The lights moved off the ribbon to the branch tips, because lights next to a ribbon band read as doubled. The legi mark at 10 px in the snow was too small; it now hides in the sky as one of the stars, at about 16 px in `paper`, twinkling with the rest.
 
+**Decision (design #13, approved by Jens):** the lessons became rules. In `DESIGN.md`:
+- principles 6–8 (the hero carries the detail, physical sense, phone first);
+- calm space around the subject instead of big empty space;
+- a glow on light sources only;
+- at most one accent, which is optional;
+- solid secondary buttons (`.rg-btn--second`, `--rg-second`), replacing the outlined `.rg-btn--ghost`;
+- plain words inside titles, with icons at text size;
+- a Scenes section (layers back to front, combined techniques, ambient motion);
+- no colours outside palette mixes, apart from the icons' natural colours;
+- the legi mark at least 16 px, best as an object in the world.
+
+`specimen/scene.html` keeps the test page as the reference scene. No app used the package yet, so the removed
+`.rg-btn--ghost` breaks nothing.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
