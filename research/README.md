@@ -131,6 +131,18 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - The caught team's button is a statement in the players' voice: "Santas caught us", not "Santas caught you?".
 - Open for Jens: everything else is a proposal until he reviews it.
 
+## Phase 2, step 2: Naughty List poster (draft, 2026-11-21)
+
+- Last test of the rules before applying them: the Christmas wanted poster redrawn. Draft canvas:
+  https://claude.ai/artifact/2r7oJW9eQucxSzTLxK3B3R (A4 print and phone card, Crumb Crew hunted by the Santas).
+- `night` palette on `paper`, no accent. The portrait is a small scene (sky with moon and grain, hills and village,
+  pine row, snow clearing, ink pines at the edges); the hero gingerbread carries the detail (lit facets, icing, gumdrops),
+  its two accomplices are plain silhouettes. The legi mark is a star.
+- Old outlines gone: no double border, no warning box, no ring-only stamp. Lists are ruled rows; the name plate is an
+  `ink` block with the cut corner; the stamp is a `field` disc with one orbit line and the Santa icon.
+- Everything that carries meaning is SVG or a border, so it still prints without "Background graphics".
+- Open for Jens: everything, until reviewed. A real team photo would take the clearing's place.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
