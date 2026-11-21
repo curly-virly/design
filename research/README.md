@@ -98,6 +98,7 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - The detailed layered snowfall from the old landing came back (specks and crystals behind, big tumbling crystals in front).
 - Jens: no lines on buttons, only solids. The secondary button became a solid field tone. That clashes with §3, which says the secondary button is an outline (`decision`).
 - Tightened the colours: the tree was removed, and the secondary buttons and the "vs" tag reuse a sky shade (`field` mixed with 20% `paper`) instead of the bright cyan `accent` or a lighter blue of its own. The page now uses only `field`, `ink` and `paper` plus their mixes.
+- The reindeer and snowman moved into the title, icon-sized, each beside its own word. To fill the clearing, the tree from the app's Christmas logo came back as a large flat drawing: green tiers with a band of snow on each, a gold star and coloured lights.
 
 ## Open
 
