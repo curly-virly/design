@@ -117,6 +117,20 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 `specimen/scene.html` keeps the test page as the reference scene. No app used the package yet, so the removed
 `.rg-btn--ghost` breaks nothing.
 
+## Phase 2, step 1: Sheriffs vs Chickens Christmas player view (draft, 2026-11-21)
+
+- First real screen restyled with the rules, as the template for the rest of the app. Draft canvas:
+  https://claude.ai/artifact/HU7xNdTZGsNUwtjCvob5dF (hunt map with a hideout picked, checked-in visit, hunting circle).
+- Layout and behaviour unchanged (§1); `night` palette, no accent. The map is the scene: flat `field`, water and streets
+  as `field`/`ink`/`paper` mixes, outside the play area dimmed with no edge line. The bottom sheet is the `ink`
+  foreground with a `paper` snowbank along its top. Hideouts are `ink` tiles with the cut corner; the picked one gets
+  one bold orbit, which closes as the visit counts. The hunting circle is a small night-sky scene with the legi mark
+  as a star.
+- Review 1: the floating buttons (re-center and Wanted) were different sizes; both are now 64 px squares. Navigate's text was
+  tight in a three-button row, so Navigate and Address share a row and the main action (Arrived, Leave) runs full width below.
+- The caught team's button is a statement in the players' voice: "Santas caught us", not "Santas caught you?".
+- Open for Jens: everything else is a proposal until he reviews it.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
