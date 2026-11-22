@@ -141,7 +141,11 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - Old outlines gone: no double border, no warning box, no ring-only stamp. Lists are ruled rows; the name plate is an
   `ink` block with the cut corner; the stamp is a `field` disc with one orbit line and the Santa icon.
 - Everything that carries meaning is SVG or a border, so it still prints without "Background graphics".
-- Open for Jens: everything, until reviewed. A real team photo would take the clearing's place.
+- Review 1: the team photo is square, so the portrait is a square slot again (the scene is what shows without a
+  photo); the stamp moved beside it. Jens wants the red title and a paper feel back: grain, fibre and darker edges
+  (palette mixes) over the sheet. Red is outside the `night` palette, which allows only its cyan accent (`decision`:
+  a Christmas palette with a red accent, or an exception for the title).
+- Open for Jens: everything else, until reviewed.
 
 ## Open
 
