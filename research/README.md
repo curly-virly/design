@@ -136,6 +136,15 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   hideout's ring stays the one bold element.
 - Open for Jens: everything else is a proposal until he reviews it.
 
+## Objects that leave the screen (2026-11-22)
+
+- A legi version of the Wanted poster was considered and dropped: Jens finds the current Western poster (Rye, aged
+  paper) good as it is. It gets printed and pinned up, so its context is different: it should evoke a Wild West
+  handbill, not the app.
+
+**Decision (approved by Jens):** §1 now exempts objects made to be printed, saved or shared (the Wanted poster, printed
+or as a saved image). Inside the app the poster stays as drawn; the card and buttons around it follow the rules.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
