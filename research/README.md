@@ -129,6 +129,11 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 - Review 1: the floating buttons (re-center and Wanted) were different sizes; both are now 64 px squares. Navigate's text was
   tight in a three-button row, so Navigate and Address share a row and the main action (Arrived, Leave) runs full width below.
 - The caught team's button is a statement in the players' voice: "Santas caught us", not "Santas caught you?".
+- Built in Sheriffs vs Chickens (the-hunt PR #98) as drafted, with one change: the draft's hideout markers showed
+  category icons, but the app's markers show the last visitor (yours, a rival's, nobody's), and changing what players
+  see is a game-rule change. The build keeps that information: your team's tile is framed in `paper`, a rival's is
+  `ink`, an unvisited one a sky shade (`--rg-second`). The zone circle uses a thin, softened line so the picked
+  hideout's ring stays the one bold element.
 - Open for Jens: everything else is a proposal until he reviews it.
 
 ## Open
