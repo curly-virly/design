@@ -147,6 +147,10 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   a Christmas palette with a red accent, or an exception for the title).
 - Review 2: the photo can be much bigger. The square grew from 380 to 460 px on A4 (two thirds of the width) and to
   the full width on the phone; the charges went into two columns and the reward note beside the amount to make room.
+- Review 3: no custom art per team. Without a photo, the square shows one shared night scene with the team's icon
+  from `icons/` (natural colours) in the clearing and two copies as one-colour `paper` silhouettes. This scales an icon
+  up into a scene, which section 3 forbids ("never scale one up into a scene prop"): `decision`, an exception for the
+  no-photo poster, or a rule that allows icons as the hero when no drawing exists.
 - Open for Jens: everything else, until reviewed.
 
 ## Open
