@@ -104,8 +104,8 @@ each one.
 ## 4. Colour
 
 - Palettes live in `palettes/`, one file each, with four tokens: `--rg-field`, `--rg-ink`, `--rg-paper`,
-  `--rg-accent`, plus `flip` (the sibling palette for big moments).
-- Each app picks one palette as its own and one flip. Two apps shouldn't share a main palette.
+  `--rg-accent`, plus `flip` (the sibling palette for big moments; `ripa` has none).
+- Each app picks one palette as its own and, unless it has none, one flip. Two apps shouldn't share a main palette.
 - No colours outside the palette: extra shades are mixes of `field`, `ink` and `paper` only, never a new tint.
   The icons' natural colours (`icons/natural.css`) are the one addition, for icons and the hero subject.
 - Semantic colours (success, warning, error) are separate and stay legible on `paper` in both themes.

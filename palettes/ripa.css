@@ -1,0 +1,8 @@
+/* Ptarmigan: after the rock ptarmigan (fjällripa) in winter plumage. Mostly paper, quiet by design.
+   Field is the feather shadow, ink the beak and tail, accent the red eye comb. No flip palette. */
+[data-palette="ripa"], .palette-ripa {
+  --rg-field: #a09386;
+  --rg-ink: #2b2a28;
+  --rg-paper: #ece8e3;
+  --rg-accent: #db341a;
+}

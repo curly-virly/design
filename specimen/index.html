@@ -179,6 +179,7 @@ const PALETTES=[
   {id:"morioh",name:"Lilac & mint",from:"JoJo · Diamond is Unbreakable",field:"#9d7fd0",ink:"#1d1430",paper:"#faf6ee",accent:"#78e2c1",note:"Soft lilac with mint; the gentlest of the loud ones."},
   {id:"aku",name:"Flame",from:"Samurai Jack",field:"#d13a1e",ink:"#0d0a08",paper:"#f4ead6",accent:"#43a84f",note:"Red field, black shape, one green."},
   {id:"desert",name:"Desert haze",from:"Samurai Jack",field:"#e6ad62",ink:"#2a1912",paper:"#f7ead0",accent:"#a3412a",note:"Sand and rust; calm with a hot accent."},
+  {id:"ripa",name:"Ptarmigan",from:"Rock ptarmigan, winter plumage",field:"#a09386",ink:"#2b2a28",paper:"#ece8e3",accent:"#db341a",note:"Mostly white paper with feather-shadow field; quiet on purpose. Red comb as the one accent."},
   {id:"night",name:"Night forest",from:"Samurai Jack",field:"#14284d",ink:"#060b17",paper:"#dcebf2",accent:"#46c4e0",note:"Deep blue with a cold cyan light."}
 ];
 const FLIP={phantom:"checker",checker:"phantom",stardust:"wind",wind:"stardust",morioh:"stardust",aku:"night",desert:"aku",night:"desert"};
@@ -201,14 +202,14 @@ function chip(list,host,key,render){
   for(const it of list){const b=document.createElement("button");b.type="button";b.className="chip";b.id=key+"-"+it.id;b.setAttribute("aria-pressed",String(state[key]===it.id));b.innerHTML=render(it);b.onclick=()=>{state[key]=it.id;apply();};host.appendChild(b);}
 }
 function apply(){
-  const p=PALETTES.find(x=>x.id===state.pal), f=PALETTES.find(x=>x.id===FLIP[state.pal]);
+  const p=PALETTES.find(x=>x.id===state.pal), f=PALETTES.find(x=>x.id===FLIP[state.pal])||p;
   setVars(s1,p); setVars(s2,f);
   s1.dataset.bg=state.bg;
   root.style.setProperty("--line-w",state.line+"px");
   chip(PALETTES,document.getElementById("palettes"),"pal",it=>`<span class="sw"><i style="background:${it.field}"></i><i style="background:${it.ink}"></i><i style="background:${it.accent}"></i></span>${it.name}`);
   chip(BGS,document.getElementById("bgs"),"bg",it=>it.name);
   chip(LINES,document.getElementById("lines"),"line",it=>it.name);
-  document.getElementById("palNote").textContent=`After ${p.from}. ${p.note} Moment screen flips to ${f.name}.`;
+  document.getElementById("palNote").textContent=`After ${p.from}. ${p.note} ${FLIP[state.pal]?`Moment screen flips to ${f.name}.`:"No flip palette."}`;
   document.getElementById("bgNote").textContent=BGS.find(b=>b.id===state.bg).note;
   try{localStorage.setItem("rg-state",JSON.stringify(state));}catch(e){}
 }
