@@ -151,6 +151,9 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   from `icons/` (natural colours) in the clearing and two copies as one-colour `paper` silhouettes. This scales an icon
   up into a scene, which section 3 forbids ("never scale one up into a scene prop"): `decision`, an exception for the
   no-photo poster, or a rule that allows icons as the hero when no drawing exists.
+- Review 4: bigger photo again. A4 square 460 → 520 px (three quarters of the width); the aliases became one line,
+  the description a four-column strip, the warning one sentence, and "By order of the North Pole" moved to the footer.
+  On the phone the square runs edge to edge (390 px).
 - Open for Jens: everything else, until reviewed.
 
 ## Open
