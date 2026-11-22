@@ -1,0 +1,8 @@
+/* Igel Gym night: the app's existing look, formalised. Near-black slate with one fresh green.
+   Flip palette for big moments: checker */
+[data-palette="igel"], .palette-igel {
+  --rg-field: #0f1115;
+  --rg-ink: #060709;
+  --rg-paper: #eef0f4;
+  --rg-accent: #4ade80;
+}

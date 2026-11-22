@@ -145,6 +145,14 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
 **Decision (approved by Jens):** §1 now exempts objects made to be printed, saved or shared (the Wanted poster, printed
 or as a saved image). Inside the app the poster stays as drawn; the card and buttons around it follow the rules.
 
+## Igel Gym palette (2026-11-22)
+
+Jens likes Igel Gym's existing colours (dark slate, one green), so the app gets its own palette `igel`, formalised from
+`public/styles.css`, instead of the recommended `checker`. field `#0f1115`, ink `#060709`, paper `#eef0f4`, accent
+`#4ade80`; flip `checker`. Card, card2 and line become field/paper mixes; warn, bad and info stay semantic and outside
+the palette. The app's light theme (green on `#f5f6f8`) doesn't fit one palette per app and is dropped or handled in the app.
+**Decision (approved by Jens).**
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
