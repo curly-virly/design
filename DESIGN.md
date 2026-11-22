@@ -12,6 +12,10 @@ Why each rule exists: `research/README.md`. Live reference: `specimen/index.html
 - The rules apply at the **element** level: how a button, sheet, card, icon, search field, message or empty
   state looks and behaves, wherever it appears.
 - An app's own patterns are protected: a rule may change how they look, never how they work.
+- **Objects that leave the screen keep their own look.** Things made to be printed, saved or shared as an
+  object in their own right (the Wanted poster, printed or as a saved image) are props from the game's world,
+  not interface: they follow the style the object evokes, not these rules. Shown inside the app, the object
+  itself stays as it is; the frame around it (card, sheet, buttons) follows the rules.
 
 ## 2. Principles
 
