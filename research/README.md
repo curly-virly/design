@@ -156,11 +156,12 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   On the phone the square runs edge to edge (390 px).
 - Review 5: too clean; Jens wants an old-school look as a contrast to the app. The poster now prints like an old
   handbill: Rye wood type for the title, reward and name plate, Old Standard TT and IM Fell English for the text, worn
-  ink (displaced edges, small gaps), a halftone screen over the picture, paper with folds, stains and darker edges, and
+  ink (displaced edges, small gaps), a halftone screen over the picture, paper with stains and darker edges, and
   a red rubber stamp with its words round the ring. The app's buttons keep the legi type. Clashes with the rules
   (`decision`): the type is outside section 5, the worn ink is not "hard cuts", and the stamp uses two rings. Proposed
   rule: printed artefacts (posters) may take a period look; screens may not.
-- Open for Jens: everything else, until reviewed.
+- Review 6: Jens approved the look, without the folds (removed).
+- Open for Jens: the `decision` items above.
 
 ## Open
 
