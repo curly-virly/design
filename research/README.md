@@ -145,6 +145,8 @@ elegantly mixes in non-line-drawing elements," including very simple texture in 
   photo); the stamp moved beside it. Jens wants the red title and a paper feel back: grain, fibre and darker edges
   (palette mixes) over the sheet. Red is outside the `night` palette, which allows only its cyan accent (`decision`:
   a Christmas palette with a red accent, or an exception for the title).
+- Review 2: the photo can be much bigger. The square grew from 380 to 460 px on A4 (two thirds of the width) and to
+  the full width on the phone; the charges went into two columns and the reward note beside the amount to make room.
 - Open for Jens: everything else, until reviewed.
 
 ## Open
