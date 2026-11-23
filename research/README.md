@@ -168,6 +168,13 @@ Jens doesn't want the big-moment flip in this app: no flip palette, `igel` on ev
 **Decision (approved by Jens):** big-moment palette flips are removed for every app. Each app uses its own palette on every
 screen; a big moment is marked with layout, scale and the one accent, not a palette change.
 
+## Avalanche danger scale (2026-11-23)
+
+Fjällripa's orange avalanche box broke the palette rule, and Jens wanted the standard danger colours for the level number
+anyway. **Decision (approved by Jens):** the European Avalanche Danger Scale is allowed outside the palette, only to show a
+danger level: 1 green `#ccff66`, 2 yellow `#ffff00`, 3 orange `#ff9900`, 4 red `#ff0000`, 5 red and black check. A solid tile with an
+ink numeral (paper on 5), `scales/avalanche.css`. Nothing else in the chrome takes warning or hazard colours.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.

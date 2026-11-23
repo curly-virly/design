@@ -9,12 +9,14 @@
     "tokens.css",
     "palettes",
     "assets",
+    "scales",
     "icons"
   ],
   "exports": {
     "./tokens.css": "./tokens.css",
     "./palettes/*": "./palettes/*",
     "./assets/*": "./assets/*",
+    "./scales/*": "./scales/*",
     "./icons/*": "./icons/*"
   }
 }

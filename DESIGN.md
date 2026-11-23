@@ -109,6 +109,8 @@ each one.
 - No colours outside the palette: extra shades are mixes of `field`, `ink` and `paper` only, never a new tint.
   The icons' natural colours (`icons/natural.css`) are the one addition, for icons and the hero subject.
 - Semantic colours (success, warning, error) are separate and stay legible on `paper` in both themes.
+- **Avalanche danger scale** (`scales/avalanche.css`): the standard five levels (green, yellow, orange, red, red and black check) are the one
+  colour set allowed outside the palette, only to show a danger level, as a solid tile (`.rg-avalanche[data-level]`).
 
 ## 5. Type (draft)
 
