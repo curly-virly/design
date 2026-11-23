@@ -186,5 +186,8 @@ iconSvg("reindeer", { colors: { antlers: "var(--rg-accent)" } }); // one part re
 iconSvg("check", { colors: "currentColor" }); // one colour
 ```
 
+When this repo is checked out in the same workspace (cloud sessions: `/home/user/design`), an app takes the design from
+that checkout, not the package. Reference its files, and use the package only where no checkout is present.
+
 Apps follow `main`; the lockfile holds the commit in use, and `bun update legi-design` takes the latest. Each app's `AGENTS.md` points here with one
 line.

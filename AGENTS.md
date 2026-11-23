@@ -14,3 +14,6 @@ it as a pinned Git dependency.
   each change.
 - Icons: edit `icons/svg/` and `icons/meta.json`, then run `node scripts/build-icons.mjs`; never edit `icons/index.js`
   or `specimen/icons.html` by hand. Check `specimen/icons.html` renders after each change.
+- **Use this checkout, not the package, when it's present.** If this repo is checked out next to your app (in cloud
+  sessions it's at `/home/user/design`), take tokens, palettes, icons and `DESIGN.md` from it, and point the app at
+  it. Pull `legi-design` from `github:curly-virly/design` only when no checkout is there. Don't copy files by hand.
