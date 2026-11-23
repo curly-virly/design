@@ -1,24 +1,25 @@
 /* Default icon colours: the realistic colour of each part (a red Santa hat, a brown reindeer). icons/meta.json
    names one of these per part; iconSvg writes it as the part's default. Override any of them in an app to tune
-   the whole set, or recolour single parts (DESIGN.md, Icons). `ink` and `accent` follow the palette. */
+   the whole set, or recolour single parts (DESIGN.md, Icons). These are the lifted values: each is the old realistic
+   colour brightened (CSS brightness 1.5, saturate 1.15). Apps never filter icons themselves. `ink` and `accent` follow the palette. */
 :root {
-  --rg-natural-red: #c8312b;
-  --rg-natural-green: #2f7d3a;
-  --rg-natural-brown: #8a5a35;
-  --rg-natural-tan: #d2ab74;
-  --rg-natural-snow: #fbf8f2;
-  --rg-natural-skin: #f0c6a0;
-  --rg-natural-gold: #e8b923;
-  --rg-natural-ice: #8fc8e8;
-  --rg-natural-ginger: #b5713a;
-  --rg-natural-flame: #f2a531;
-  --rg-natural-orange: #e07a2f;
-  --rg-natural-blue: #3f78c4;
-  --rg-natural-steel: #8b96a3;
-  --rg-natural-grey: #b9b4ab;
-  --rg-natural-stone: #c9bfae;
-  --rg-natural-patina: #5d9c8b;
-  --rg-natural-charcoal: #2e2b2f;
+  --rg-natural-red: #ff4439;
+  --rg-natural-green: #3ac04d;
+  --rg-natural-brown: #d88545;
+  --rg-natural-tan: #ffffa3;
+  --rg-natural-snow: #ffffff;
+  --rg-natural-skin: #ffffee;
+  --rg-natural-gold: #ffff18;
+  --rg-natural-ice: #d2ffff;
+  --rg-natural-ginger: #ffa849;
+  --rg-natural-flame: #fff931;
+  --rg-natural-orange: #ffb635;
+  --rg-natural-blue: #54b6ff;
+  --rg-natural-steel: #cee1f8;
+  --rg-natural-grey: #ffffff;
+  --rg-natural-stone: #ffffff;
+  --rg-natural-patina: #81edd0;
+  --rg-natural-charcoal: #454047;
   --rg-natural-ink: var(--rg-ink, #1d1b19);
   --rg-natural-accent: var(--rg-accent, #c8312b);
 }

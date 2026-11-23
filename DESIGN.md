@@ -142,6 +142,9 @@ in the apps; `icons/meta.json` says which. Drawn after Samurai Jack: flat shapes
   is a named part (`parts` in `icons/meta.json`, e.g. reindeer: `head`, `antlers`) with a realistic default
   colour: reindeer brown, Santa's hat red, a heart red. Details and dots share one part, `detail` (default
   ink). Things with no real colour (circle, play, mystery) default to the palette `accent`.
+- **Lifted, everywhere.** The natural colours in `icons/natural.css` are already brightened (each realistic colour at
+  brightness 1.5, saturate 1.15). Every app shows icons with these values: no CSS filters or per-page brightening.
+  Tune them there, once.
 - **Recolour freely, per part:** `iconSvg(name, { colors: { antlers: "#fff" } })`, or in CSS with
   `--rg-icon-<icon>-<part>` (e.g. `--rg-icon-reindeer-antlers`). Tune the whole set at once by overriding the
   default colours, `--rg-natural-*` in `icons/natural.css`.

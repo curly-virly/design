@@ -175,6 +175,12 @@ anyway. **Decision (approved by Jens):** the European Avalanche Danger Scale is 
 danger level: 1 green `#ccff66`, 2 yellow `#ffff00`, 3 orange `#ff9900`, 4 red `#ff0000`, 5 red and black check. A solid tile with an
 ink numeral (paper on 5), `scales/avalanche.css`. Nothing else in the chrome takes warning or hazard colours.
 
+## Icons lifted everywhere (2026-11-23)
+
+The rules page had its icons brightened with a filter (brightness 1.5, saturate 1.15), which read better on the classic sand and night fields. Jens wants the same everywhere, so the rule moves into the design: `icons/natural.css` holds the lifted values and apps draw them unfiltered. Colours that clip (tan, gold, snow, grey, stone) go to near-white or yellow; tune them in `natural.css` if they are too hot.
+
+**Decision (approved by Jens).**
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
