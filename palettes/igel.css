@@ -1,5 +1,5 @@
 /* Igel Gym night: the app's existing look, formalised. Near-black slate with one fresh green.
-   No flip: Igel Gym stays in this palette on every screen (Jens) */
+   Igel Gym stays in this palette on every screen (Jens) */
 [data-palette="igel"], .palette-igel {
   --rg-field: #0f1115;
   --rg-ink: #060709;

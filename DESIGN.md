@@ -70,7 +70,7 @@ never the detail.
 | Lists | Rows divided by lines at `--rg-line`; the first rule full `ink`, the rest softened. No card boxes around rows. |
 | Icons | From `icons/` only (section 7). Realistic colours by default; recolour per part where the app chooses. Never outlined. |
 | Scenes and headers | Built in layers (below). |
-| Big moments | The palette **flips** to the app's sibling palette for that screen (`data-palette` of the flip). |
+| Big moments | No palette change: the app's palette stays. Mark the moment with scale, layout and the one accent. |
 
 ### Scenes
 
@@ -104,8 +104,8 @@ each one.
 ## 4. Colour
 
 - Palettes live in `palettes/`, one file each, with four tokens: `--rg-field`, `--rg-ink`, `--rg-paper`,
-  `--rg-accent`, plus `flip` (the sibling palette for big moments).
-- Each app picks one palette as its own and one flip. Two apps shouldn't share a main palette.
+  `--rg-accent`. There are no flip palettes.
+- Each app picks one palette as its own. Two apps shouldn't share a main palette.
 - No colours outside the palette: extra shades are mixes of `field`, `ink` and `paper` only, never a new tint.
   The icons' natural colours (`icons/natural.css`) are the one addition, for icons and the hero subject.
 - Semantic colours (success, warning, error) are separate and stay legible on `paper` in both themes.

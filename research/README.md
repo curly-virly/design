@@ -154,8 +154,22 @@ the palette. The app's light theme (green on `#f5f6f8`) doesn't fit one palette 
 Jens doesn't want the big-moment flip in this app: no flip palette, `igel` on every screen.
 **Decision (approved by Jens).**
 
+## Fjällripa palette: `ripa` (2026-11-22)
+
+- Built from a photo of a rock ptarmigan in winter plumage, sampling the bird only (not the ground): feather shadow
+  `#a09386` (field), beak/tail `#2b2a28` (ink), plumage `#ece8e3` (paper), eye comb `#db341a` (accent).
+- Replaces the earlier `morioh` suggestion. Quiet on purpose: most of the app is white paper; the field is the
+  feather shadow, so there is no loud colour block.
+- Contrast: ink on field 4.8:1, ink on paper 11.8:1, accent on paper 3.8:1 (large text and icons only, not body text).
+- **Decision (approved by Jens):** Fjällripa has no flip palette. Hazard colours stay semantic (open question 3).
+
+## No flip palettes (2026-11-23)
+
+**Decision (approved by Jens):** big-moment palette flips are removed for every app. Each app uses its own palette on every
+screen; a big moment is marked with layout, scale and the one accent, not a palette change.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
 - Which icon parts each app recolours: decided per app in Phase 2.
-- Which palette and flip each app gets: decided per app in Phase 2.
+- Which palette each app gets: decided per app in Phase 2 (Igel Gym: `igel`; Fjällripa: `ripa`).

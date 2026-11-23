@@ -160,11 +160,11 @@ header p{margin:10px 0 0;max-width:62ch;color:var(--chrome-mute)}
           <div class="msg">
             <div class="eyebrow" style="color:var(--paper)">Summit</div>
             <h3 class="title">Ridge<br>taken</h3>
-            <p>All five legs done. The palette flips for big moments like this one.</p>
+            <p>All five legs done. Big moments get scale and the one accent.</p>
             <button class="btn" type="button">Carry on</button>
           </div>
         </div></div>
-        <div class="cap">Moment screen · palette flipped</div>
+        <div class="cap">Moment screen</div>
       </div>
     </main>
   </div>
@@ -180,9 +180,9 @@ const PALETTES=[
   {id:"morioh",name:"Lilac & mint",from:"JoJo · Diamond is Unbreakable",field:"#9d7fd0",ink:"#1d1430",paper:"#faf6ee",accent:"#78e2c1",note:"Soft lilac with mint; the gentlest of the loud ones."},
   {id:"aku",name:"Flame",from:"Samurai Jack",field:"#d13a1e",ink:"#0d0a08",paper:"#f4ead6",accent:"#43a84f",note:"Red field, black shape, one green."},
   {id:"desert",name:"Desert haze",from:"Samurai Jack",field:"#e6ad62",ink:"#2a1912",paper:"#f7ead0",accent:"#a3412a",note:"Sand and rust; calm with a hot accent."},
+  {id:"ripa",name:"Ptarmigan",from:"Rock ptarmigan, winter plumage",field:"#a09386",ink:"#2b2a28",paper:"#ece8e3",accent:"#db341a",note:"Mostly white paper with feather-shadow field; quiet on purpose. Red comb as the one accent."},
   {id:"night",name:"Night forest",from:"Samurai Jack",field:"#14284d",ink:"#060b17",paper:"#dcebf2",accent:"#46c4e0",note:"Deep blue with a cold cyan light."}
 ];
-const FLIP={phantom:"checker",checker:"phantom",igel:"igel",stardust:"wind",wind:"stardust",morioh:"stardust",aku:"night",desert:"aku",night:"desert"};
 const BGS=[
   {id:"flat",name:"Flat field",note:"Just the colour field. The silhouette does all the work."},
   {id:"layers",name:"Silhouette layers",note:"Flat hills stacked front to back, paler with distance."},
@@ -202,14 +202,14 @@ function chip(list,host,key,render){
   for(const it of list){const b=document.createElement("button");b.type="button";b.className="chip";b.id=key+"-"+it.id;b.setAttribute("aria-pressed",String(state[key]===it.id));b.innerHTML=render(it);b.onclick=()=>{state[key]=it.id;apply();};host.appendChild(b);}
 }
 function apply(){
-  const p=PALETTES.find(x=>x.id===state.pal), f=PALETTES.find(x=>x.id===FLIP[state.pal]);
-  setVars(s1,p); setVars(s2,f);
+  const p=PALETTES.find(x=>x.id===state.pal);
+  setVars(s1,p); setVars(s2,p);
   s1.dataset.bg=state.bg;
   root.style.setProperty("--line-w",state.line+"px");
   chip(PALETTES,document.getElementById("palettes"),"pal",it=>`<span class="sw"><i style="background:${it.field}"></i><i style="background:${it.ink}"></i><i style="background:${it.accent}"></i></span>${it.name}`);
   chip(BGS,document.getElementById("bgs"),"bg",it=>it.name);
   chip(LINES,document.getElementById("lines"),"line",it=>it.name);
-  document.getElementById("palNote").textContent=`After ${p.from}. ${p.note} Moment screen flips to ${f.name}.`;
+  document.getElementById("palNote").textContent=`After ${p.from}. ${p.note}`;
   document.getElementById("bgNote").textContent=BGS.find(b=>b.id===state.bg).note;
   try{localStorage.setItem("rg-state",JSON.stringify(state));}catch(e){}
 }
