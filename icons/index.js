@@ -352,10 +352,11 @@ export const icons = {
   ],
   "parts": {
    "beer": "gold",
+   "foam": "snow",
    "handle": "gold"
   },
   "detail": "ink",
-  "body": "<path class=\"shape\" d=\"M5 6c-1-2 1.5-3.5 3-2.2 1.2-1.4 4-1.4 5 0 1.5-1 4 0 3 2.2v14c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1Z\"/><path class=\"line\" d=\"M16 9h2.5c.8 0 1.5.7 1.5 1.5v4c0 .8-.7 1.5-1.5 1.5H16\"/><path class=\"detail\" d=\"M8.5 9.5v8M12.5 9.5v8\"/>"
+  "body": "<path class=\"shape\" d=\"M5 6h11v14c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1Z\"/><path class=\"shape\" d=\"M5 6c-1-2 1.5-3.5 3-2.2 1.2-1.4 4-1.4 5 0 1.5-1 4 0 3 2.2Z\"/><path class=\"line\" d=\"M16 9h2.5c.8 0 1.5.7 1.5 1.5v4c0 .8-.7 1.5-1.5 1.5H16\"/><path class=\"detail\" d=\"M8.5 9.5v8M12.5 9.5v8\"/>"
  },
  "coffee": {
   "label": "Café",

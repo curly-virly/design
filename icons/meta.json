@@ -311,6 +311,7 @@
     ],
     "parts": {
       "beer": "gold",
+      "foam": "snow",
       "handle": "gold"
     }
   },
