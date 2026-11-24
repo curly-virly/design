@@ -17,3 +17,6 @@ it as a pinned Git dependency.
 - **Use this checkout, not the package, when it's present.** If this repo is checked out next to your app (in cloud
   sessions it's at `/home/user/design`), take tokens, palettes, icons and `DESIGN.md` from it, and point the app at
   it. Pull `legi-design` from `github:curly-virly/design` only when no checkout is there. Don't copy files by hand.
+- **Phone screenshots** (landing pages, reviews): `scripts/screenshot.mjs` opens a local URL at phone size, runs an optional
+  per-app recipe (a few lines that seed state) and writes a 540 px webp. Needs only Playwright. Each app keeps its own recipe
+  and a `bun run screenshots` line; legi.nu's images are refreshed by hand from them.

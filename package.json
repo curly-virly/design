@@ -10,7 +10,8 @@
     "palettes",
     "assets",
     "scales",
-    "icons"
+    "icons",
+    "scripts/screenshot.mjs"
   ],
   "exports": {
     "./tokens.css": "./tokens.css",
