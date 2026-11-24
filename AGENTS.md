@@ -17,3 +17,6 @@ it as a pinned Git dependency.
 - **Use this checkout, not the package, when it's present.** If this repo is checked out next to your app (in cloud
   sessions it's at `/home/user/design`), take tokens, palettes, icons and `DESIGN.md` from it, and point the app at
   it. Pull `legi-design` from `github:curly-virly/design` only when no checkout is there. Don't copy files by hand.
+- **Show palettes as colours.** When palettes come up with Jens, always show the actual colours (swatches rendered
+  from `palettes/*.css`: field, ink, paper, accent with hex values), not just names or hex codes. Render them as an
+  image or page he can see, and re-render if a value changes.
