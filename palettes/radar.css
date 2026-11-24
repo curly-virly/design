@@ -1,0 +1,8 @@
+/* Phosphor: after a radar scope. Deep green-teal field, near-black ink, pale-green paper, one hot pink ping.
+   Proposed for Crumb Radar (pending Jens). No flip palette: the app stays in it on every screen. */
+[data-palette="radar"], .palette-radar {
+  --rg-field: #0f3d3a;
+  --rg-ink: #041211;
+  --rg-paper: #e8f2e6;
+  --rg-accent: #ff4f9a;
+}
