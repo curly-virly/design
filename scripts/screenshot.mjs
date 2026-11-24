@@ -3,7 +3,8 @@
 //
 //   node /home/user/design/scripts/screenshot.mjs --url http://127.0.0.1:8080/ --out shots/home.webp
 //     [--recipe scripts/landing-shot.mjs]  module whose default export is async (page) => {...}: click, fill, wait
-//     [--phone 390x844] [--width 540] [--quality 85] [--theme dark|light] [--wait 1500] [--live]
+//     [--proxy]  let a local page load remote images through the sandbox proxy (--live implies it)
+//     [--phone 390x844] [--width 540] [--quality 85] [--theme dark|light] [--wait 1500] [--live] [--proxy]
 //
 // A recipe is where an app seeds its demo state; it should be a few lines. Local URLs only, unless --live is given:
 // that is for read-only public pages (e.g. Fjällripa); never use it on an app that writes (The Hunt, Verflick, Igel Gym).
@@ -31,11 +32,11 @@ function chromiumPath() {
   } catch {}
 }
 
-export async function shoot({ url, out, recipe, phone = "390x844", width = 540, quality = 85, theme = "dark", wait = 1500, live = false }) {
+export async function shoot({ url, out, recipe, phone = "390x844", width = 540, quality = 85, theme = "dark", wait = 1500, live = false, proxy: useProxy = live }) {
   if (!live && !/^(http:\/\/(127\.0\.0\.1|localhost)[:/]|file:)/.test(url)) throw new Error("Local URLs only (or file:); --live allows a public page.");
   const [w, h] = phone.split("x").map(Number);
   const { chromium } = loadPlaywright();
-  const proxy = process.env.HTTPS_PROXY && live ? { server: process.env.HTTPS_PROXY } : undefined;
+  const proxy = process.env.HTTPS_PROXY && useProxy ? { server: process.env.HTTPS_PROXY, bypass: "127.0.0.1,localhost" } : undefined;
   const browser = await chromium.launch({ executablePath: chromiumPath(), proxy, args: ["--use-gl=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] });
   try {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, colorScheme: theme });
@@ -62,6 +63,6 @@ export async function shoot({ url, out, recipe, phone = "390x844", width = 540, 
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const a = process.argv.slice(2), get = (n) => { const i = a.indexOf("--" + n); return i >= 0 ? a[i + 1] : undefined; };
-  if (!get("url") || !get("out")) { console.error("Usage: screenshot.mjs --url <local url> --out <file.webp> [--recipe f] [--phone WxH] [--width 540] [--quality 85] [--theme dark|light] [--wait ms] [--live]"); process.exit(1); }
-  await shoot({ url: get("url"), out: get("out"), recipe: get("recipe"), phone: get("phone"), width: get("width") && +get("width"), quality: get("quality") && +get("quality"), theme: get("theme"), wait: get("wait") && +get("wait"), live: a.includes("--live") });
+  if (!get("url") || !get("out")) { console.error("Usage: screenshot.mjs --url <local url> --out <file.webp> [--recipe f] [--phone WxH] [--width 540] [--quality 85] [--theme dark|light] [--wait ms] [--live] [--proxy]"); process.exit(1); }
+  await shoot({ url: get("url"), out: get("out"), recipe: get("recipe"), phone: get("phone"), width: get("width") && +get("width"), quality: get("quality") && +get("quality"), theme: get("theme"), wait: get("wait") && +get("wait"), live: a.includes("--live"), proxy: a.includes("--live") || a.includes("--proxy") });
 }
