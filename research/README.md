@@ -181,12 +181,12 @@ The rules page had its icons brightened with a filter (brightness 1.5, saturate 
 
 **Decision (approved by Jens).**
 
-## Crumb Radar palette: `radar` (2026-11-24, proposed)
+## Crumb Radar palette: `radar` (2026-11-24)
 
 Crumb Radar's old look (white/teal-grey, coral-red, light and dark themes, rounded cards) broke most of the rules. Proposal: its own palette
 `radar`, "Phosphor": field `#0f3d3a`, ink `#041211`, paper `#e8f2e6`, accent `#ff4f9a`. Reasons: a radar scope is the app's
 idea; the hot pink ping is the colour the specks are already painted in, so the accent *is* the hero (specks); no other app is
-green-teal (`night` is blue, `igel` near-black). No flip palette, no light theme. **Pending Jens's approval.**
+green-teal (`night` is blue, `igel` near-black). No flip palette, no light theme. **Decision (approved by Jens).**
 
 ## Open
 
