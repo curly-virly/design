@@ -197,13 +197,18 @@ line.
 Panels and labels drawn in a WebXR scene (headset or phone AR). Approved by Jens, revisable. Numbers and reasons:
 `research/xr-panels.md`. The element rules above still apply; these add what a 3D scene needs.
 
-- **Distance and size.** A head-up panel hangs 1 m ahead of the eye, 0.12 m below the eye line, about 1.0 × 0.74 m.
+- **Distance and size.** A head-up panel hangs 1 m ahead of the eye, 0.12 m below the eye line, about 1.0 × 0.74 m. A full-screen menu sheet is 1.0 m wide and up to 0.92 m tall (1.12 m on a phone), centred on the eye line.
 - **Text size is an angle, not a length.** Every line is at least about 1.7° tall (size ÷ distance). Body 1.9°, small
   1.7°, headline 2.9°. At 1 m that is 0.034, 0.030 and 0.050 m.
 - **Follow lazily.** A panel eases to its place (position rate 4/s) and turns only once the head is more than 12° off
   (yaw rate 3/s). Smoothing is frame-rate independent. Looking straight up or down keeps the old heading.
 - **Safety content can't be closed.** Whatever the app must always show (danger level, estimate line, stale or demo
-  data) is on a panel with no close or hide control. A control may shrink other content, never that.
+  data) is on a strip with no close or hide control. A control may shrink other content, never that.
+- **One icon, one menu.** The closed view is the scene, that safety strip at the top, a small readout and ONE menu icon
+  (a paper square, three bars, 0.1 m) at the bottom. The icon opens a full-screen sheet with the strip still on top, a
+  title, a close button, tabs, and one action at the bottom. The same sheet is DOM on a flat screen and drawn in the
+  scene in a headset; only the layout differs (two columns in the scene). Controls are flat: ink when on, a soft
+  `field`/`paper` mix when off, no outlines.
 - **Depth.** Overlays and panel text ignore the depth test and draw last (high `renderOrder`), so the model never
   hides them. The panel swallows pointer rays, so a click on it never reaches the model behind.
 - **Labels on a scaled model stay one size.** A label on the model is rescaled each frame to keep its apparent size

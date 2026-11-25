@@ -193,6 +193,17 @@ green-teal (`night` is blue, `igel` near-black). No flip palette, no light theme
 Fjällripa's XR views (VR tabletop, phone AR) needed rules for panels in 3D: distance, text size, following, depth.
 **Decision (approved by Jens, revisable; fjallripa issue #41):** `DESIGN.md` section 9 records what Fjällripa's panels use. Measured numbers and reasons are in `research/xr-panels.md`. No tokens changed.
 
+## XR menu: one icon, two tabs (2026-11-25)
+
+Fjällripa's XR UI had too many things on screen at once: an always-open panel, a separate "Look around" entry with its own
+chooser, strips and cards. **Decision (approved by Jens, from mockups):** closed, the view shows only the scene, the safety
+strip and one menu icon with a scale readout; the icon opens a full-screen two-tab sheet (View | Layers) with the strip kept
+on top, and phone and headset share it (one view, one size control). Section 9 gains the "one icon, one menu" rule and the
+sheet size (1.0 × 0.92 m, 1.12 m on a phone; the old 1.0 × 0.74 m head-up panel is for a panel without tabs). Reasons:
+safety content is never hidden because it is not part of the menu; a sheet that replaces the view needs no attention rules
+beyond the existing ones (distance, angular text size, lazy follow); two columns keep the sheet short enough for a headset.
+Not measured on a headset yet. No tokens changed.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
