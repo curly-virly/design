@@ -202,7 +202,10 @@ on top, and phone and headset share it (one view, one size control). Section 9 g
 sheet size (1.0 × 0.92 m, 1.12 m on a phone; the old 1.0 × 0.74 m head-up panel is for a panel without tabs). Reasons:
 safety content is never hidden because it is not part of the menu; a sheet that replaces the view needs no attention rules
 beyond the existing ones (distance, angular text size, lazy follow); two columns keep the sheet short enough for a headset.
-Not measured on a headset yet. No tokens changed.
+Follow-up (Jens, same day): on a phone the strip, icon, readout and menu must be real on-screen HTML, so phone AR uses the WebXR
+`dom-overlay` feature instead of a camera-fixed 3D card (a card eased towards the camera and swam). Headsets cannot use it
+and keep the lazily following in-world sheet; the old card stays only as a logged fallback. Not measured on hardware yet.
+No tokens changed.
 
 ## Open
 

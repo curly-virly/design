@@ -218,5 +218,8 @@ Panels and labels drawn in a WebXR scene (headset or phone AR). Approved by Jens
 - **Type.** One legible mono or sans face, served from the app as `.woff` or `.ttf`: SDF text can't read `.woff2`, and
   a CDN font is blocked by CSP. Lay text out on the main thread if CSP forbids workers.
 - **Lines.** One weight per element and no tapered strokes, as in section 3. A flat shape is a plane, not an outline.
-- **Phone AR card.** On a phone the panel is a smaller card low in the view, fixed to the camera (0.8 m ahead,
-  0.2 m below the centre, scale 0.55) so it can't be out of sight. Keep text at or above the angle rule after scaling.
+- **Phone AR is HTML.** On a phone, AR draws the strip, readout, icon and menu as real HTML over the camera image (WebXR
+  `dom-overlay`), not as 3D, so nothing floats. Taps on that UI must not reach the scene (`beforexrselect`). A headset
+  cannot do this and keeps the in-world sheet. Only where `dom-overlay` is missing does a phone fall back to a smaller
+  in-world card fixed to the camera (0.8 m ahead, 0.2 m below the centre, scale 0.55); keep text at or above the angle
+  rule after scaling, and log the fallback.
