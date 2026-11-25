@@ -20,3 +20,17 @@ it as a pinned Git dependency.
 - **Phone screenshots** (landing pages, reviews): `scripts/screenshot.mjs` opens a local URL at phone size, runs an optional
   per-app recipe (a few lines that seed state) and writes a 540 px webp. Needs only Playwright. Each app keeps its own recipe
   and a `bun run screenshots` line; legi.nu's images are refreshed by hand from them.
+
+## Repo map (same text in every repo; canonical copy in `vps-app-hosting/README.md`)
+
+Every repo under `curly-virly` is one of three kinds. In cloud sessions they are checked out side by side at `/home/user/<name>`.
+
+| Kind | What it is | Repos | Deploys? |
+|---|---|---|---|
+| **App** | A live site or service; users see it | `legi-nu`, `crumb-radar`, `fjallripa`, `taskmaster`, `the-hunt`, `verflick`, `workout` | Yes: push to `main` |
+| **Supporting** | Serves the apps; not an app | `design` (shared design system), `vps-app-hosting` (the server `jolly-dragon`: Caddy, deploy pipeline, logs, issue labels) | No |
+| **Project** | Things we make and keep; no users, no server | `3d` (OpenSCAD/STL models), `dnd` (printable paper props), `Circuits` (electronics builds) | No |
+
+- Work in the repo that owns the thing. If a task needs a change in another repo, say so (or open an issue there); don't edit it from here.
+- Apps follow `design` for looks and `vps-app-hosting` for anything about the server. Apps only need to know "push to `main` deploys".
+- Project repos have no deploy, CI or server: a README per project folder is the documentation. Anything shared across repos (design, server) is not duplicated into them.
