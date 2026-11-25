@@ -188,6 +188,11 @@ Crumb Radar's old look (white/teal-grey, coral-red, light and dark themes, round
 idea; the hot pink ping is the colour the specks are already painted in, so the accent *is* the hero (specks); no other app is
 green-teal (`night` is blue, `igel` near-black). No flip palette, no light theme. **Decision (approved by Jens).**
 
+## In-world UI (XR) (2026-11-25)
+
+Fjällripa's XR views (VR tabletop, phone AR) needed rules for panels in 3D: distance, text size, following, depth.
+**Decision (approved by Jens, revisable; fjallripa issue #41):** `DESIGN.md` section 9 records what Fjällripa's panels use. Measured numbers and reasons are in `research/xr-panels.md`. No tokens changed.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.

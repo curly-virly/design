@@ -191,3 +191,27 @@ that checkout, not the package. Reference its files, and use the package only wh
 
 Apps follow `main`; the lockfile holds the commit in use, and `bun update legi-design` takes the latest. Each app's `AGENTS.md` points here with one
 line.
+
+## 9. In-world UI (XR)
+
+Panels and labels drawn in a WebXR scene (headset or phone AR). Approved by Jens, revisable. Numbers and reasons:
+`research/xr-panels.md`. The element rules above still apply; these add what a 3D scene needs.
+
+- **Distance and size.** A head-up panel hangs 1 m ahead of the eye, 0.12 m below the eye line, about 1.0 × 0.74 m.
+- **Text size is an angle, not a length.** Every line is at least about 1.7° tall (size ÷ distance). Body 1.9°, small
+  1.7°, headline 2.9°. At 1 m that is 0.034, 0.030 and 0.050 m.
+- **Follow lazily.** A panel eases to its place (position rate 4/s) and turns only once the head is more than 12° off
+  (yaw rate 3/s). Smoothing is frame-rate independent. Looking straight up or down keeps the old heading.
+- **Safety content can't be closed.** Whatever the app must always show (danger level, estimate line, stale or demo
+  data) is on a panel with no close or hide control. A control may shrink other content, never that.
+- **Depth.** Overlays and panel text ignore the depth test and draw last (high `renderOrder`), so the model never
+  hides them. The panel swallows pointer rays, so a click on it never reaches the model behind.
+- **Labels on a scaled model stay one size.** A label on the model is rescaled each frame to keep its apparent size
+  (about 1.75° per line), faces the viewer, and never blocks picking.
+- **Colour only from `palettes/`.** Copy the palette's hex values into the scene (three.js can't read CSS variables),
+  in one place, labelled with the palette file. Same limits as section 4: mixes and the avalanche scale only.
+- **Type.** One legible mono or sans face, served from the app as `.woff` or `.ttf`: SDF text can't read `.woff2`, and
+  a CDN font is blocked by CSP. Lay text out on the main thread if CSP forbids workers.
+- **Lines.** One weight per element and no tapered strokes, as in section 3. A flat shape is a plane, not an outline.
+- **Phone AR card.** On a phone the panel is a smaller card low in the view, fixed to the camera (0.8 m ahead,
+  0.2 m below the centre, scale 0.55) so it can't be out of sight. Keep text at or above the angle rule after scaling.
