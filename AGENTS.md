@@ -27,8 +27,8 @@ Every repo under `curly-virly` is one of three kinds. In cloud sessions they are
 
 | Kind | What it is | Repos | Deploys? |
 |---|---|---|---|
-| **App** | A live site or service; users see it | `legi-nu`, `crumb-radar`, `fjallripa`, `taskmaster`, `the-hunt`, `verflick`, `workout` | Yes: push to `main` |
-| **Supporting** | Serves the apps; not an app | `design` (shared design system), `vps-app-hosting` (the server `jolly-dragon`: Caddy, deploy pipeline, logs, issue labels) | No |
+| **App** | A live site or service; users see it | `crumb-radar`, `fjallripa`, `taskmaster`, `the-hunt`, `verflick`, `workout` | Yes: push to `main` |
+| **Supporting** | Serves the apps; not an app | `design` (shared design system), `legi-nu` (the legi.nu showcase site: points to the things we want to show off; deploys on push to `main` like an app), `vps-app-hosting` (the server `jolly-dragon`: Caddy, deploy pipeline, logs, issue labels) | `legi-nu`: yes; others no |
 | **Project** | Things we make and keep; no users, no server | `3d` (OpenSCAD/STL models), `dnd` (printable paper props), `Circuits` (electronics builds) | No |
 
 - Work in the repo that owns the thing. If a task needs a change in another repo, say so (or open an issue there); don't edit it from here.
