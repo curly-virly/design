@@ -937,6 +937,10 @@
       "RotateCcw"
     ]
   },
+  "recentre": {
+    "label": "Back to start view",
+    "group": "ui"
+  },
   "user-plus": {
     "label": "Add player",
     "group": "ui",
