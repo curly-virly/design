@@ -154,8 +154,47 @@ the palette. The app's light theme (green on `#f5f6f8`) doesn't fit one palette 
 Jens doesn't want the big-moment flip in this app: no flip palette, `igel` on every screen.
 **Decision (approved by Jens).**
 
+## Fjällripa palette: `ripa` (2026-11-22)
+
+- Built from a photo of a rock ptarmigan in winter plumage, sampling the bird only (not the ground): feather shadow
+  `#a09386` (field), beak/tail `#2b2a28` (ink), plumage `#ece8e3` (paper), eye comb `#db341a` (accent).
+- Replaces the earlier `morioh` suggestion. Quiet on purpose: most of the app is white paper; the field is the
+  feather shadow, so there is no loud colour block.
+- Contrast: ink on field 4.8:1, ink on paper 11.8:1, accent on paper 3.8:1 (large text and icons only, not body text).
+- **Decision (approved by Jens):** Fjällripa has no flip palette. Hazard colours stay semantic (open question 3).
+
+## No flip palettes (2026-11-23)
+
+**Decision (approved by Jens):** big-moment palette flips are removed for every app. Each app uses its own palette on every
+screen; a big moment is marked with layout, scale and the one accent, not a palette change.
+
+## Avalanche danger scale (2026-11-23)
+
+Fjällripa's orange avalanche box broke the palette rule, and Jens wanted the standard danger colours for the level number
+anyway. **Decision (approved by Jens):** the European Avalanche Danger Scale is allowed outside the palette, only to show a
+danger level: 1 green `#ccff66`, 2 yellow `#ffff00`, 3 orange `#ff9900`, 4 red `#ff0000`, 5 red and black check. A solid tile with an
+ink numeral (paper on 5), `scales/avalanche.css`. Nothing else in the chrome takes warning or hazard colours.
+
+## Icons lifted everywhere (2026-11-23)
+
+The rules page had its icons brightened with a filter (brightness 1.5, saturate 1.15), which read better on the classic sand and night fields. Jens wants the same everywhere, so the rule moves into the design: `icons/natural.css` holds the lifted values and apps draw them unfiltered. Colours that clip (tan, gold, snow, grey, stone) go to near-white or yellow; tune them in `natural.css` if they are too hot.
+
+**Decision (approved by Jens).**
+
+## Crumb Radar palette: `radar` (2026-11-24)
+
+Crumb Radar's old look (white/teal-grey, coral-red, light and dark themes, rounded cards) broke most of the rules. Proposal: its own palette
+`radar`, "Phosphor": field `#0f3d3a`, ink `#041211`, paper `#e8f2e6`, accent `#ff4f9a`. Reasons: a radar scope is the app's
+idea; the hot pink ping is the colour the specks are already painted in, so the accent *is* the hero (specks); no other app is
+green-teal (`night` is blue, `igel` near-black). No flip palette, no light theme. **Decision (approved by Jens).**
+
+## In-world UI (XR) (2026-11-25)
+
+Fjällripa's XR views (VR tabletop, phone AR) needed rules for panels in 3D: distance, text size, following, depth.
+**Decision (approved by Jens, revisable; fjallripa issue #41):** `DESIGN.md` section 9 records what Fjällripa's panels use. Measured numbers and reasons are in `research/xr-panels.md`. No tokens changed.
+
 ## Open
 
 - Type pairing is a draft (from the specimen); not yet reviewed by Jens.
 - Which icon parts each app recolours: decided per app in Phase 2.
-- Which palette and flip each app gets: decided per app in Phase 2.
+- Which palette each app gets: decided per app in Phase 2 (Igel Gym: `igel`; Fjällripa: `ripa`).

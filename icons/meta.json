@@ -311,6 +311,7 @@
     ],
     "parts": {
       "beer": "gold",
+      "foam": "snow",
       "handle": "gold"
     }
   },
@@ -996,5 +997,21 @@
       "Trash2",
       "🗑️"
     ]
+  },
+  "xmas-lights": {
+    "label": "Christmas lights",
+    "group": "christmas",
+    "replaces": [],
+    "parts": {
+      "wire": "charcoal",
+      "bulb-1": "red",
+      "bulb-2": "gold",
+      "bulb-3": "blue",
+      "bulb-4": "flame",
+      "bulb-5": "ice",
+      "bulb-6": "orange",
+      "bulb-7": "patina",
+      "bulb-8": "red"
+    }
   }
 }

@@ -7,7 +7,8 @@ legi mark hidden as an Easter egg.
 |---|---|
 | `DESIGN.md` | The rules. Start here. |
 | `tokens.css` | Shared tokens and classes: line weights, cut-corner button, type, spacing, background techniques. |
-| `palettes/` | One file per palette (`--rg-field`, `--rg-ink`, `--rg-paper`, `--rg-accent`) with its flip palette noted. |
+| `palettes/` | One file per palette (`--rg-field`, `--rg-ink`, `--rg-paper`, `--rg-accent`). |
+| `scales/avalanche.css` | The avalanche danger scale colours (levels 1 to 5), the only colours allowed outside the palette. |
 | `assets/legi-mark.svg` | The mark, in `currentColor`. |
 | `icons/` | The icon set: `svg/` (one file per icon), `icons.css` (how parts take colour), `natural.css` (the default colours), `index.js` (`iconSvg`, `iconParts`, `byReplaces`), `meta.json`. Rebuild with `node scripts/build-icons.mjs`. |
 | `specimen/icons.html` | Every icon in its default colours, on paper and on the field, in one colour, with its part names. |
@@ -31,6 +32,6 @@ bun add github:curly-virly/design
 import { iconSvg } from "legi-design/icons/index.js";
 ```
 
-Set `data-palette="<palette>"` on the root (or on a single screen for a big moment's flip).
+Set `data-palette="<palette>"` on the root.
 
 Apps follow `main`. The app's lockfile records the commit it uses, and `bun update legi-design` moves it to the latest. No tags or releases. Planning and open work: vps-app-hosting issue #60.

@@ -1,0 +1,30 @@
+/* The European Avalanche Danger Scale (EAWS), used by the Swedish bulletin too.
+   A semantic scale, not a palette: the only colours allowed outside the palette and the icons' natural colours.
+   Use it only to show an avalanche danger level (1 low to 5 very high). Ink text on levels 1-4, paper on 5. */
+:root {
+  --rg-avalanche-1: #ccff66; /* low */
+  --rg-avalanche-2: #ffff00; /* moderate */
+  --rg-avalanche-3: #ff9900; /* considerable */
+  --rg-avalanche-4: #ff0000; /* high */
+  --rg-avalanche-5: #ff0000; /* very high: red and black check, see .rg-avalanche[data-level="5"] */
+}
+.rg-avalanche {
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  min-height: 48px;
+  color: var(--rg-ink);
+  font-family: var(--rg-font-display);
+  font-variation-settings: "wdth" var(--rg-display-width);
+  font-weight: 850;
+  font-size: var(--rg-text-xl);
+  line-height: 1;
+  background: var(--rg-avalanche-1);
+}
+.rg-avalanche[data-level="2"] { background: var(--rg-avalanche-2); }
+.rg-avalanche[data-level="3"] { background: var(--rg-avalanche-3); }
+.rg-avalanche[data-level="4"] { background: var(--rg-avalanche-4); }
+.rg-avalanche[data-level="5"] {
+  color: #fff;
+  background: conic-gradient(#000 25%, var(--rg-avalanche-5) 0 50%, #000 0 75%, var(--rg-avalanche-5) 0) 0 0 / 24px 24px;
+}

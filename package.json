@@ -9,12 +9,15 @@
     "tokens.css",
     "palettes",
     "assets",
-    "icons"
+    "scales",
+    "icons",
+    "scripts/screenshot.mjs"
   ],
   "exports": {
     "./tokens.css": "./tokens.css",
     "./palettes/*": "./palettes/*",
     "./assets/*": "./assets/*",
+    "./scales/*": "./scales/*",
     "./icons/*": "./icons/*"
   }
 }
