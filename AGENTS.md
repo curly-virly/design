@@ -14,3 +14,7 @@ it as a pinned Git dependency.
   each change.
 - Icons: edit `icons/svg/` and `icons/meta.json`, then run `node scripts/build-icons.mjs`; never edit `icons/index.js`
   or `specimen/icons.html` by hand. Check `specimen/icons.html` renders after each change.
+
+## GitHub access
+
+- If the GitHub MCP tools (`mcp__github__*`) fail or are missing, don't stop: use `gh api` instead (e.g. `gh api repos/curly-virly/<repo>/issues -f title=... -f body=...`, `-X PATCH .../issues/N`, `.../issues/N/comments`, `.../pulls`). `gh auth status` may report an invalid token; ignore it, the API calls still work. Project-board (GraphQL) work stays local-only, see `vps-app-hosting/PROJECTS.md`.
