@@ -1063,7 +1063,7 @@ export const icons = {
   "label": "Back to start view",
   "group": "ui",
   "replaces": [],
-  "body": "<path class=\"line\" d=\"M3 8V4h4M17 4h4v4M21 16v4h-4M7 20H3v-4M7 15l3.5-5 2.5 3 1.5-2L17 15z\"/>"
+  "body": "<path class=\"line\" d=\"M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5M7 15.5l3.5-5 2.5 3 1.5-2 2.5 4\"/>"
  },
  "user-plus": {
   "label": "Add player",
