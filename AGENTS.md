@@ -38,3 +38,4 @@ Every repo under `curly-virly` is one of three kinds. In cloud sessions they are
 ## GitHub access
 
 - If the GitHub MCP tools (`mcp__github__*`) fail or are missing, don't stop: use `gh api` instead (e.g. `gh api repos/curly-virly/<repo>/issues -f title=... -f body=...`, `-X PATCH .../issues/N`, `.../issues/N/comments`, `.../pulls`). `gh auth status` may report an invalid token; ignore it, the API calls still work. Project-board (GraphQL) work stays local-only, see `vps-app-hosting/PROJECTS.md`.
+- **Issues and branches:** every branch links to its issue. Before starting, find or open the issue (no issue, no branch); comment on it with the branch name when work starts and again when pushed. Put `Refs #N` (or `Fixes #N`) in every commit and PR. When the branch merges or is dropped, say so on the issue.
